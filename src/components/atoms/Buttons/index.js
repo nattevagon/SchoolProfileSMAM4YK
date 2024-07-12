@@ -7,10 +7,9 @@ const Buttons = (props) => {
 
     return (
         <Button 
-            className={"buttons"+(isLoad ? " loader":"")} 
+            className="buttons"
             variant={variant} 
             id={id}
-            active={active} 
             type={type}
             disabled={disabled} 
             size={size} 

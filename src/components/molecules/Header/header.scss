@@ -8,11 +8,12 @@
     display: flex;
     align-items: center;
     font-family: 'Assistant', sans-serif;
+    z-index: 2;
 
     .container {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 0;
 
         .title-section {
@@ -36,6 +37,7 @@
         }
 
         .menu-section {
+            width: 572px;
             display: flex;
             align-items: center;
 
@@ -49,8 +51,13 @@
                 cursor: pointer;
 
                 &:hover {
-                    font-weight: bold;
+                    // font-weight: bold;
                     text-decoration: none;
+                    // opacity: 0.5;
+                }
+
+                &.active {
+                    font-weight: bold;
                 }
 
                 .chevron {
@@ -65,6 +72,8 @@
 
                 &.show {
                     .btn-menu-item {
+                        font-weight: bold;
+
                         .chevron {
                             transform: rotate(180deg);
                             transition: all 0.5s;
@@ -104,10 +113,10 @@
 
         .button-section {
             .btn-location {
+                background-color: #28A745;
                 width: 158px;
                 display: flex;
                 align-items: center;
-                margin-right: 8px;
                 padding: 6px 16px;
                 border-radius: 8px;
                 border: 1px solid #FFFFFF;
@@ -118,7 +127,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    opacity: 0.5;
+                    background-color: #218F3B;
                 }
 
                 img {

@@ -4,7 +4,9 @@ import { Chevron, LocationMaps, SchoolLogo } from "assets/images"
 import { Container, Dropdown } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
-export default function Header() {
+export default function Header(props) {
+    let { menu } = props
+
     return (
         <div className="header-component">
             <Container>
@@ -13,56 +15,71 @@ export default function Header() {
                     <div className="school-name">SMA Muhammadiyah 4 Yogyakarta</div>
                 </div>
                 <div className="menu-section">
-                    <Link className="btn-menu-item" to={"/"}>Beranda</Link>
+                    <Link className={"btn-menu-item" + (menu === "Home" ? " active" : "")} to={"/"}>Beranda</Link>
                     <Dropdown bsPrefix="dropdown-item">
-                        <Dropdown.Toggle bsPrefix="btn-menu-item" as={'div'}>
+                        <Dropdown.Toggle bsPrefix={"btn-menu-item" + (menu === "Profile" ? " active" : "")} as={'div'}>
                             Profil
-                            <img className="chevron" src={Chevron} alt="Chevron"/>
+                            <img className="chevron" src={Chevron} alt="Chevron" />
                         </Dropdown.Toggle>
                         <Dropdown.Menu bsPrefix="dropdown-menu">
-                            <Link className="sub-menu">
+                            <Link className="sub-menu" to={"/vision-mission"}>
                                 Visi dan Misi Sekolah
                             </Link>
-                            <Link className="sub-menu">
+                            <Link className="sub-menu" to={"/organizational-structure"}>
                                 Struktur Organisasi
                             </Link>
-                            <Link className="sub-menu line-top">
+                            <Link className="sub-menu" to={"/infrastucture"}>
                                 Sarana Prasarana
+                            </Link>
+                            <Link className="sub-menu">
+                                Sejarah Sekolah
+                            </Link>
+                            <Link className="sub-menu">
+                                Ekstrakurikuler
+                            </Link>
+                            <Link className="sub-menu">
+                                Warga Sekolah
+                            </Link>
+                            <Link className="sub-menu">
+                                Prestasi
+                            </Link>
+                            <Link className="sub-menu">
+                                IPM
                             </Link>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Link className="btn-menu-item" to={"/Gallery"}>Galeri</Link>
+                    <Link className={"btn-menu-item" + (menu === "Gallery" ? " active" : "")}  to={"/gallery"}>Galeri</Link>
                     <Dropdown bsPrefix="dropdown-item">
                         <Dropdown.Toggle bsPrefix="btn-menu-item" as={'div'}>
                             Berita & Informasi
-                            <img className="chevron" src={Chevron} alt="Chevron"/>
+                            <img className="chevron" src={Chevron} alt="Chevron" />
                         </Dropdown.Toggle>
                         <Dropdown.Menu bsPrefix="dropdown-menu">
                             <Link className="sub-menu">
-                                Profil
+                                Agenda Sekolah
                             </Link>
                             <Link className="sub-menu">
-                                Ubah Kata Sandi
+                                Pengumuman
                             </Link>
-                            <Link className="sub-menu line-top">
-                                Logout
+                            <Link className="sub-menu">
+                                Kritik & Saran
+                            </Link>
+                            <Link className="sub-menu">
+                                Berita
                             </Link>
                         </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown bsPrefix="dropdown-item">
                         <Dropdown.Toggle bsPrefix="btn-menu-item" as={'div'}>
                             E-Learning & Al-Quran
-                            <img className="chevron" src={Chevron} alt="Chevron"/>
+                            <img className="chevron" src={Chevron} alt="Chevron" />
                         </Dropdown.Toggle>
                         <Dropdown.Menu bsPrefix="dropdown-menu">
                             <Link className="sub-menu">
-                                Profil
+                                Mata Pelajaran
                             </Link>
                             <Link className="sub-menu">
-                                Ubah Kata Sandi
-                            </Link>
-                            <Link className="sub-menu line-top">
-                                Logout
+                                Al-Quran
                             </Link>
                         </Dropdown.Menu>
                     </Dropdown>

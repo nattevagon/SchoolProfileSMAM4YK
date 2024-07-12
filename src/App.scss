@@ -5,9 +5,30 @@ body {
 }
 
 .main {
-    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .container {
+        @media (min-width: 1300px) {
+            max-width: 1320px;
+        }
+
+        // @media (min-width: 1400px) {
+        //     max-width: 1420px;
+        // }
+    }
 
     .pages {
         padding-top: 88px;
+        flex: 1;
+    }
+
+    a {
+        color: #313131;
+
+        &:hover {
+            color: #313131;
+        }
     }
 }
