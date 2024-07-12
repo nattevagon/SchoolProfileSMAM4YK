@@ -1,0 +1,82 @@
+@import "../../../assets/colors/colors";
+
+.radio-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 16px;
+    height: 16px;
+
+    .check {
+        margin-right: 12px;
+
+        input {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            appearance: none;
+            background-color: $grey6;
+            // box-shadow: 0px 1px 4px $blue2shadow;
+            border: 1px solid $grey2;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+    
+            &:checked {
+                border: none;
+                background-color: $blue2;
+    
+                &:after {
+                    opacity: 1;
+                }
+            }
+            &:hover {
+                border: 1px solid $blue2;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:after {
+                content: '';
+                border-radius: 50%;
+                vertical-align: middle;
+                width: 8px;
+                height: 8px;
+                background-color: $grey6;
+                opacity: 0;
+            }
+        }
+    }   
+    .title {
+        p {
+            color: $black;
+            font-size: 14px;
+            text-align: left;
+            margin: 0;
+            letter-spacing: 0px;
+            line-height: 16px;
+        }
+    }
+
+    &.disable {
+        cursor: default;
+        opacity: 0.5;
+
+        .check {
+            input {
+                cursor: default;
+
+                &:checked {
+                    &:hover {
+                        border: 1px solid $blue2;
+                    }
+                }
+                &:hover {
+                    border: 1px solid $grey2;
+                }
+            }
+        }
+    }
+}

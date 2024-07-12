@@ -1,0 +1,338 @@
+@import "../../../assets/colors/colors";
+
+.buttons{
+    &.btn{
+        border: 0;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 12px;
+        font-weight: bold;
+        font-size: 14px;
+        height: 40px;
+        // outline: none;
+        box-shadow: none !important;
+        cursor: pointer;
+    }
+
+    &.btn-block{
+        width: 100%;
+    }
+
+    &.btn-primary{
+        color: $white !important;
+        background-color: $blue2;
+        border: 1px solid $blue2;
+        box-shadow: none !important;
+
+        &.active{
+            background-color: $blue1 !important;
+            color: $white !important;
+            border: 1px solid $blue1 !important;
+        }
+        &:active, &:focus{
+            background-color: $blue1 !important;
+            color: $white !important;
+            border: 1px solid $blue1 !important;
+        }
+        &:hover{
+            background-color: $blue3;
+            border: 1px solid $blue3;
+        }
+        &:disabled{
+            // pointer-events: none !important;
+            // border: $blue4 1px solid;
+            // color: $white;
+            // opacity: 1 !important;
+            // background-color: $blue4 !important;
+            color: $white;
+            pointer-events: none;
+            background: $blue4 !important;
+            border: 1px solid $blue4;
+            opacity: 1;
+        }
+    }
+
+    &.btn-general{
+        color: $white !important;
+        background-color: $blue2;
+        border: 1px solid $blue2;
+
+        &.active{
+            background-color: $blue1 !important;
+            color: $white !important;
+            border: 1px solid $blue1 !important;
+        }
+        &:hover{
+            background-color: $blue3;
+            border: 1px solid $blue3;
+        }
+        &:disabled{
+            // pointer-events: none;
+            // border: $blue4 1px solid;
+            // color: $white;
+            // opacity: 1;
+            // background-color: $blue4;
+            color: $white;
+            pointer-events: none;
+            background: $grey7;
+            border: 1px solid $grey7;
+        }
+    }
+
+    // &.btn-outline-primary{
+    //     color: $blue2 !important;
+    //     background-color: transparent;
+    //     border: 1px solid $blue2 !important;
+    //     box-shadow: none !important;
+
+    //     &.active{
+    //         background-color: $blue1 !important;
+    //         color: $white !important;
+    //         border: 1px solid $blue1 !important;
+    //     }
+    //     &:active{
+    //         background-color: $blue1 !important;
+    //         color: $white !important;
+    //         border: 1px solid $blue1 !important;
+    //     }
+    //     &:hover{
+    //         background-color: $blue5;
+    //         border: 1px solid $blue3;
+    //     }
+    //     &:disabled{
+    //         // pointer-events: none;
+    //         // border: $blue4 1px solid;
+    //         // color: $blue4;
+    //         // opacity: 1;
+    //         // background-color: transparent;
+    //     }
+    // }
+
+    &.btn-outline-primary{
+        color: $blue2 !important;
+        background-color: transparent;
+        border: 1px solid $blue2 !important;
+        box-shadow: none !important;
+
+        &.active{
+            background-color: $blue1 !important;
+            color: $white !important;
+            border: 1px solid $blue1 !important;
+        }
+        &:active, &:focus{
+            background-color: $blue1 !important;
+            color: $white !important;
+            border: 1px solid $blue1 !important;
+        }
+        &:hover{
+            background-color: $blue5;
+            border: 1px solid $blue3;
+        }
+        &:disabled{
+            pointer-events: none;
+            border: $blue4 1px solid;
+            color: $blue4;
+            opacity: 1;
+            background-color: transparent;
+            opacity: 1;
+        }
+    }
+
+    &.btn-outline-general{
+        color: $blue2 !important;
+        background-color: transparent;
+        border: 1px solid $blue2;
+
+        &.active{
+            background-color: $blue1 !important;
+            color: $white !important;
+            border: 1px solid $blue1 !important;
+        }
+        &:hover{
+            background-color: $blue5;
+            border: 1px solid $blue3;
+        }
+        &:disabled{
+            pointer-events: none;
+            border: $blue4 1px solid;
+            color: $blue4;
+            opacity: 1;
+            background-color: transparent;
+        }
+    }
+
+    &.btn-tertiary{
+        color: $black;
+        background-color: $grey3;
+        border: 1px solid $grey3;
+
+        &.active{
+            background-color: $grey2 !important;
+            color: $black !important;
+            border: 1px solid $grey2 !important;
+        }
+        &:hover{
+            background-color: $grey6;
+            border: 1px solid $grey6;
+        }
+        &:disabled{
+            pointer-events: none;
+            border: $grey4 1px solid;
+            color: $grey2;
+            opacity: 1;
+            background-color: $grey4;
+        }
+    }
+
+    &.btn-success{
+        color: $white;
+        background-color: $green2;
+        border: 1px solid $green2;
+
+        &.active{
+            background-color: $green1 !important;
+            color: $white !important;
+            border: 1px solid $green1 !important;
+        }
+        &:hover{
+            background-color: $green3;
+            border: 1px solid $green3;
+        }
+        &:disabled{
+            pointer-events: none;
+            border: $green4 1px solid;
+            color: $white;
+            opacity: 1;
+            background-color: $green4;
+        }
+    }
+
+    &.btn-warning{
+        color: $black;
+        background-color: $yellow2;
+        border: 1px solid $yellow2;
+
+        &.active{
+            background-color: $yellow1 !important;
+            color: $black !important;
+            border: 1px solid $yellow1 !important;
+        }
+        &:hover{
+            background-color: $yellow3;
+            border: 1px solid $yellow3;
+        }
+        &:disabled{
+            pointer-events: none;
+            border: $yellow4 1px solid;
+            color: $white;
+            opacity: 1;
+            background-color: $yellow4;
+        }
+    }
+
+    &.btn-danger{
+        color: $white;
+        background-color: $red2;
+        border: 1px solid $red2;
+
+        &.active{
+            background-color: $red1 !important;
+            color: $white !important;
+            border: 1px solid $red1 !important;
+        }
+        &:hover{
+            background-color: $red3;
+            border: 1px solid $red3;
+        }
+        &:disabled{
+            pointer-events: none;
+            border: $red4 1px solid;
+            color: $white;
+            opacity: 1;
+            background-color: $red4;
+        }
+    }
+
+    &.btn-outline-danger{
+        color: $red2 !important;
+        background-color: transparent;
+        border: 1px solid $red2 !important;
+        box-shadow: none !important;
+
+        &.active{
+            background-color: $white !important;
+            color: $red1 !important;
+            border: 1px solid $red1 !important;
+        }
+        &:active{
+            background-color: $white !important;
+            color: $red1 !important;
+            border: 1px solid $red1 !important;
+        }
+        &:hover{
+            background-color: $white;
+            border: 1px solid $red1;
+            color: $red1 !important;
+        }
+        &:disabled{
+            pointer-events: none;
+            border: $red4 1px solid;
+            color: $white;
+            opacity: 1;
+            background-color: $red4;
+        }
+
+        &:focus {
+            background-color: $white;
+            border: 1px solid $red1;
+            color: $red1 !important;
+        }
+    }
+
+    &.btn-xs{
+        padding: 12px 16px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    &.btn-md{
+        padding: 12px 28px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &.btn-lg{
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+
+    &.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+        color: $white;
+        background-color: $blue2 !important;
+        border-color: $blue2 !important;
+    }
+    &.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {
+        color: $white;
+        background-color: $green2;
+        border-color: $green2;
+    }
+    &.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle {
+        color: $white;
+        background-color: $yellow2;
+        border-color: $yellow2;
+    }
+    &.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
+        color: $white;
+        background-color: $red2;
+        border-color: $red2;
+    }
+
+    &.loader {
+        background: $blue2 0% 0% no-repeat padding-box;
+		background-image: url(../../../assets/images/icons/anim_spinner_loader.svg);
+        background-size: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+	}
+}

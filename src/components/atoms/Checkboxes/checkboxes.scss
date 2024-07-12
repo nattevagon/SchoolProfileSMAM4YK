@@ -1,0 +1,96 @@
+@import "../../../assets/colors/colors";
+
+.checkbox {
+    padding-bottom: 12px;
+
+    .checkbox-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px auto 0px 0px;
+        cursor: pointer;
+
+        input {
+            width: 17px;
+            height: 17px;
+            background-color: $grey6;
+            border: 1px solid $grey8;
+            border-radius: 4px;
+            cursor: pointer;
+            appearance: none;
+            background-image: none;
+            background-position: center;
+            background-size: 5px;
+            transition: all 0.3s;
+
+            &:hover {
+                border: 1px solid $blue3;
+            }
+
+            &:checked {
+                // background-image: url(https://food.klikindomaret.net/Assets/image/icon_ceklis.png);
+                // background-image: url('../../assets/images/menus/menu_checklist_all.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 16px;
+                background-color: $blue2;
+                border: 1px solid $blue2;
+                box-shadow: 0px 1px 4px $blue2shadow;
+
+                &.all {
+                    background-image: url('../../../assets/images/icons/checklist-all.png');
+                }
+    
+                &.selected {
+                    background-image: url('../../../assets/images/icons/checklist-selected.png');
+                }
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        p {
+            font-family: Arial Rounded MT;
+            text-align: left;
+            font-size: 12px;
+            letter-spacing: 0px;
+            margin: 0px auto 0px 8px;
+        }
+
+        &.disable {
+            input {
+                background: $grey4 0% 0% no-repeat padding-box;
+                border: 1px solid $grey3;
+            }
+            p {
+                color: $grey2;
+            }
+        }
+
+        &.error {
+            input {
+                background-color: $grey6;
+                box-shadow: 0px 3px 6px $red2shadow;
+                border: 1px solid $red2;
+            }
+        }
+
+        .validation-error {
+            border: 1px solid $red2;
+        }
+
+        .text-error {
+            color: $red2;
+        }
+    }
+    
+    .error-message {
+        margin: 4px 0 0 0;
+        letter-spacing: 0px;
+        color: $red2;
+        font-family: Arial Rounded MT;
+        text-align: left;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

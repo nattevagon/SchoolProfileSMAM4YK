@@ -1,0 +1,101 @@
+@import '../../../assets/colors/colors';
+
+.text-fields {
+    .text-label {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 16px;
+    }
+
+    .wrap-form-input {
+        position: relative;
+
+        .form-input {
+            height: 40px;
+            font-size: 14px;
+            background: $grey6;
+            border: none;
+            border-radius: 6px;
+            color: $black;
+            box-shadow: none;
+    
+            &:focus {
+                box-shadow: 0px 1px 4px $blue2shadow;
+                border: 1px solid $blue2;
+                outline-color: $blue2;
+            }
+            &.error {
+                box-shadow: 0px 1px 4px $red2shadow;
+                border: 1px solid $red2;
+            }
+            &.correct {
+                // box-shadow: 0px 1px 4px $red2shadow;
+                border: 1px solid $green2;
+            }
+    
+            &[type=number] {
+                -moz-appearance: textfield;
+            }
+    
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+    
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $grey1;
+                opacity: 1; /* Firefox */
+            }
+                
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: $grey1;
+            }
+            
+            &::-ms-input-placeholder { /* Microsoft Edge */
+                color: $grey1;
+            }
+        }
+    
+        .form-control {
+            &:disabled {
+                background: $grey6;
+            }
+        }
+
+        .form-mark {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    
+            .mark-logo {
+                display: inline-block;
+            }
+    
+            .mark-title {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 8px;
+                font-size: 14px;
+                color: $green6;
+                margin-top: 1px;
+            }
+        }
+    }
+
+    .text-alert {
+        margin-top: 6px;
+        text-align: left;
+        line-height: 10px;
+        letter-spacing: 0px;
+        color: $red2;
+        font-size: 10px;
+
+        &.correct {
+            color: $green2;
+        }
+    }
+}
