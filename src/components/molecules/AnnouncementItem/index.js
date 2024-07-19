@@ -5,20 +5,20 @@ import "./announcementItem.scss"
 export default function AnnouncementItem(props) {
     const moment = require('moment');
     require('moment/locale/id');
-    const { item } = props
+    const { title, date, desc } = props
 
     return (
         <div className="announcement-item">
             <Accordions>
                 <Accordions.Header>
                     <div className="header">
-                        <div className="title">{item.title}</div>
-                        <div className="date">{moment(item.date).format('dddd, DD MMMM YYYY')}</div>
+                        <div className="title">{title}</div>
+                        <div className="date">{moment(date).format('dddd, DD MMMM YYYY')}</div>
                     </div>
                 </Accordions.Header>
                 <Accordions.Body>
                     <div className="desc">
-                        {item.desc}
+                        {desc}
                     </div>
                 </Accordions.Body>
             </Accordions>

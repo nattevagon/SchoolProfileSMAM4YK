@@ -1,0 +1,59 @@
+/* OrgChart.css */
+.org-chart {
+    display: flex;
+    justify-content: center;
+}
+
+.org-chart-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.org-chart-node-content {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.org-chart-children {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.org-chart-children::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 2px;
+    height: 10px;
+    background-color: #000;
+}
+
+.org-chart-children>.org-chart-node:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+}
+
+.org-chart-children>.org-chart-node:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+}

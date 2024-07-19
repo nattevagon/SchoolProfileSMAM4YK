@@ -1,0 +1,262 @@
+[
+    {
+        "name": "Andrew Johnson",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Emily Roberts",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Natalie Walker",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Sarah Miller",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "Michael Brown",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Daniel Lee",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Sophia Harris",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Olivia King",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Emma Martinez",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "James Wilson",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Ethan Scott",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Ava Davis",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Mia Thompson",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Isabella Green",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "Jacob Adams",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "William Carter",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Charlotte Walker",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Amelia Lewis",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Lily Wilson",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "Oliver Robinson",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Benjamin Hall",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Ella Young",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Zoe Martinez",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Megan Walker",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "Lucas Lee",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Henry Johnson",
+        "gender": "Laki-laki",
+        "grade": "X B"
+    },
+    {
+        "name": "Andrew Johnson",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Emily Roberts",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Natalie Walker",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Sarah Miller",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "Michael Brown",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Daniel Lee",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Sophia Harris",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Olivia King",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Emma Martinez",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "James Wilson",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Ethan Scott",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Ava Davis",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Mia Thompson",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Isabella Green",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "Jacob Adams",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "William Carter",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Charlotte Walker",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Amelia Lewis",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Lily Wilson",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "Oliver Robinson",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Benjamin Hall",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Ella Young",
+        "gender": "Perempuan",
+        "grade": "XI IPA 2"
+    },
+    {
+        "name": "Zoe Martinez",
+        "gender": "Perempuan",
+        "grade": "XII IPS 1"
+    },
+    {
+        "name": "Megan Walker",
+        "gender": "Perempuan",
+        "grade": "X A"
+    },
+    {
+        "name": "Lucas Lee",
+        "gender": "Laki-laki",
+        "grade": "XI IPA 1"
+    },
+    {
+        "name": "Henry Johnson",
+        "gender": "Laki-laki",
+        "grade": "X B"
+    }
+]

@@ -1,0 +1,124 @@
+.vision-mission-page {
+    font-family: 'Assistant', sans-serif;
+    padding-top: 64px;
+    padding-bottom: 280px;
+
+    .page-section {
+        padding: 0 -28px;
+
+        .left-section, .right-section {
+            padding: 0 28px;
+        }
+    }
+
+    .left-section {
+        .wrap-item {
+            &.vision {
+                margin-bottom: 32px;
+            }
+            
+            .label {
+                font-size: 36px;
+                font-weight: 800;
+                line-height: 38px;
+                color: #28A745;
+                margin-bottom: 18px;
+            }
+
+            .content {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                padding-left: 26px;
+                color: #000000;
+
+                .additional-note {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #28A745;
+                    margin-bottom: 12px;
+                }
+                
+                .multiple-desc {
+                    .desc-label {
+                        font-weight: 700;
+                        color: #313131;
+                        margin-bottom: 12px;
+                    }
+
+                    .desc-content {
+                        list-style-type: none;
+                        padding: 0;
+
+                        li {
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right-section {
+        .motto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            background-image: url("../../assets/images/backgrounds/footer-3.svg");
+            background-size: cover;
+            border-radius: 30px;
+            padding: 26px 22px;
+            color: #28A745;
+            height: 100%;
+
+            .wrap-school {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                .logo {
+                    width: 138px;
+                }
+    
+                .name {
+                    margin-top: 16px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    text-align: center;
+                }
+    
+                .address {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: center;
+                }
+            }
+
+            .school-motto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 44px;
+
+                .title {
+                    font-size: 36px;
+                    font-weight: 800;
+                    line-height: 38px;
+                }
+
+                .desc {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

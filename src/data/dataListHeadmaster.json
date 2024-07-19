@@ -1,0 +1,26 @@
+[
+    {
+        "imgUrl": "https://s3-alpha-sig.figma.com/img/43e1/5acf/130258ac43dc9db925e9df5f47128885?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DzompKK98j54O19L4kK90u9LVqe-kkUcIaY9n0gdBXpIYxdNq691X4IlRNEMZF6mFhYiD21etDMPR7l1O~kOf-rXfg8SMo50xsHud1Npl2YMLkq1rJNY3MprSLnaksHtFwlXiVVcWdNXhxhEbj3Gcec4S5qwOc-UNrEIGVjyKJSynjtCZqBuLO0Zit4~3-4lFs6adoJvawqQyvQSI15RFR~bI3u-bKZG6nPvKpNvbzP3NDaxcEqaxyE4dJima6Ypp7l~H0wlFXbiFBoM35zi9VQXT0qWyVMFx3ajX13qG18nMn78rKqMrbbELimTNQC5n8P6aXEFJjoczlOuIzrouA__",
+        "gender": 2,
+        "period": "2023 - Sekarang",
+        "name": "Hj. Tri Suryani,M.Pd"
+    },
+    {
+        "imgUrl": null,
+        "gender": 1,
+        "period": "2018 - 2022",
+        "name": "Drs. H. Muhammad Arif Prajoko"
+    },
+    {
+        "imgUrl": null,
+        "gender": 2,
+        "period": "2008 - 2018",
+        "name": "Drs. H. Ahmad Djam’an, M.Pd.I"
+    },
+    {
+        "imgUrl": null,
+        "gender": 1,
+        "period": "2000 - 2008",
+        "name": "Drs. Lorem Ipsum"
+    }
+]

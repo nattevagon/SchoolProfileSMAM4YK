@@ -6,13 +6,13 @@
     border: 1px solid #E3E3E3;
 
     .accordions-toggle {
-        .content {
+        .accordions-content {
             cursor: pointer;
         }
     }
 
     .accordions-collapse {
-        .content {
+        .accordions-content {
             padding: 0;
             padding-top: 20px;
             font-size: 15px;

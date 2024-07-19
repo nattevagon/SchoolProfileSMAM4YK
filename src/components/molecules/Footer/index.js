@@ -1,14 +1,16 @@
 import React from "react"
 import "./footer.scss"
 import { Col, Container, Row } from "react-bootstrap"
-import { Mail, PhoneCall, SchoolLogo } from "assets"
+import { Mail, PhoneCall, SchoolLogo, SocialFB, SocialIG, SocialTiktok, SocialWA, SocialX, SocialYT } from "assets"
 import { Link } from "react-router-dom"
 
-export default function Footer() {
+export default function Footer(props) {
+    const { isLightMode } = props
+
     return (
-        <div className="footer-component">
+        <div className={"footer-component" + (isLightMode ? " light-mode" : "")}>
             <Container>
-                <Row>
+                <Row className="top-section">
                     <Col md={4} className="left-section">
                         <div className="wrap-school">
                             <img className="logo" src={SchoolLogo} alt="SchoolLogo" />
@@ -57,18 +59,31 @@ export default function Footer() {
                                     Muhammadiyah4yk@gmail.com
                                 </div>
                                 <div className="social-icons">
-                                    <img className="social-item"></img>
-                                    <img className="social-item"></img>
-                                    <img className="social-item"></img>
-                                    <img className="social-item"></img>
-                                    <img className="social-item"></img>
-                                    <img className="social-item"></img>
+                                    <Link>
+                                        <img className="social-item" src={SocialIG} alt="SocialLogo"/>
+                                    </Link>
+                                    <Link>
+                                        <img className="social-item" src={SocialWA} alt="SocialLogo"/>
+                                    </Link>
+                                    <Link>
+                                        <img className="social-item" src={SocialFB} alt="SocialLogo"/>
+                                    </Link>
+                                    <Link>
+                                        <img className="social-item" src={SocialTiktok} alt="SocialLogo"/>
+                                    </Link>
+                                    <Link>
+                                        <img className="social-item x" src={SocialX} alt="SocialLogo"/>
+                                    </Link>
+                                    <Link>
+                                        <img className="social-item" src={SocialYT} alt="SocialLogo"/>
+                                    </Link>
                                 </div>
                             </Col>
                         </Row>
                     </Col>
                 </Row>
             </Container>
+            <div className="bottom-section">© Copyright 2024. SMA Muhammadiyah 4 Yogyakarta.</div>
         </div>
     )
 }

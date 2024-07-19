@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Ruang Kelas",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/c515/5fd1/455f9422508d470490b433dfaac6eeef?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R529fFGQD1~WR-7UkHjPpa6Pv9O0W9dt5bZK-hMLOUPojb0rUitAO4XKeBF0YoArqOESgSeNriQLyEf1lw1Y3j9M~ww5nmbXfY-GASsLWlKbRrwmZxtRV-WJQcGWgT1Tl1MJsM7m0qRnZKCu9Ngdj6-F2u~qlBmqGoA968dxAMjnzKi~ajCDG3TpGMIdC5tSYW7B9LnPYzocnMtpJKwrMo8dkuByw0rXRZ8XPrSXN6pytMUr7ZOfZ~mMTzXWLTQ~LlxuCYsG~BXVjeO~3ZFwT5Xkl3UO3oiQL~CPX64o5XrEB7wyQA3xMs7YTj0hPbELQCTpFH0830uUyQjTQ-MCiA__",
+        "description": "Ruang Kelas SMA Muhammadiyah 4 Yogyakarta, dilengkapi dengan AC (Air Conditioning), dan LCD Proyektor guna menunjang kegiatan belajar mengajar.",
+        "features": ["AC (Air Conditioning)", "LCD Proyektor"]
+    },
+    {
+        "name": "Perpustakaan Digital",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/57e4/dd0a/24da2c711929b868d40fa51a6126ba9a?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SXo249gtr8c-46smYQEMphyll3UlS0~-NyFnG9YmF3pqJmFtEfRknxA9gKY3b7LLWpEGbNuiAEN5XdrmrBX1-2uCM90SwS1NGO4px-GNBzMS0AymXmC2LPJNvvpN-5GT0mWXLG-Lg~r5acvofwQloLmXWilr4slFgMXj2Gd-MfVtdy6lbqC3u6PIym1MhdMhpSVcsAgYjj087Y~r7zYC18i4G37NUMEkPOvFchHCn12uj5AgfHcFCXZbCq37C2iBCogdw-utjPaUwWLrgwJ7QBHMb92IakiE~DnapETNdZop0iQRDp2Rb2Ubw9d-UcCdGLT8DsO4dIzmuzngAMGdbQ__",
+        "description": "Perpustakaan di Muhammadiyah 4 sudah digital dan dilengkapi dengan AC (Air Conditioning), serta Hotspot area demi menunjang kenyamanan siswa siswi.",
+        "features": ["AC (Air Conditioning)", "Hotspot Area"]
+    },
+    {
+        "name": "Laboratorium IPA",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/09a0/b445/c1be689eb72766d4a6e198fa1343fcb1?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=d-fy2eNruu2SRr1YvDQMytHQeeks1x44MxxHYQTl1VZ6xgA7kbuaRHpVyI~61CaGREY-rGRKQF3dlDIBNJjTGTvcqRRAYAeCuhXCz-X1a~0EFjEs8fjYf3AhWvZXSNZkI-oZw901R38D~tcAOG7rNvCG3FpccBfO6MYLOCrSUJ18O1inC7KFoFPYpUhdZ1WhMhBuddSsAtmxmKgYdUKNJyC5CoRmEeWL3T~Ltd11HSPxX9faofVOuGbuoVQ5L-wYjk6vtlQ~coaIbJ65GfNLzhhkSwF-6zPyXwVAgqsc~O-KEKrp43QSbjWxUg7wWmgcwc7S5DyfIg8s9mLfY6I4Eg__",
+        "description": "SMA Muhammadiyah memiliki ruang laboratorium IPA yang lengkap dengan peralatan laboratorium kimia, laboratorium fisika, laboratorium biologi.",
+        "features": ["Laboratorium Kimia", "Laboratorium Fisika", "Laboratorium Biologi"]
+    },
+    {
+        "name": "Laboratorium Bahasa",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/9805/48b2/a72c76a31566d0cfec1c156fbd19b267?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HcwKyKA4Y3BMfRcERJDDcveEaeyXxG-HA6xdJHkpnuRWDvh~Zj-gzKoROhYguIlUke67iL-FNynLZ7LTWbBa8SHY~kRgZqZUqpdU5McYmA5s6GYTfGnSJya8fTJS5Nkkbejx29cRRJI6AgtA4igE0dHmQlFWBOpBEUH1~fmwj7f~npCjraFHAzMeWTCElprK4bg1H3TzcbpxE-WjkOeALv60P5yDEyX-DtpprMcIAb6NOZATRqH7~mV~HnN-xzGA8MJkYRv6XRa1hiYchUVdfvWHQ8~sYyQoJ463rhtr65wIa4VDe3XOmlQ2pR9i5h7xBEQ50mFA~CQOkROt6EP4gw__",
+        "description": "Laboratorium Bahasa di SMA Muhammadiyah 4 Yogyakarta, untuk mendukung pembelajaran siswa siswi.",
+        "features": ["AC (Air Conditioning)", "Hotspot Area"]
+    },
+    {
+        "name": "Laboratorium Komputer",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/4274/2021/9c4be807cbfd4476a61ed98e510dd56b?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q9w4BczAR8ytptU-AiGMFzfpLHgJI8QJjdEr9PqPy8dBYwlku6j905OmyAP3jvP-Ix7vmZwuqQIKJC2T9PQhenSKHpFHsGeKqL9BEmkx8JZXRqj6uuWUuttR6wXv852hDJ7vdMg5MTeY06G056MqWEYkOY4UVfjGPV0S5e~czlEus5U9-tstoRlQxLNSmwKb9mJd68f0bEiSRenFMpPbDyZUEnLkFFtFVin1IYleIzCHSV8aas9QvTc4li9u6GEHIumHnhJTgbW6jbslmK2yNIgAvgr8X7QARBPLwBqJAI3bjk02rx3UM2CvhGN8Lxg8RQXYdkDXomT9i35ZdOE5Fw__",
+        "description": "SMA Muhammadiyah memiliki 3 (tiga) ruang laboratorium komputer yang lengkap untuk menunjang pembelajaran komputer siswa siswi lengkap dengan ruangan ber AC (Air Conditioning).",
+        "features": ["AC (Air Conditioning)"]
+    },
+    {
+        "name": "Masjid Besar",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/0c84/ddc9/741400f77a9ad53980e300d4f6ee6ba3?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I7SERqFIJWX4jAkDVLLUNTROg~NoJK-KL-ug6cdt25vQ1Tl948XrrlIVBnuj~umBwqNr1yYRJIrtiOHtglhlznglCWggj1IMb9PC4IRygO8yYsjvQVf0U33~P4L9JV-IGo92FCFd536Eil0c~YKUoxkF162oXxmstr6OZVtk1YVqWzlD4fyhL1kgOtYppoQdd9myAo~sKlxwfy5Sg2PXyTfub8r6HnK43vWqzNLIfSVj2iuZzzMQvNmPx9Ioq~fko7erFRW0gWTNZ3Fc3DCfFTXURR0RM7473Z1mMSpqf7FzKUCYfwPF8WM8GmbxGbzVtrn1u157TkcEaZevgUxDzw__",
+        "description": "Masjid Besar di SMA Muhammadiyah 4 Yogyakarta, untuk mendukung pembelajaran siswa siswi.",
+        "features": ["AC (Air Conditioning)", "Hotspot Area"]
+    },
+    {
+        "name": "Koperasi / Kantin",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/b8e5/e514/15a2df61433aaf5402ec177f49b1502e?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=emSwI~ff5HI4H7~XGcPPhZpLqUMiV-nbJKg7nQ-6Y2ZwzHNKkOMd552aJsLG8VWzRowmNs3I5UaTF2QSNb8c~sGVT6cTyJv93AZYWJVGCjgavTtZMHNSC0vT~2OJX-IaOQDSfmhm8zthXlYJ7e42dcKVl0qRt70drmcYnKkNUTD3nqf2UUn4EvAUvEMjaQh4EKpTE7RpQ42~HZxK~HxyWzVcHrGog~HJN7FkXIk7yaZLqGfFcWHztcOTp-PngYqe0Ag33~Yef1g~uLK1yVoZi5gQ6Clt0uSK~n3e8Q0LVquY9cMEws91mj8Y1dOjYbSZjuQxu40lD2RfFTR99uFbyA__",
+        "description": "SMA Muhammadiyah memiliki fasilitas Koprasi dan kantin yang bisa digunakan sebagai tempat siswa dan siswi untuk beraktifitas dan makan siang  saat jam istrirahat.",
+        "features": []
+    },
+    {
+        "name": "Hall Sekolah",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/5213/ef04/b2865cc3f44eeb7e7081e9ce914f96cb?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cFG6god3lvwdPSY6dztROauRyNoW3wc11DpwWV4WnQDBIrZCK5nJ7vUeRMDiKyPai~AWbUzHH-xhHIrt1oWIHh9cgpb1o244VlDImuBxGVGg6APufghri4F4Cx9iNmaR3eYCeFKsjR8XEKgSAaQfpuJF6W7~PBXIdIk8cMYlw8VR4CBUwgVySGEjmhBn~3~r137L5H~kqKa7riDoIV11nCDLCcDwlswc1DzVbHRJdiWS49MXDI7DHgI0zudUHedY3KBCuKz2QoPOD8SB6YcZFl1YIbunlOex2K7I2NVO~m6-HmBuW8f4x3-FrlYJwPI7q~v36uGjkJ9VgArsNJDzJw__",
+        "description": "SMA Muhammadiyah juga memiliki Hall Sekolah yang cukup besar yang bisa dipergunakan untuk  kegiatan olahraga maupun pertemuan.",
+        "features": ["AC (Air Conditioning)", "Hotspot Area"]
+    },
+    {
+        "name": "Ruang Musik",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/3b8f/7b8b/8ef0d1fd6d87df1cba0003ee13da6765?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QeXRLFrpI-Zm7vKSTgWDR5h6in3Wur67BAY6ntLkuoWFeG1oEI-wwrcE~qxk8QOKXehVz3yhbcFawhxLPZI-KN~yjEtcAHW9QER9GNTT8mBazJPXovwdPfLTcHolEKH1b67jFtQmLaIAp1osqd2GyqnXM4I~xhjmS5c~b~CkqJQ2SGF0BQw3l5IPp5sgh~ea7z50JUF4HAJgtvKQrZIMArSJ37vWFhQoCu0hp7W2cgaYdiLft0FJGC~QviYkutbQ7dJ0K20-IIv-sUQucCSZCZ8t--Oc8guZ5l~0xS50KXFHe4r0jxpYjgz2RgmIx2QocHc3ck-HgWcd0Ggh4eU8tw__",
+        "description": "SMA Muhammadiyah memiliki fasilitas ruang musik dan alat musik yang cukup lengkap, yang bisa dipergunakan siswa dan siswi dalam kegiatan belajar / ekstrakurikuler.",
+        "features": ["AC (Air Conditioning)", "Hotspot Area"]
+    },
+    {
+        "name": "Ruang UKS",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/4cec/9c09/470464de8fb1285ed19863a62c667e2b?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G~oA3bkPvrVhzxXrWgO7TjsSdEEYle94RjXTs4utimFxhEh51Hyh5Y5SdJ7cD3S-UXmeVg6BMuxNIsWUn7cZ8TdTcg97c07p031BPcHVrYLBJ1PA99XgFRnyzCdBIjYoNHG3Kcleu~Sa0wfgU68rVFL4Pxi9VeCsqr3f-4midXO-ym5QYhO8RcVNqJHZxOM0EpvBMrp5wjbI6fwwKCZjjYwPqHHoLXhkJ1ohQnCPPEmY6RwVlkFToZ3uqQ7heAiegjwy~VdgkrpddfFMPApX~x3QAY0q1k6b03idu3TOyUYn-RpWYTtgQCuJQZXlknwechgbnE1RiwxSspPO-sVtKA__",
+        "description": "SMA Muhammadiyah memiliki ruang UKS (Usaha Kesehatan Sekolah) yang nyaman dan fasilitas yang baik seperti klinik gigi.",
+        "features": ["AC (Air Conditioning)", "Hotspot Area"]
+    },
+    {
+        "name": "Gedung Berlantai 3",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/eb0c/d28b/86268b311968345ed597e1045b7c6eed?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FCOwjtzZEHktVpeOi5pC4Sunv8eALd7sW5C6SAEzhg5VPeUMmLgsiaMCD4FfC78S1nia3XrfwTfo6Cc1M-8Vmlc9uPr9SWXfkQJK93Uzm22IbSJcaspjU2IbiWB23SK53uzzvgc~jPlC9BLxaJm0nEWew4mRfeNAjhriqiLn2IDgdeUkTfzTPNstJnNSYnkQq7TnKrFrAMjYzKalXGaWOTk~RjoXbBgN~rkwvtZ~fNK771-J~8o2iB77U-JaqoJ2hCTc8cR7oMQBFbQfB5tve2AwCgFeNYo49YuBq1zNnCfkyU2VLwEl-pKobO3GYRsyaVg7nSt3RJLCWDdAcP5oDQ__",
+        "description": "SMA Muhammadiyah memiliki gedung ber Lantai 3 lengkap dengan aula yang bisa dipergunakan untuk berbagai kegiatan siswa siswi.",
+        "features": ["AC (Air Conditioning)", "Hotspot Area"]
+    },
+    {
+        "name": "Ruang Siswa Inklusi",
+        "imageUrl": "https://s3-alpha-sig.figma.com/img/6000/04b6/a6afc6aefb31b7c9e92a4ef0635764f3?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mqbc7-qqTRAAeNFxW51HQzjESI6ve3QzpytJiyhNYNVX8-cBG7ohP3WOW6Ts516veRgZbiZbS7AVzkI3mGCOgHw6iRIIl12qzkqiYl8cUd-KgJMePb0H2avU5rL1HBjAh8WW7392t5LlggryjFhN4NKLDTBCJe2I-YpKLpMK1-WRcDtfHpjF2goTXxUV-Q3YacVOLrtpsIA6SWQgbI4E4vW5vlr7FX9WhOW3-TGdI54tHJvL0DMQX1lDcLVcSO~pdmNSCr4L29NITY1OAyho-vX4lfopSlqJkx0bylgeZBemhNT5wbiL1-lSSF-0HCwHjU8UkVDuEYcu-Dc75hT2bg__",
+        "description": "SMA Muhammadiyah 4 memiliki ruang siswa inklusi, yang nyaman untuk digunakan siswa dan siswi yang memiliki kebutuhan khusus dalam mengikuti kegiatan belajar.",
+        "features": ["AC (Air Conditioning)", "Hotspot Area"]
+    }
+]

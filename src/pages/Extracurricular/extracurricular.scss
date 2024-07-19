@@ -1,0 +1,155 @@
+.extracurricular-page {
+    font-family: 'Assistant', sans-serif;
+
+    .top-section {
+        position: relative;
+
+        .background-section {
+            position: relative;
+            width: 100%;
+            height: 488px;
+
+            img {
+                position: absolute;
+                height: 100%;
+                object-fit: cover;
+                
+                @media(min-width: 1400px) {
+                    height: 520px;
+                }
+            }
+
+            .left {
+                left: 0;
+                z-index: 1;
+            }
+
+            .right {
+                right: 0;
+                z-index: -1;
+            }
+        }
+
+        .page-info {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            margin-top: 144px;
+
+            .wrap-school-info {
+                width: fit-content;
+                text-align: center;
+                color: #FFFFFF;
+
+                .school-name {
+                    font-size: 28px;
+                    font-weight: 300;
+                    line-height: 38px;
+                    margin-bottom: 16px;
+                }
+
+                .page-title {
+                    font-size: 58px;
+                    font-weight: 700;
+                    line-height: 38px;
+                    margin-bottom: 16px;
+                }
+
+                .page-desc {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                .register {
+                    cursor: pointer;
+                    background-color: #F9AB37BA;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    border-radius: 33px;
+                    padding: 8px 16px;
+                    margin-top: 28px;
+
+                    &:hover {
+                        filter: brightness(0.8);
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-section {
+        margin-bottom: 86px;
+
+        .extracurricular-list {
+            margin-top: 106px;
+            margin-bottom: 124px;
+
+            .row {
+                row-gap: 80px;
+            }
+
+            .extracurricular-item {
+                .wrap-title {
+                    position: relative;
+                    margin-bottom: 12px;
+
+                    .background {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                    }
+
+                    .title {
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 36px;
+                        color: #313131;
+                    }
+                }
+
+                .wrap-content {
+                    .label {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #7E7E7E;
+                    }
+
+                    .desc {
+                        margin-bottom: 12px;
+
+                        &.schedule {
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 20px;
+                            color: #F9AB37;
+                        }
+
+                        &.last {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .gallery-section {
+            .wrap-label {
+                .label {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    color: #313131;
+                }
+            }
+
+            .wrap-content {
+                margin-top: 32px;
+            }
+        }
+    }
+}

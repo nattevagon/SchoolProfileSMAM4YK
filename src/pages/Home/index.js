@@ -3,12 +3,13 @@ import { Accordion, Card, Col, Container, Row } from "react-bootstrap"
 import { Accordions, AnnouncementItem, Banner, Buttons, MiniGallery, NewsItem } from "components"
 import { Link } from "react-router-dom"
 import { TeacherAndStudents } from "assets"
-import dataNewsLatest from "../../data/dataNewsLatest.json"
+import dataNews from "../../data/dataNews.json"
 import dataAnnouncement from "../../data/dataAnnouncement.json"
 import "./home.scss"
 
 export default function Home(props) {
     useEffect(() => {
+        window.scrollTo(0, 0);
         props.onMenu("Home")
     }, [])
 
@@ -40,12 +41,16 @@ export default function Home(props) {
                             </div>
                         </div>
                         <div className="wrap-content">
-                            <Row xs={1} md={3} className="g-4">
-                                {dataNewsLatest.map((item, i) => (
-                                    <Col key={i}>
-                                        <NewsItem item={item} />
-                                    </Col>
-                                ))}
+                            <Row xs={1} md={3}>
+                                {dataNews.map((item, i) => {
+                                    if (i < 3) {
+                                        return (
+                                            <Col key={i}>
+                                                <NewsItem item={item} />
+                                            </Col>
+                                        )
+                                    }
+                                })}
                             </Row>
                         </div>
                     </div>
@@ -57,16 +62,22 @@ export default function Home(props) {
                         <div className="wrap-label">
                             <div className="label">Pengumuman</div>
                             <div className="see-all">
-                                <Link to={"/news"}>Lihat Semua Pengumuman</Link>
+                                <Link to={"/announcement"}>Lihat Semua Pengumuman</Link>
                             </div>
                         </div>
                         <div className="wrap-content">
-                            {dataAnnouncement.map((item, i) => (
-                                <AnnouncementItem
-                                    key={i}
-                                    item={item}
-                                />
-                            ))}
+                            {dataAnnouncement.map((item, i) => {
+                                if (i < 6) {
+                                    return (
+                                        <AnnouncementItem
+                                            key={i}
+                                            title={item.title}
+                                            date={item.date}
+                                            desc={item.desc}
+                                        />
+                                    )
+                                }
+                            })}
                         </div>
                     </div>
                     <div className="wrap-section gallery">
@@ -77,7 +88,7 @@ export default function Home(props) {
                             </div>
                         </div>
                         <div className="wrap-content">
-                            <MiniGallery/>
+                            <MiniGallery />
                         </div>
                     </div>
                 </Container>

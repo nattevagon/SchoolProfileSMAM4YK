@@ -1,0 +1,78 @@
+.organizational-structure-page {
+    font-family: 'Assistant', sans-serif;
+    padding-top: 56px;
+    padding-bottom: 340px;
+
+    .page-section {
+        .page-title {
+            width: 100%;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        .content-chart {
+            margin-top: 32px;
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                table-layout: fixed;
+            }
+
+            td {
+                text-align: center;
+                vertical-align: middle;
+                height: 44px;
+
+                &.line-border-left {
+                    border-left: 2px solid #F9AB37;
+                }
+
+                &.line-border-right {
+                    border-right: 2px solid #F9AB37;
+                }
+
+                &.line-border-top {
+                    border-top: 2px solid #F9AB37;
+                }
+
+                &.line-border-bottom {
+                    border-bottom: 2px solid #F9AB37;
+                }
+            }
+
+            .wrap-item {
+                text-align: center;
+                cursor: pointer;
+
+                *:hover {
+                    opacity: 0.8;
+                }
+
+                &.need-to-align {
+                    margin-bottom: 34px;
+                }
+
+                .name {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 38px;
+                    color: #313131;
+                }
+
+                .title {
+                    background-color: #28A745;
+                    padding: 12px 10px;
+                    border-radius: 8px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 38px;
+                    color: #FFFFFF;
+                    height: 62px;
+                }
+            }
+        }
+    }
+}

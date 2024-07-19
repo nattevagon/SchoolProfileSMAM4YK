@@ -1,0 +1,102 @@
+.achievement-page {
+    font-family: 'Assistant', sans-serif;
+    
+    .top-section {
+        position: relative;
+
+        .background-section {
+            position: relative;
+            height: 488px;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 -160px;
+            }
+        }
+
+        .page-info {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            margin-top: 30px;
+        }
+    }
+
+    .bottom-section {
+        .label-section {
+            margin-top: 52px;
+            text-align: center;
+
+            .title {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 38px;
+                color: #28A745;
+                margin-bottom: 6px;
+            }
+
+            .desc {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 27px;
+                color: #313131;
+            }
+        }
+
+        .content-section {
+            margin-top: 52px;
+
+            .achievement-items {
+                row-gap: 52px;
+                margin-bottom: 140px;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100%;
+
+                    .logo {
+                        width: 258px;
+                    }
+
+                    .content {
+                        flex: 1;
+                        padding: 68px 66px 0 66px;
+                        border-radius: 115px 115px 0 0;
+                        margin-top: -46px;
+                        z-index: -1;
+                        color: #313131;
+
+                        &.primary {
+                            background-color: #FAFAFA;
+                        }
+
+                        .content-item {
+                            text-align: center;
+                            margin-top: 16px;
+                            margin-bottom: 32px;
+
+                            .event {
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 27px;
+                            }
+
+                            .level,
+                            .organizer {
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 27px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

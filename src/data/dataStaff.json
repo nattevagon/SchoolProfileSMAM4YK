@@ -1,0 +1,157 @@
+[
+    {
+        "name": "John Doe",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Jane Smith",
+        "gender": "Perempuan",
+        "position": "Tata Usaha"
+    },
+    {
+        "name": "Alice Johnson",
+        "gender": "Perempuan",
+        "position": "Office Boy"
+    },
+    {
+        "name": "Emily Davis",
+        "gender": "Perempuan",
+        "position": "Kantin"
+    },
+    {
+        "name": "Robert Brown",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Michael Williams",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Sophia Martinez",
+        "gender": "Perempuan",
+        "position": "Tata Usaha"
+    },
+    {
+        "name": "Olivia Anderson",
+        "gender": "Perempuan",
+        "position": "Office Boy"
+    },
+    {
+        "name": "Charlotte Wilson",
+        "gender": "Perempuan",
+        "position": "Kantin"
+    },
+    {
+        "name": "James Taylor",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Daniel Thomas",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Ava Lee",
+        "gender": "Perempuan",
+        "position": "Tata Usaha"
+    },
+    {
+        "name": "Isabella Perez",
+        "gender": "Perempuan",
+        "position": "Office Boy"
+    },
+    {
+        "name": "Mia Thompson",
+        "gender": "Perempuan",
+        "position": "Kantin"
+    },
+    {
+        "name": "Ethan Harris",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Alexander Clark",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Harper Lewis",
+        "gender": "Perempuan",
+        "position": "Tata Usaha"
+    },
+    {
+        "name": "Amelia Walker",
+        "gender": "Perempuan",
+        "position": "Office Boy"
+    },
+    {
+        "name": "Elizabeth Hall",
+        "gender": "Perempuan",
+        "position": "Kantin"
+    },
+    {
+        "name": "Sebastian Allen",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Henry Young",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Abigail Hernandez",
+        "gender": "Perempuan",
+        "position": "Tata Usaha"
+    },
+    {
+        "name": "Madison King",
+        "gender": "Perempuan",
+        "position": "Office Boy"
+    },
+    {
+        "name": "Scarlett Wright",
+        "gender": "Perempuan",
+        "position": "Kantin"
+    },
+    {
+        "name": "Jackson Green",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Mason Adams",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Ella Scott",
+        "gender": "Perempuan",
+        "position": "Tata Usaha"
+    },
+    {
+        "name": "Sofia Baker",
+        "gender": "Perempuan",
+        "position": "Office Boy"
+    },
+    {
+        "name": "Aria Gonzalez",
+        "gender": "Perempuan",
+        "position": "Kantin"
+    },
+    {
+        "name": "Liam Nelson",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    },
+    {
+        "name": "Logan Carter",
+        "gender": "Laki-laki",
+        "position": "Keuangan"
+    }
+]

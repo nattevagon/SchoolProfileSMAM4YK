@@ -24,7 +24,7 @@
             transition: all 0.3s;
 
             &:hover {
-                border: 1px solid $blue3;
+                border: 1px solid #28A745;
             }
 
             &:checked {
@@ -32,13 +32,13 @@
                 // background-image: url('../../assets/images/menus/menu_checklist_all.png');
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: 16px;
-                background-color: $blue2;
-                border: 1px solid $blue2;
+                background-size: auto;
+                background-color: #01D063;
+                border: 1px solid #28A745;
                 box-shadow: 0px 1px 4px $blue2shadow;
 
                 &.all {
-                    background-image: url('../../../assets/images/icons/checklist-all.png');
+                    background-image: url('../../../assets/images/icons/checklist-all.svg');
                 }
     
                 &.selected {

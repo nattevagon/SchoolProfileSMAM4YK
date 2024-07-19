@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Accordion, Card } from "react-bootstrap"
 import "./accordions.scss"
 
-export default function Accordions({ children }) {
+export default function Accordions({ children, className }) {
     const [toggle, setToggle] = useState(false)
     let header = null;
     let body = null;
@@ -17,12 +17,12 @@ export default function Accordions({ children }) {
     });
 
     return (
-        <Accordion className={"accordions" + (toggle ? " active" : "")}>
-            <Accordion.Toggle as="div" className="accordions-toggle" eventKey="0">
-                <div className="content" onClick={() => setToggle(!toggle)}>{header}</div>
+        <Accordion className={"accordions" + (toggle ? " active" : "") + (className !== undefined ? " "+className : "")}>
+            <Accordion.Toggle as="div" className="accordions-toggle no-select" eventKey="0">
+                <div className="accordions-content" onClick={() => setToggle(!toggle)}>{header}</div>
             </Accordion.Toggle>
             <Accordion.Collapse className="accordions-collapse" eventKey="0">
-                <div className="content">{body}</div>
+                <div className="accordions-content">{body}</div>
             </Accordion.Collapse>
         </Accordion>
     )
@@ -30,9 +30,9 @@ export default function Accordions({ children }) {
 
 // Subcomponents for Accordion
 Accordions.Header = function Header({ children }) {
-    return <div>{children}</div>;
+    return <div className="header-section">{children}</div>;
 };
 
 Accordions.Body = function Body({ children }) {
-    return <div>{children}</div>;
+    return <div className="body-section">{children}</div>;
 };

@@ -1,0 +1,547 @@
+[
+    {
+        "name": "Thiago Alcantara",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Theo Hernandez",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Maryanda",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Thiago Silva",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Lionel Messi",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Andes Iniesta",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Xavi Hernandez",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Zulvin Zamrun",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Claudia",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Radja Nainggolan",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Rizki Ridho",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Sandra Dewi",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Sabrina",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Sabhita",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Lois Saputra",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Herman Hermanto",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Gigi",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Abduh Lestaluhu",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Sergio Aguero",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Kevin de Bryuin",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Lorem Ipsum",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Niki",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Hamka Hamzah",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Julia Robert",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Mathias Cordoba",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Fernando Torres",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Kendal Jenner",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Zulham Zamrun",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Ferran Torres",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Puyol",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Yaya Toure",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "John Doe",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Jane Smith",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Emily Johnson",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Alex Brown",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Michael Davis",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Chris Wilson",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Olivia Lee",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Sophia Taylor",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Lily Anderson",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "David Martinez",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "James Robinson",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Mia Harris",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Charlotte Clark",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Ella Lewis",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "William Walker",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Benjamin Hall",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Grace Young",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Ava Allen",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Isabella King",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Ethan Wright",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Jacob Scott",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Zoe Adams",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Chloe Baker",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Amelia Carter",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Henry Mitchell",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Alexander Turner",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Liam Harris",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Mason Lee",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Aiden Nelson",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Lucas King",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Elijah Wright",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Oliver Thompson",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "William Harris",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Emma Martinez",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Ava Garcia",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Isabella Miller",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Sophia Davis",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Mia Johnson",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Charlotte Brown",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Amelia Taylor",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Olivia Wilson",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Isabella Moore",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Lily Anderson",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Zoe Clark",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Chloe Lewis",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Grace Walker",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Hannah Young",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Natalie King",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Evelyn Wright",
+        "gender": "Perempuan",
+        "graduationYear": "2020"
+    },
+    {
+        "name": "Avery Thompson",
+        "gender": "Perempuan",
+        "graduationYear": "2019"
+    },
+    {
+        "name": "Scarlett Martinez",
+        "gender": "Perempuan",
+        "graduationYear": "2022"
+    },
+    {
+        "name": "Liam Harris",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Noah Johnson",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Ethan Miller",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "James Davis",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Daniel Rodriguez",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Michael Martinez",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Alexander Lopez",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Matthew Garcia",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Henry Walker",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Sebastian Young",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Jacob Allen",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Jack Scott",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Owen Adams",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Leo Baker",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Nathan Nelson",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Ryan King",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Samuel Lee",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "David Wright",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "James Green",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Joseph Robinson",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Thomas Turner",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Isaac Harris",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "William Thompson",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Gabriel Walker",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "David Martinez",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Daniel Lewis",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    },
+    {
+        "name": "Elijah Young",
+        "gender": "Laki-laki",
+        "graduationYear": "2018"
+    }
+]

@@ -1,0 +1,301 @@
+.history-page {
+    font-family: 'Assistant', sans-serif;
+
+    .top-section {
+        background-image: url(../../assets/images/backgrounds/shape-1.svg);
+        background-size: cover;
+        background-position: 0 -26px;
+        background-repeat: no-repeat;
+        padding-bottom: 312px;
+        padding-top: 56px;
+        color: #FFFFFF;
+        z-index: 2;
+
+        // @media(min-width: 1360px) {
+        //     background-position: 0 -68px;
+        //     padding-bottom: 256px;
+        // }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 38px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .wrap-brief-history {
+            position: relative;
+
+            .box-brief-history {
+                background-color: #006932;
+                padding: 32px 244px 42px 42px;
+                border-radius: 0px 134px 0px 60px;
+                margin-right: 148px;
+
+                .label {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-bottom: 12px;
+                }
+
+                .content {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    text-align: justify;
+                }
+            }
+
+            .school-image {
+                position: absolute;
+                top: 42px;
+                right: 0;
+
+                .school {
+                    width: 526px;
+                }
+
+                .quotes {
+                    position: absolute;
+
+                    &.top {
+                        top: -33px;
+                        right: 0;
+                    }
+
+                    &.bottom {
+                        bottom: 0;
+                        left: 130px;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-section {
+        margin-top: -136px;
+        z-index: 1;
+
+        .list-school-headmaster {
+            .label {
+                .wrap-school {
+                    width: 362px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    padding-right: 8px;
+
+                    .school-logo {
+                        width: 36px;
+                        margin-right: 10px;
+                    }
+
+                    .school-name {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 27px;
+                        color: #28A745
+                    }
+                }
+
+                .content-desc {
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    color: #7E7E7E;
+                    margin-top: 16px;
+                }
+
+                .content-slider-list {
+                    margin-top: 122px;
+
+                    .swiper {
+                        position: relative;
+                        border-radius: 8px;
+
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .slider-item {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    .wrap-media {
+                                        position: relative;
+                                        height: 100%;
+                                        padding-top: 20px;
+
+                                        .background-shape {
+                                            width: 196px;
+                                            height: 196px;
+                                            border-radius: 100%;
+
+                                            &.person {
+                                                background-color: #66C07B;
+                                            }
+
+                                            &.silhouette {
+                                                background-color: #E2DFDF;
+                                            }
+                                        }
+
+                                        .image {
+                                            position: absolute;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                            object-fit: fill;
+
+                                            &.person {
+                                                top: -24px;
+                                                height: 112%;
+                                            }
+
+                                            &.silhouette {
+                                                top: 0;
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+
+                                    .wrap-line-slider {
+                                        position: relative;
+                                        width: 100%;
+                                        margin-top: 16px;
+                                        margin-bottom: 16px;
+
+                                        .line-slider {
+                                            width: 100%;
+                                            border-bottom: 4px solid #28A745;
+                                        }
+
+                                        .dot-slider {
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
+                                            width: 14px;
+                                            height: 14px;
+                                            background-color: #95989A;
+                                            border-radius: 100%;
+                                        }
+                                    }
+
+                                    .wrap-content {
+                                        text-align: center;
+
+                                        .period {
+                                            font-size: 18px;
+                                            font-weight: 600;
+                                            line-height: 24px;
+                                            color: #95989A;
+                                        }
+
+                                        .person-name {
+                                            margin-top: 16px;
+                                            background-color: #BDBDBD;
+                                            font-size: 18px;
+                                            font-weight: 800;
+                                            line-height: 24px;
+                                            color: #FFFFFF;
+                                            width: Hug (269px)px;
+                                            padding: 10px;
+                                            border-radius: 8px;
+                                        }
+                                    }
+
+                                    &.active {
+                                        .wrap-line-slider {
+                                            .dot-slider {
+                                                background: #F9AB37;
+                                            }
+                                        }
+
+                                        .wrap-content {
+                                            .person-name {
+                                                background-color: #F9AB37;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .swiper-button-prev,
+                        .swiper-button-next {
+                            cursor: pointer;
+                            width: 48px;
+                            height: 48px;
+                            background-color: #FFFFFF;
+                            opacity: 1;
+                            display: inline-block;
+                            vertical-align: middle;
+                            background-image: url(../../assets/images/icons/chevron-slider.svg);
+                            background-repeat: no-repeat !important;
+                            background-size: auto;
+                            border-radius: 50%;
+                            background-position: 20px;
+                            border: 1px solid #E3E3E3;
+
+                            &::after {
+                                display: none;
+                            }
+
+                            &.swiper-button-disabled {
+                                filter: grayscale(1);
+                            }
+                        }
+
+                        .swiper-button-prev {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .advanced-history {
+            margin-top: 128px;
+            margin-bottom: 250px;
+
+            .wrap-advanced-history {
+                position: relative;
+                background-color: #006932;
+                color: #FFFFFF;
+                padding: 46px 52px;
+                border-radius: 0px 60px 0px 60px;
+                box-shadow: 2px 8px 16px 0px #31313133;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50px;
+                    left: -48px;
+                    right: 48px;
+                    bottom: -50px;
+                    border: 2px solid #01813D;
+                    border-radius: 0px 60px 0px 60px;
+                    z-index: -1;
+                }
+
+                .label {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+
+                .content-desc {
+                    margin-top: 32px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    padding-left: 44px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

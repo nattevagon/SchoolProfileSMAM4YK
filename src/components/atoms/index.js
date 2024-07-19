@@ -1,19 +1,23 @@
 import Buttons from "./Buttons"
 import Accordions from "./Accordions"
-// import Toasts from './Toasts'
-// import TextFields from './TextFields'
-// import PasswordFields from './PasswordFields'
-// import Checkboxes from './Checkboxes'
-// import RadioButtons from './RadioButtons'
-// import Switches from './Switches'
+import Paginations from "./Paginations"
+import Checkboxes from "./Checkboxes"
+import SearchField from "./SearchField"
+import Breadcrumbs from "./Breadcrumbs"
+// import Toasts from "./Toasts"
+// import PasswordFields from "./PasswordFields"
+// import RadioButtons from "./RadioButtons"
+// import Switches from "./Switches"
 
 export {
     Buttons,
-    Accordions
+    Accordions,
+    Paginations,
+    Checkboxes,
+    SearchField,
+    Breadcrumbs
     // Toasts,
-    // TextFields,
     // PasswordFields,
-    // Checkboxes,
     // RadioButtons,
     // Switches
 }

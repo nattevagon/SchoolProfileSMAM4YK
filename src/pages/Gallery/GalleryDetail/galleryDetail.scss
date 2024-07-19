@@ -1,0 +1,61 @@
+.gallery-detail-page {
+    margin: 62px 0;
+
+    .gallery-header {
+        color: #313131;
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 36px;
+            margin-top: 64px;
+        }
+
+        .date {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .count-photo {
+            margin-top: 16px;
+            
+            .label {
+                color: #95989A;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                margin-bottom: 0;
+            }
+
+            .value {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 16px;
+                margin-top: 8px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .gallery-content {
+        margin-top: 42px;
+        padding: 0 8px;
+
+        .row {
+            width: fit-content;
+            row-gap: 16px;
+            
+            .col {
+                padding: 0 8px;
+            }
+        }
+
+        .gallery-item {
+            cursor: pointer;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+}
