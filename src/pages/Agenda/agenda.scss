@@ -1,3 +1,26 @@
 .agenda-page {
-    
+    font-family: 'Assistant', sans-serif;
+    margin-top: 42px;
+    margin-bottom: 100px;
+
+    .page-title {
+        background-image: url("../../assets/images/backgrounds/background-agenda.svg");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        border-radius: 16px;
+        padding: 24px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: baseline;
+        
+        .date-info {
+            padding-right: 24px;
+            border-right: 1px solid #FFFFFF;
+        }
+
+        .wrap-agenda {
+            padding-left: 24px;
+        }
+    }
 }

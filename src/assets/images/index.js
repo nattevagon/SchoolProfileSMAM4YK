@@ -32,6 +32,7 @@ import ChevronReguler from "./icons/chevron-reguler.svg"
 import Search from "./icons/search.svg"
 import ZoomIn from "./icons/zoom-in.svg"
 import ZoomOut from "./icons/zoom-out.svg"
+import Clock from "./icons/clock.svg"
 
 //Backgrounds
 import Students from "./backgrounds/students.jpg"
@@ -87,6 +88,7 @@ export {
     Search,
     ZoomIn,
     ZoomOut,
+    Clock,
 
     //Backgrounds
     Students,

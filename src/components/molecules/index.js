@@ -6,6 +6,7 @@ import GalleryItem from "./GalleryItem"
 import AnnouncementItem from "./AnnouncementItem"
 import MiniGallery from "./MiniGallery"
 import PopUpPhotoViewer from "./PopUpPhotoViewer"
+import Maps from "./Maps"
 
 export {
     Header,
@@ -15,5 +16,6 @@ export {
     GalleryItem,
     AnnouncementItem,
     MiniGallery,
-    PopUpPhotoViewer
+    PopUpPhotoViewer,
+    Maps
 }

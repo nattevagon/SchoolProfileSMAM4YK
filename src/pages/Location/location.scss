@@ -1,3 +1,124 @@
 .location-page {
-    
+    font-family: 'Assistant', sans-serif;
+    margin: 112px 0;
+
+    .page-title {
+        display: flex;
+        align-items: center;
+
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46px;
+        }
+
+        .icon {
+            width: 28px;
+            height: 28px;
+            background-color: #00833E;
+            border-radius: 4px;
+            margin-left: 12px;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .page-content {
+        margin-top: 46px;
+
+        .row {
+            row-gap: 28px;
+            column-gap: 28px;
+            padding: 0 16px;
+            
+            .col {
+                padding: 0;
+            }
+        }
+
+        .info-section {
+            max-width: 234px;
+
+            .title {
+                white-space: nowrap;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                margin-bottom: 8px;
+            }
+
+            .menu-list {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin: 8px 0;
+                    white-space: nowrap;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .contact-item {
+                display: flex;
+                align-items: flex-start;
+                margin: 16px 0;
+
+                .text {
+                    margin-bottom: 0;
+                }
+                
+                .icon {
+                    margin-top: 4px;
+                    margin-right: 6px;
+                    filter: invert(1);
+                }
+
+                &.center {
+                    align-items: center;
+
+                    .icon {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .social-icons {
+                margin-top: 16px;
+
+                .social-item {
+                    cursor: pointer;
+                    width: 24px;
+                    margin-right: 8px;
+
+                    &.x {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+
+        .wrap-maps {
+            width: 100%;
+            height: 560px;
+            border-radius: 8px;
+            border: none;
+
+            &:focus {
+                border: none;
+            }
+        }
+    }
 }
