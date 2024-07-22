@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Accordion, Card } from "react-bootstrap"
+import { Accordion } from "react-bootstrap"
 import "./accordions.scss"
 
 export default function Accordions({ children, className }) {

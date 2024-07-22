@@ -9,7 +9,7 @@ import "./infrastucture.scss"
 import { Buttons } from "components";
 
 export default function Infrastucture(props) {
-    const [facility, setFacility] = useState(
+    const [facility] = useState(
         [
             {
                 "name": "Ruang Kelas"

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Modal } from "react-bootstrap";
-import { TransformWrapper, TransformComponent, useControls, } from "react-zoom-pan-pinch";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { ZoomIn, ZoomOut } from "assets";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -34,7 +34,7 @@ export default function PopUpPhotoViewer(props) {
                                 </div>
                                 <TransformComponent>
                                     <div className="image-content">
-                                        <img className="item" src={selectedPhoto} alt="image content" />
+                                        <img className="item" src={selectedPhoto} alt="ImageContent" />
                                     </div>
 
                                 </TransformComponent>

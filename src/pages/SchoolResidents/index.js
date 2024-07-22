@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "./schoolResidents.scss"
-import { Button, Col, Container, Dropdown, Row, Table } from "react-bootstrap"
+import { Col, Container, Dropdown, Row, Table } from "react-bootstrap"
 import { Accordions, Buttons, Checkboxes, Paginations, SearchField } from "components"
 import dataTeacher from "../../data/dataTeacher.json"
 import dataStaff from "../../data/dataStaff.json"
@@ -8,7 +7,7 @@ import dataStudent from "../../data/dataStudent.json"
 import dataAlumni from "../../data/dataAlumni.json"
 import dataFilterList from "../../data/dataFilterList.json"
 import { Chevron } from "assets"
-import { Form } from "react-router-dom"
+import "./schoolResidents.scss"
 
 export default function SchoolResidents(props) {
     const maxData = 21
@@ -20,7 +19,6 @@ export default function SchoolResidents(props) {
     const [filterSearchData, setFilterSearchData] = useState([])
     const [pageData, setPageData] = useState(1)
     const [selectedFilter, setSelectedFilter] = useState([])
-    const [isChecked, setChecked] = useState(false)
 
     useEffect(() => {
         window.scrollTo(0, 0);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BackgroundNews, Chevron } from "assets"
+import { Chevron } from "assets"
 import { Col, Container, Dropdown, Row } from "react-bootstrap"
 import dataNews from "../../data/dataNews.json"
 import { NewsItem, Paginations } from "components"

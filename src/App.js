@@ -8,7 +8,6 @@ import { BackgroundNews } from "assets"
 
 function App() {
     const [menu, setMenu] = useState("")
-    const [subMenu, setSubMenu] = useState("")
 
     useEffect(() => {
         window.scrollTo(0, 0);

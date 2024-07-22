@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
-import { BackgroundNews, Chevron, ChevronReguler } from "assets"
-import { Col, Container, Dropdown, Row } from "react-bootstrap"
-import { Breadcrumbs, NewsItem, Paginations } from "components"
-import { Link } from "react-router-dom"
+import { Container } from "react-bootstrap"
+import { Breadcrumbs } from "components"
 import "./newsDetail.scss"
 
 export default function News(props) {

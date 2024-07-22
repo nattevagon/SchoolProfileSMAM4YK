@@ -4,7 +4,7 @@ import { AchievementTitle, FifthChampion, FirstChampion, FourthChampion, SecondC
 import { Col, Container, Row } from "react-bootstrap"
 
 export default function Achievement(props) {
-    const [achievement, setAchievement] = useState(
+    const [achievement] = useState(
         [
             {
                 "position": "1st Place",

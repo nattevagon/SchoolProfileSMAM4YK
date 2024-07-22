@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
-import { Accordion, Card, Col, Container, Row } from "react-bootstrap"
-import { Accordions, AnnouncementItem, Banner, Buttons, MiniGallery, NewsItem } from "components"
+import { Col, Container, Row } from "react-bootstrap"
+import { AnnouncementItem, Banner, MiniGallery, NewsItem } from "components"
 import { Link } from "react-router-dom"
 import { TeacherAndStudents } from "assets"
 import dataNews from "../../data/dataNews.json"

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,7 +9,6 @@ import "./banner.scss"
 
 // import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
-import { Student } from "assets";
 
 export default function Banner() {
     return (

@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Container, Dropdown, DropdownButton } from "react-bootstrap"
+import { Container, Dropdown } from "react-bootstrap"
 import dataAnnouncement from "../../data/dataAnnouncement.json"
 import { AnnouncementItem, Buttons, MiniGallery } from "components"
 import "./announcement.scss"
 import { Chevron } from "assets"
-import { Link } from "react-router-dom"
 
 export default function Announcement(props) {
     const [announcementList, setAnnouncementList] = useState([]);
@@ -25,7 +24,7 @@ export default function Announcement(props) {
         let newAnnouncementList = announcementList
 
         if (type === 1) { // Tanggal Terbaru
-            newAnnouncementList = announcementList.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse().slice() 
+            newAnnouncementList = announcementList.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse().slice()
         }
         else if (type === 2) { // Tanggal Terlama
             newAnnouncementList = announcementList.sort((a, b) => new Date(a.date) - new Date(b.date)).slice()
@@ -34,7 +33,7 @@ export default function Announcement(props) {
             newAnnouncementList = announcementList.sort((a, b) => a.title.localeCompare(b.title)).slice()
         }
         else if (type === 4) { // Z to A
-            newAnnouncementList = announcementList.sort((a, b) => a.title.localeCompare(b.title)).reverse().slice()   
+            newAnnouncementList = announcementList.sort((a, b) => a.title.localeCompare(b.title)).reverse().slice()
         }
 
         setAnnouncementList(newAnnouncementList)
@@ -70,18 +69,17 @@ export default function Announcement(props) {
                 </div>
                 <div className="page-content">
                     <div className="announcement-list">
-                        {announcementList.map((item, i) => {
-                            if (i < maxAnnouncementList) {
-                                return (
-                                    <AnnouncementItem
-                                        key={i}
-                                        title={item.title}
-                                        date={item.date}
-                                        desc={item.desc}
-                                    />
-                                )
-                            }
-                        })}
+                        {announcementList
+                            .filter((_, i) => i < maxAnnouncementList)
+                            .map((item, i) => (
+                                <AnnouncementItem
+                                    key={i}
+                                    title={item.title}
+                                    date={item.date}
+                                    desc={item.desc}
+                                />
+                            ))
+                        }
                     </div>
                     {dataAnnouncement.length !== maxAnnouncementList && (
                         <div className="wrap-see-all">
