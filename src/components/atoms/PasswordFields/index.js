@@ -30,9 +30,9 @@ export default class PasswordFields extends Component {
                 }
                 <div className="form-container">
                     <Form.Control className={"form-input "+(validate === true || validate === undefined ? "" : "error")} type={type ? "text" : "password"} placeholder={placeholder} id={id} name={name} value={value} onChange={onChange}/>
-                    <a className="btn-show-hide" onClick={() => this.changeStatusType()}>
-                        <img src={!type ? Eye : EyeSlash}></img>
-                    </a>
+                    <div className="btn-show-hide" onClick={() => this.changeStatusType()}>
+                        <img src={!type ? Eye : EyeSlash} alt="Eye"/>
+                    </div>
                 </div>
                 {validate === true || validate === undefined ?
                     null

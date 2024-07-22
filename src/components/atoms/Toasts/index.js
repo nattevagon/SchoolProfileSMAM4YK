@@ -31,7 +31,7 @@ export default function Toasts(props) {
                 <div className="medium">
                     <p className="text">{subtitle}
                     {cancelButton ?
-                        <a className="cursor-pointer" onClick={() => props.onShowToasts(false)}> Batalkan</a>
+                        <div className="cursor-pointer" onClick={() => props.onShowToasts(false)}> Batalkan</div>
                     :
                         null}
                     </p>
