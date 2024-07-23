@@ -1,40 +1,38 @@
 [
     {
         "title": "Kegiatan Alam Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/album/DSC00803.JPG",
+        "imgUrl": "https://smam4ykassets.netlify.app/mupat-event.png",
         "date": "2014-07-16T09:07:21-07:00",
         "permalink": "kegiatan-alam-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/album/DSC00803.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/outbond.jpg",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/praktek%20lapangan.jpg",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/keamh%202015%20putri%20outbond.jpg",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/kemah%202015%20putra%20outbond.jpg"
+            "https://smam4ykassets.netlify.app/mupat-event.png",
+            "https://smam4ykassets.netlify.app/outbond.jpg",
+            "https://smam4ykassets.netlify.app/praktek-lapangan.jpg",
+            "https://smam4ykassets.netlify.app/outbond-2.jpg",
+            "https://smam4ykassets.netlify.app/outbond-3.jpg"
         ]
     },
     {
         "title": "Sarpras dan Kegiatan Muhammadiyah 4",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/album/PROKES.jpg",
+        "imgUrl": "https://smam4ykassets.netlify.app/fever-check.png",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "kegiatan-alam-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/album/PROKES.jpg",        
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/TAPAK%20SUCI.jpg"
+            "https://smam4ykassets.netlify.app/fever-check.png",        
+            "https://smam4ykassets.netlify.app/health-care-room.jpg"
         ]
     },
     {
         "title": "Foto Keindahan Alam Ciptaan Tuhan",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DSC00503.JPG",
+        "imgUrl": "https://smam4ykassets.netlify.app/nature-1.jpg",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "keindahan-alam-ciptaan-tuhan",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DSC00503.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DSC00527.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DSC00596.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DSC00603.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DSC00587.JPG"
+            "https://smam4ykassets.netlify.app/nature-1.jpg",
+            "https://smam4ykassets.netlify.app/nature-2.jpg",
+            "https://smam4ykassets.netlify.app/nature-3.jpg",
+            "https://smam4ykassets.netlify.app/nature-4.jpg",
+            "https://smam4ykassets.netlify.app/nature-5.jpg"
         ]
     },
     {
