@@ -45,6 +45,7 @@ import Students2 from "./backgrounds/students-2.jpg"
 import BackgroundNews from "./backgrounds/background-news.jpg"
 import Header1 from "./backgrounds/header-1.svg"
 import ShapeMini1 from "./backgrounds/shape-mini-1.svg"
+import BackgroundLearning from "./backgrounds/background-learning.svg"
 
 //Others
 import TeacherAndStudents from "./others/teacher-and-students.png"
@@ -52,6 +53,7 @@ import School1 from "./others/school-1.svg"
 import SchoolWithLogo from "./others/school-with-logo.png"
 import SilhouetteMen from "./others/silhouette-men.svg"
 import SilhouetteWomen from "./others/silhouette-women.svg"
+import HeadmasterNow from "./others/headmaster-now.png"
 
 export {
     //Logos
@@ -101,11 +103,13 @@ export {
     BackgroundNews,
     Header1,
     ShapeMini1,
+    BackgroundLearning,
 
     //Others
     TeacherAndStudents,
     School1,
     SchoolWithLogo,
     SilhouetteMen,
-    SilhouetteWomen
+    SilhouetteWomen,
+    HeadmasterNow
 }

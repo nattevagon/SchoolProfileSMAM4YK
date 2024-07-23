@@ -17,7 +17,7 @@ export default function News(props) {
             />
             <div className="news-header">
                 <div className="wrap-media">
-                    <img src="https://s3-alpha-sig.figma.com/img/1830/78f6/cf44ef91ef7cef6aa1090c0dfe58c066?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=n8tCCCx-w71JvS6Ywki1ijZAOxCdlfRipjF4ttP6iCdGSQYqAToVkHUbsO00yv4jEhXaYndzzsNwPMGSFUtojn3Cn7qHrZ8IKG-ggNOWu1Hw8d9nVmU9zJqy5NJE9C-CLDEyGmLaLvoC6h7lHFGc1QOQSKqe7UZhGXDfGgCXixZSSqcQXds-bybUWJ0WzDh8B4~xgDPuLN4oEhO2Pvt83HROtvgs5pEsa~gsFrJzbU7Eutk0qvGU9Ul20HXcSFjZBSPIuyPTaWlesNa6i9FDfsE99ZohGt6vNBQHF9nn~y~~cqCsLcsgDuNDPA5j3EEkWKp1EnAnD~etLjfCMsvcog__" alt="Post" />
+                    <img src="http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/album/DSC00803.JPG" alt="Post" />
                 </div>
                 <div className="wrap-content">
                     <div className="title">Jejak Petualang Qabilah Ismail Siswa SMA Muhammadiyah 4 Yogyakarta</div>

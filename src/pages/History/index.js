@@ -1,14 +1,41 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from "react-bootstrap"
-import { QuotesBig, School1, SchoolLogo, SilhouetteMen, SilhouetteWomen } from "assets"
+import { HeadmasterNow, QuotesBig, School1, SchoolLogo, SilhouetteMen, SilhouetteWomen } from "assets"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import dataListHeadmaster from "../../data/dataListHeadmaster.json"
 import "./history.scss"
 
 export default function History(props) {
+    const [listHeadmaster] = useState(
+        [
+            {
+                "imgUrl": HeadmasterNow,
+                "gender": 2,
+                "period": "2023 - Sekarang",
+                "name": "Hj. Tri Suryani,M.Pd"
+            },
+            {
+                "imgUrl": null,
+                "gender": 1,
+                "period": "2018 - 2022",
+                "name": "Drs. H. Muhammad Arif Prajoko"
+            },
+            {
+                "imgUrl": null,
+                "gender": 2,
+                "period": "2008 - 2018",
+                "name": "Drs. H. Ahmad Djam’an, M.Pd.I"
+            },
+            {
+                "imgUrl": null,
+                "gender": 1,
+                "period": "2000 - 2008",
+                "name": "Drs. Lorem Ipsum"
+            }
+        ]
+    )
     useEffect(() => {
         window.scrollTo(0, 0);
         props.onMenu("Profile")
@@ -55,9 +82,9 @@ export default function History(props) {
                                     navigation={true}
                                     modules={[Navigation]}
                                 >
-                                    {dataListHeadmaster.slice().reverse().map((item, i) => (
+                                    {listHeadmaster.slice().reverse().map((item, i) => (
                                         <SwiperSlide key={i}>
-                                            <div className={"slider-item" + (dataListHeadmaster.length === i+1 ? " active" : "")}>
+                                            <div className={"slider-item" + (listHeadmaster.length === i+1 ? " active" : "")}>
                                                 <div className="wrap-media">
                                                     <div className={"background-shape" + (item.imgUrl !== null ? " person" : " silhouette")}/>
                                                     <img className={"image" + (item.imgUrl !== null ? " person" : " silhouette")} src={item.imgUrl !== null ? item.imgUrl : (item.gender === 1 ? SilhouetteMen : SilhouetteWomen)} alt="Headmaster"/>
