@@ -155,7 +155,6 @@ export default function Achievement(props) {
         ]
     )
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Profile")
     }, [])
 

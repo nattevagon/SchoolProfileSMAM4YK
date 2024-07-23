@@ -7,7 +7,6 @@ import "./extracurricular.scss"
 
 export default function Extracurricular(props) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Profile")
     }, [])
 

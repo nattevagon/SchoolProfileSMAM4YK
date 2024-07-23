@@ -5,7 +5,6 @@ import "./newsDetail.scss"
 
 export default function News(props) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("NewsAndInformation")
     }, [])
 

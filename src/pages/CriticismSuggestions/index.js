@@ -3,7 +3,6 @@ import "./criticismSuggestions.scss"
 
 export default function CriticismSuggestions(props) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("NewsAndInformation")
     }, [])
 

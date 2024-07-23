@@ -42,6 +42,28 @@
                 line-height: 27px;
                 color: #FFFFFF;
             }
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            @media (max-width: 448px) {
+                min-width: fit-content;
+
+                .school-name {
+                    display: none !important;
+                }
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .menu-section, .button-section {
+                display: none !important;
+            }
+
+            .burger-menu {
+                display: block !important;
+            }
         }
 
         .menu-section {
@@ -49,8 +71,8 @@
             display: flex;
             align-items: center;
 
+
             .btn-menu-item {
-                font-family: Assistant;
                 font-size: 16px;
                 line-height: 20px;
                 text-align: center;
@@ -144,6 +166,20 @@
                     height: 16px;
                     margin-right: 8px;
                 }
+            }
+        }
+
+        .burger-menu {
+            display: none;
+            cursor: pointer;
+
+            img {
+                height: 32px;
+                filter: invert(1);
+            }
+
+            &:hover {
+                filter: brightness(0.8);
             }
         }
     }

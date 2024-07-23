@@ -10,7 +10,6 @@ export default function Announcement(props) {
     const [maxAnnouncementList, setMaxAnnouncementList] = useState(6);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("NewsAndInformation")
 
         setAnnouncementList(dataAnnouncement)

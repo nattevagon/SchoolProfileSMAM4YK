@@ -21,7 +21,6 @@ export default function SchoolResidents(props) {
     const [selectedFilter, setSelectedFilter] = useState([])
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Profile")
 
         switchDataType(dataType)

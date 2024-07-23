@@ -33,6 +33,7 @@ import Search from "./icons/search.svg"
 import ZoomIn from "./icons/zoom-in.svg"
 import ZoomOut from "./icons/zoom-out.svg"
 import Clock from "./icons/clock.svg"
+import BurgerMenu from "./icons/burger-menu.svg"
 
 //Backgrounds
 import Students from "./backgrounds/students.jpg"
@@ -91,6 +92,7 @@ export {
     ZoomIn,
     ZoomOut,
     Clock,
+    BurgerMenu,
 
     //Backgrounds
     Students,

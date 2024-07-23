@@ -1,20 +1,20 @@
 import React from "react"
 import "./header.scss"
-import { Chevron, Header1, LocationMaps, SchoolLogo } from "assets"
+import { BurgerMenu, Chevron, Header1, LocationMaps, SchoolLogo } from "assets"
 import { Container, Dropdown } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 export default function Header(props) {
-    let { menu } = props
+    let { menu, onShowPopUpMenu } = props
 
     return (
         <div className="header-component">
             <img src={Header1} className="background" alt="Background"/>
             <Container>
-                <div className="title-section">
+                <Link className="title-section" to={"/"}>
                     <img className="school-logo" src={SchoolLogo} alt="SchoolLogo" />
                     <div className="school-name">SMA Muhammadiyah 4 Yogyakarta</div>
-                </div>
+                </Link>
                 <div className="menu-section">
                     <Link className={"btn-menu-item" + (menu === "Home" ? " active" : "")} to={"/"}>Beranda</Link>
                     <Dropdown bsPrefix="dropdown-item no-select">
@@ -90,6 +90,9 @@ export default function Header(props) {
                         <img src={LocationMaps} alt="Location" />
                         Lokasi Sekolah
                     </Link>
+                </div>
+                <div className="burger-menu" onClick={() => onShowPopUpMenu()}>
+                    <img src={BurgerMenu} alt="Burger"/>
                 </div>
             </Container>
         </div>

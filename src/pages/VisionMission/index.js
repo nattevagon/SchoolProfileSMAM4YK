@@ -5,7 +5,6 @@ import { SchoolLogo } from "assets"
 
 export default function VisionMission(props) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Profile")
     }, [])
 

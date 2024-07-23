@@ -7,32 +7,34 @@ import "./news.scss"
 
 export default function News(props) {
     const maxData = 9
+    const [newsList, setNewsList] = useState([]);
     const [pageData, setPageData] = useState(1)
     const [indexStartData, setIndexStartData] = useState(0)
     const [indexEndData, setIndexEndData] = useState(maxData)
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("NewsAndInformation")
+
+        setNewsList(dataNews)
     }, [])
 
     const handleFilter = (type) => {
-        // let newAnnouncementList = announcementList
+        let newAnnouncementList = newsList
 
-        // if (type === 1) { // Tanggal Terbaru
-        //     newAnnouncementList = announcementList.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse().slice() 
-        // }
-        // else if (type === 2) { // Tanggal Terlama
-        //     newAnnouncementList = announcementList.sort((a, b) => new Date(a.date) - new Date(b.date)).slice()
-        // }
-        // else if (type === 3) { //A to Z
-        //     newAnnouncementList = announcementList.sort((a, b) => a.title.localeCompare(b.title)).slice()
-        // }
-        // else if (type === 4) { // Z to A
-        //     newAnnouncementList = announcementList.sort((a, b) => a.title.localeCompare(b.title)).reverse().slice()   
-        // }
+        if (type === 1) { // Tanggal Terbaru
+            newAnnouncementList = newsList.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse().slice() 
+        }
+        else if (type === 2) { // Tanggal Terlama
+            newAnnouncementList = newsList.sort((a, b) => new Date(a.date) - new Date(b.date)).slice()
+        }
+        else if (type === 3) { //A to Z
+            newAnnouncementList = newsList.sort((a, b) => a.title.localeCompare(b.title)).slice()
+        }
+        else if (type === 4) { // Z to A
+            newAnnouncementList = newsList.sort((a, b) => a.title.localeCompare(b.title)).reverse().slice()   
+        }
 
-        // setAnnouncementList(newAnnouncementList)
+        setNewsList(newAnnouncementList)
     }
 
     const handleClickPage = (page) => {
@@ -71,7 +73,7 @@ export default function News(props) {
             <div className="page-content">
                 <div className="news-list">
                     <Row xs={1} md={3}>
-                        {dataNews
+                        {newsList
                             .filter((item, i) => i >= indexStartData && i < indexEndData)
                             .map((item, i) => (
                                 <Col key={i}>

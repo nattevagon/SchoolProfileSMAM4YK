@@ -37,7 +37,6 @@ export default function Infrastucture(props) {
     const [maxFacilityList, setMaxFacilityList] = useState(6)
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Profile")
     }, [])
 

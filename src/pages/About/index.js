@@ -5,7 +5,6 @@ import { BackgroundIPM, IPM } from "assets"
 
 export default function About(props) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Profile")
     }, [])
 

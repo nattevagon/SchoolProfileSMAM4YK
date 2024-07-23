@@ -9,7 +9,6 @@ import "./home.scss"
 
 export default function Home(props) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Home")
     }, [])
 
@@ -18,13 +17,13 @@ export default function Home(props) {
             <Container>
                 <Banner />
                 <div className="welcome-section">
-                    <div className="left-section">
+                    <Col className="left-section">
                         <img src={TeacherAndStudents} alt="TeacherAndStudents" />
                         <div className="wrap-head-master">
                             <div className="title">Kepala Sekolah</div>
                             <div className="name">Hj. Tri Suryani, M.Pd</div>
                         </div>
-                    </div>
+                    </Col>
                     <div className="right-section">
                         <h4 className="title">Sambutan Kepala Sekolah</h4>
                         <p className="desc">Assalamu 'alaikum wr. wb. Puji Syukur atas kehadirat Allah yang senantiasa melimpahkan ridho-Nya kepada kita semua sehingga kita selalu diberi manfaat, kesehatan dan iman. Tak lupa salam serta sholawat kita sanjungkan kepada Nabi Besar Muhammad SAW. Alhamdulillah, pada tanggal 17 Januari 2022, PTMT 100% sudah mulai berlaku di SMA Muhammadiyah 4 Yogyakarta. Semua siswa sudah mulai kembali berkatifitas di bangku sekolah secara bersamaan.<br /><br />Adapaun dikarenakan masih keterbatasan jumlah pembelajaran yang jumlahnya dibatasi, maka ada beberapa mata pelajaran yang masih menggunakan sistem penugasan dan diantaranya masih harus mengakses web <Link to="https://mupatbelajar.umy.ac.id/">https://mupatbelajar.umy.ac.id/</Link>. Semoga semuanya dapat berlancar dengan lancar. Aamiin YRA. Wassalamu 'alaikum wr.wb</p>

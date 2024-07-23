@@ -13,7 +13,6 @@ export default function Gallery(props) {
     const [indexEndData, setIndexEndData] = useState(maxData)
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Gallery")
 
         setGalleryList(dataGallery)

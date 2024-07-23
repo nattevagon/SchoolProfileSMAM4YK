@@ -4,7 +4,6 @@ import "./organizationalStructure.scss"
 
 export default function OrganizationalStructure(props) {
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Profile")
     }, [])
 

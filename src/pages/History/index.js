@@ -37,7 +37,6 @@ export default function History(props) {
         ]
     )
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Profile")
     }, [])
 

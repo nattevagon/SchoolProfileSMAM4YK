@@ -15,7 +15,6 @@ export default function GalleryDetail(props) {
     console.log(dataState)
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         props.onMenu("Gallery")
     }, [])
 

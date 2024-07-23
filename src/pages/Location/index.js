@@ -1,11 +1,15 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { Clock, LocationMaps, LocationMaps2, Mail, PhoneCall, SocialFB, SocialIG, SocialTiktok, SocialWA, SocialX, SocialYT } from "assets"
 import { Link } from "react-router-dom"
 import "./location.scss"
 // import { Maps } from "components"
 
-export default function Location() {
+export default function Location(props) {
+    useEffect(() => {
+        props.onMenu("Location")
+    }, [])
+
     return (
         <div className="location-page">
             <Container>
