@@ -1,5 +1,5 @@
 import React from 'react'
-import "./miniGallery.scss"
+import dataGallery from "../../../data/dataGallery.json"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,6 +10,7 @@ import "./miniGallery.scss"
 
 // import required modules
 import { Navigation } from 'swiper/modules';
+import "./miniGallery.scss"
 
 export default function MiniGallery() {
     return (
@@ -20,15 +21,13 @@ export default function MiniGallery() {
                 navigation={true}
                 modules={[Navigation]}
             >
-                <SwiperSlide>
-                    <img className="image-item " src="http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg" alt="Student" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img className="image-item " src="http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DSC00503.JPG" alt="Student" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img className="image-item " src="http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/album/DSC00803.JPG" alt="Student" />
-                </SwiperSlide>
+                {dataGallery
+                    .filter((_, i) => i < 3)
+                    .map((item, i) => (
+                        <SwiperSlide key={i}>
+                            <img className="image-item " src={item.listPhoto[0]} alt="MiniGallery" />
+                        </SwiperSlide>
+                    ))}
             </Swiper>
         </div >
     )

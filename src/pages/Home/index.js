@@ -42,15 +42,14 @@ export default function Home(props) {
                         </div>
                         <div className="wrap-content">
                             <Row xs={1} md={3}>
-                                {dataNews.map((item, i) => {
-                                    if (i < 3) {
-                                        return (
-                                            <Col key={i}>
-                                                <NewsItem item={item} />
-                                            </Col>
-                                        )
-                                    }
-                                })}
+                                {dataNews
+                                    .filter((_, i) => i < 3)
+                                    .map((item, i) => (
+                                        <Col key={i}>
+                                            <NewsItem item={item} />
+                                        </Col>
+                                    )
+                                    )}
                             </Row>
                         </div>
                     </div>
@@ -66,18 +65,17 @@ export default function Home(props) {
                             </div>
                         </div>
                         <div className="wrap-content">
-                            {dataAnnouncement.map((item, i) => {
-                                if (i < 6) {
-                                    return (
-                                        <AnnouncementItem
-                                            key={i}
-                                            title={item.title}
-                                            date={item.date}
-                                            desc={item.desc}
-                                        />
-                                    )
-                                }
-                            })}
+                            {dataAnnouncement
+                                .filter((_, i) => i < 6)
+                                .map((item, i) => (
+                                    <AnnouncementItem
+                                        key={i}
+                                        title={item.title}
+                                        date={item.date}
+                                        desc={item.desc}
+                                    />
+                                )
+                                )}
                         </div>
                     </div>
                     <div className="wrap-section gallery">

@@ -1,7 +1,6 @@
 [
     {
         "title": "Kegiatan Alam Mupat",
-        "imgUrl": "https://smam4ykassets.netlify.app/mupat-event.png",
         "date": "2014-07-16T09:07:21-07:00",
         "permalink": "kegiatan-alam-mupat",
         "listPhoto" : [
@@ -14,7 +13,6 @@
     },
     {
         "title": "Sarpras dan Kegiatan Muhammadiyah 4",
-        "imgUrl": "https://smam4ykassets.netlify.app/fever-check.png",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "kegiatan-alam-mupat",
         "listPhoto" : [
@@ -24,7 +22,6 @@
     },
     {
         "title": "Foto Keindahan Alam Ciptaan Tuhan",
-        "imgUrl": "https://smam4ykassets.netlify.app/nature-1.jpg",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "keindahan-alam-ciptaan-tuhan",
         "listPhoto" : [
@@ -37,180 +34,108 @@
     },
     {
         "title": "Laboratorium Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PENGGUNAAN%20RUANG%20MULTIMEDIA.JPG",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "lab-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PENGGUNAAN%20RUANG%20MULTIMEDIA.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PRAKTIKUM%20DI%20LABORATORIUM%20IPA.JPG"
+            "https://smam4ykassets.netlify.app/students-in-lab.jpg"
         ]
     },
     {
         "title": "Sarpras dan Kegiatan Muhammadiyah 4",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "kegiatan-sapras-kegiatan-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg"
+            "https://smam4ykassets.netlify.app/smam4-yk.png"
         ]
     },
     {
         "title": "Cek Kesehatan siswa & siswi Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "cek-kesehatan",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PROKES.jpg"
+            "https://smam4ykassets.netlify.app/health-care-room.jpg",
+            "https://smam4ykassets.netlify.app/fever-check.png" 
+            
         ]
     },
     {
         "title": "Perpustakaan Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg",
         "date": "2024-07-25T09:07:21-07:00",
         "permalink": "perpustakaan-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg"
-        ]
-    },
-    {
-        "title": "Sarpras dan Kegiatan Muhammadiyah 4",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg",
-        "date": "2023-07-25T09:07:21-07:00",
-        "permalink": "kegiatan-sapras-kegiatan-mupat",
-        "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg"
+            "https://smam4ykassets.netlify.app/library-discuss.jpg"
         ]
     },
     {
         "title": "Cek Kesehatan siswa & siswi Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "cek-kesehatan",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PROKES.jpg"
+            "https://smam4ykassets.netlify.app/health-care-room.jpg",
+            "https://smam4ykassets.netlify.app/fever-check.png" 
+            
         ]
     },
     {
         "title": "Perpustakaan Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg",
         "date": "2024-07-25T09:07:21-07:00",
         "permalink": "perpustakaan-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg"
-        ]
-    },
-    {
-        "title": "Sarpras dan Kegiatan Muhammadiyah 4",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg",
-        "date": "2023-07-25T09:07:21-07:00",
-        "permalink": "kegiatan-sapras-kegiatan-mupat",
-        "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg"
+            "https://smam4ykassets.netlify.app/library-discuss.jpg"
         ]
     },
     {
         "title": "Cek Kesehatan siswa & siswi Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "cek-kesehatan",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PROKES.jpg"
+            "https://smam4ykassets.netlify.app/health-care-room.jpg",
+            "https://smam4ykassets.netlify.app/fever-check.png" 
+            
         ]
     },
     {
         "title": "Perpustakaan Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg",
         "date": "2024-07-25T09:07:21-07:00",
         "permalink": "perpustakaan-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg"
-        ]
-    },
-    {
-        "title": "Sarpras dan Kegiatan Muhammadiyah 4",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg",
-        "date": "2023-07-25T09:07:21-07:00",
-        "permalink": "kegiatan-sapras-kegiatan-mupat",
-        "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg"
+            "https://smam4ykassets.netlify.app/library-discuss.jpg"
         ]
     },
     {
         "title": "Cek Kesehatan siswa & siswi Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "cek-kesehatan",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PROKES.jpg"
+            "https://smam4ykassets.netlify.app/health-care-room.jpg",
+            "https://smam4ykassets.netlify.app/fever-check.png" 
+            
         ]
     },
     {
         "title": "Perpustakaan Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg",
         "date": "2024-07-25T09:07:21-07:00",
         "permalink": "perpustakaan-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg"
-        ]
-    },
-    {
-        "title": "Sarpras dan Kegiatan Muhammadiyah 4",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg",
-        "date": "2023-07-25T09:07:21-07:00",
-        "permalink": "kegiatan-sapras-kegiatan-mupat",
-        "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg"
+            "https://smam4ykassets.netlify.app/library-discuss.jpg"
         ]
     },
     {
         "title": "Cek Kesehatan siswa & siswi Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
         "date": "2023-07-25T09:07:21-07:00",
         "permalink": "cek-kesehatan",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PROKES.jpg"
+            "https://smam4ykassets.netlify.app/health-care-room.jpg",
+            "https://smam4ykassets.netlify.app/fever-check.png" 
+            
         ]
     },
     {
         "title": "Perpustakaan Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg",
         "date": "2024-07-25T09:07:21-07:00",
         "permalink": "perpustakaan-mupat",
         "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg"
-        ]
-    },
-    {
-        "title": "Sarpras dan Kegiatan Muhammadiyah 4",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg",
-        "date": "2023-07-25T09:07:21-07:00",
-        "permalink": "kegiatan-sapras-kegiatan-mupat",
-        "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/gedung%20depan%20sekolahan.jpg"
-        ]
-    },
-    {
-        "title": "Cek Kesehatan siswa & siswi Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
-        "date": "2023-07-25T09:07:21-07:00",
-        "permalink": "cek-kesehatan",
-        "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/IMG_1307.JPG",
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/PROKES.jpg"
-        ]
-    },
-    {
-        "title": "Perpustakaan Mupat",
-        "imgUrl": "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg",
-        "date": "2024-07-25T09:07:21-07:00",
-        "permalink": "perpustakaan-mupat",
-        "listPhoto" : [
-            "http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/DISKUSI%20DI%20PERPUSTAKAAN.jpg"
+            "https://smam4ykassets.netlify.app/library-discuss.jpg"
         ]
     }
 ]

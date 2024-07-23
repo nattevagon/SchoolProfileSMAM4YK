@@ -11,7 +11,7 @@ export default function GalleryItem(props) {
     return (
         <div className="gallery-item">
             <div className="wrap-item">
-                <img className="image" src={item.imgUrl} alt="Gallery" />
+                <img className="image" src={item.listPhoto[0]} alt="Gallery" />
                 <div className="title">{item.title}</div>
                 <div className="date">{moment(item.date).format('dddd, DD MMMM YYYY')}</div>
                 <div className="count-photo"><p className="label">Jumlah : </p>{item.listPhoto.length} Foto</div>
