@@ -25,48 +25,48 @@ function App() {
                 />
                 <div className="pages">
                     <Routes>
-                        <Route exact path="/" element={<Home onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/vision-mission" element={<VisionMission onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/organizational-structure" element={<OrganizationalStructure onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/history" element={<History onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/extracurricular" element={<Extracurricular onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/infrastucture" element={<Infrastucture onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/school-residents/*" element={
+                        <Route path="/" element={<Home onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/vision-mission" element={<VisionMission onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/organizational-structure" element={<OrganizationalStructure onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/history" element={<History onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/extracurricular" element={<Extracurricular onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/infrastucture" element={<Infrastucture onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/school-residents/*" element={
                             <Routes>
-                                <Route exact index element={
+                                <Route index element={
                                     <SchoolResidents onMenu={(value) => handleSetMenu(value)} />
                                 } />
-                                <Route exact path="add-alumni" element={
+                                <Route path="add-alumni" element={
                                     <AddAlumniForm onMenu={(value) => handleSetMenu(value)} />
                                 } />
                             </Routes>
                         } />
-                        <Route exact path="/achievement" element={<Achievement onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/about" element={<About onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/gallery/*" element={
+                        <Route path="/achievement" element={<Achievement onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/about" element={<About onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/gallery/*" element={
                             <Routes>
-                                <Route exact index element={
+                                <Route index element={
                                     <Gallery onMenu={(value) => handleSetMenu(value)} />
                                 } />
-                                <Route exact path=":id" element={
+                                <Route path=":id" element={
                                     <GalleryDetail onMenu={(value) => handleSetMenu(value)} />
                                 } />
                             </Routes>
                         } />
-                        <Route exact path="/agenda" element={<Agenda onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/announcement" element={<Announcement onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/criticism-suggestions" element={<CriticismSuggestions onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/news/*" element={
+                        <Route path="/agenda" element={<Agenda onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/announcement" element={<Announcement onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/criticism-suggestions" element={<CriticismSuggestions onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/news/*" element={
                             <div className="news-page">
                                 <div className="top-section">
                                     <img src={BackgroundNews} alt="BackgroundNews" />
                                 </div>
                                 <div className="bottom-section">
                                     <Routes>
-                                        <Route exact index element={
+                                        <Route index element={
                                             <News onMenu={(value) => handleSetMenu(value)} />
                                         } />
-                                        <Route exact path=":id" element={
+                                        <Route path=":id" element={
                                             <NewsDetail onMenu={(value) => handleSetMenu(value)} />
                                         } />
                                     </Routes>
@@ -74,10 +74,10 @@ function App() {
                             </div>
                         }
                         />
-                        <Route exact path="/elearning" element={<ELearning onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/alquran" element={<AlQuran onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="/location" element={<Location onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route exact path="*" element={<PageNotFound />} />
+                        <Route path="/elearning" element={<ELearning onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/alquran" element={<AlQuran onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/location" element={<Location onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="*" element={<PageNotFound />} />
                     </Routes>
                 </div>
                 <Footer
