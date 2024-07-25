@@ -32,19 +32,21 @@
 
     .page-content {
         margin-top: 46px;
+        display: flex;
 
-        .row {
-            row-gap: 28px;
-            column-gap: 28px;
-            padding: 0 16px;
-            
-            .col {
-                padding: 0;
+        @media (max-width: 998px) {
+            flex-direction: column;
+
+            .info-section {
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 28px;
             }
         }
 
         .info-section {
-            max-width: 234px;
+            max-width: 246px;
+            margin-right: 28px;
 
             .title {
                 white-space: nowrap;
@@ -79,7 +81,7 @@
                 .text {
                     margin-bottom: 0;
                 }
-                
+
                 .icon {
                     margin-top: 4px;
                     margin-right: 6px;
@@ -110,14 +112,19 @@
             }
         }
 
-        .wrap-maps {
-            width: 100%;
-            height: 560px;
-            border-radius: 8px;
-            border: none;
+        .maps-section {
+            flex: 1;
 
-            &:focus {
+            .wrap-maps {
+                width: 100%;
+                height: 560px;
+                border-radius: 8px;
                 border: none;
+
+
+                &:focus {
+                    border: none;
+                }
             }
         }
     }

@@ -63,14 +63,141 @@
 
             .filter-section {
                 max-width: 290px;
-                background-color: #FFFFFF;
                 flex: none;
-                padding: 24px 16px 24px 16px;
-                border-radius: 8px;
-                color: #414141;
 
-                .top-filter {
-                    margin: 0 8px;
+                .box-filter {
+                    background-color: #FFFFFF;
+                    padding: 24px 16px 24px 16px;
+                    border-radius: 8px;
+                    color: #414141;
+
+                    .top-filter {
+                        margin: 0 8px;
+
+                        .title {
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 26px;
+                        }
+
+                        .divider-line {
+                            border-top: 1px solid #D8D8D8;
+                            margin: 24px 12px;
+                        }
+
+                        .filter-item {
+                            border: none;
+                            padding: 0;
+
+                            .chevron {
+                                width: 16px;
+                                transition: all 0.5s;
+                                filter: invert(52%) sepia(8%) saturate(3956%) hue-rotate(81deg) brightness(98%) contrast(91%);
+                            }
+
+                            &.active {
+                                .chevron {
+                                    transform: rotate(180deg);
+                                    transition: all 0.5s;
+                                }
+                            }
+
+                            .header-section {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .header-title {
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                }
+                            }
+
+                            .body-section {
+                                max-height: 464px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-right: 12px;
+
+                                .body-item {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    .body-title {
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        line-height: 16px;
+                                    }
+
+                                    .checkbox {
+                                        padding-bottom: 0;
+                                        margin-right: -4px;
+                                    }
+
+                                    &.gap-bottom {
+                                        margin-bottom: 12px;
+                                    }
+                                }
+
+                                &::-webkit-scrollbar {
+                                    width: 4px;
+                                }
+
+                                /* Track */
+                                &::-webkit-scrollbar-track {
+                                    background: #E3E3E3;
+                                    padding: 10px;
+                                    border-radius: 16px;
+                                    margin: 2px 0;
+                                }
+
+                                /* Handle */
+                                &::-webkit-scrollbar-thumb {
+                                    background: #AE7827;
+                                    border-radius: 10px;
+                                }
+
+                                /* Handle on hover */
+                                &::-webkit-scrollbar-thumb:hover {
+                                    background: #AE7827;
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom-filter {
+                        .btn-show-data {
+                            .buttons {
+                                border-radius: 8px;
+                                padding: 6px;
+                                font-size: 12px;
+                                line-height: 18px;
+                                height: fit-content;
+                            }
+                        }
+
+                        .btn-reset-filter {
+                            .buttons {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: #28A745;
+
+                                &:hover {
+                                    filter: brightness(0.8);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .box-add-form {
+                    background: linear-gradient(307.16deg, #FFFFFF 30.01%, #01D063 205.96%);
+                    border-radius: 8px;
+                    color: #414141;
+                    padding: 24px 16px;
+                    margin-top: 12px;
 
                     .title {
                         font-size: 20px;
@@ -78,69 +205,15 @@
                         line-height: 26px;
                     }
 
-                    .divider-line {
-                        border-top: 1px solid #D8D8D8;
-                        margin: 24px 12px;
+                    .desc {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        margin-top: 8px;
+                        margin-bottom: 24px;
                     }
 
-                    .filter-item {
-                        border: none;
-                        padding: 0;
-
-                        .chevron {
-                            width: 16px;
-                            transition: all 0.5s;
-                            filter: invert(52%) sepia(8%) saturate(3956%) hue-rotate(81deg) brightness(98%) contrast(91%);
-                        }
-
-                        &.active {
-                            .chevron {
-                                transform: rotate(180deg);
-                                transition: all 0.5s;
-                            }
-                        }
-
-                        .header-section {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-
-                            .header-title {
-                                font-size: 14px;
-                                font-weight: 700;
-                                line-height: 18px;
-                            }
-                        }
-
-                        .body-section {
-                            .body-item {
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                .body-title {
-                                    font-size: 12px;
-                                    font-weight: 400;
-                                    line-height: 16px;
-                                }
-
-                                .checkbox {
-                                    padding-bottom: 0;
-                                    margin-right: -4px;
-                                }
-
-                                &.gap-bottom {
-                                    margin-bottom: 12px;
-                                }
-
-                                .checkbox-filter {}
-                            }
-                        }
-                    }
-                }
-
-                .bottom-filter {
-                    .btn-show-data {
+                    .btn-add-form {
                         .buttons {
                             border-radius: 8px;
                             padding: 6px;
@@ -148,17 +221,9 @@
                             line-height: 18px;
                             height: fit-content;
                         }
-                    }
 
-                    .btn-reset-filter {
-                        .buttons {
-                            font-size: 12px;
-                            font-weight: 400;
-                            color: #28A745;
-
-                            &:hover {
-                                filter: brightness(0.8);
-                            }
+                        &:hover {
+                            text-decoration: none;
                         }
                     }
                 }
@@ -173,7 +238,7 @@
 
                     .wrap-search {
                         width: 100%;
-                        
+
                         .search-field {
                             max-width: 588px;
                         }
@@ -247,10 +312,11 @@
                         border-radius: 8px;
                         margin-bottom: 32px;
 
-                        td, th {
+                        td,
+                        th {
                             border: none;
                             text-align: center;
-                            
+
                             &.corner {
                                 &.top-left {
                                     border-top-left-radius: 8px;
@@ -261,7 +327,7 @@
                                 }
                             }
                         }
-                        
+
                         thead {
                             background-color: #BFE5C7;
                         }

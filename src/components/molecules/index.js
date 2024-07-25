@@ -7,6 +7,7 @@ import AnnouncementItem from "./AnnouncementItem"
 import MiniGallery from "./MiniGallery"
 import PopUpPhotoViewer from "./PopUpPhotoViewer"
 import PopUpMenu from "./PopUpMenu"
+import PopUpSuccess from "./PopUpSuccess"
 import Maps from "./Maps"
 
 export {
@@ -19,5 +20,6 @@ export {
     MiniGallery,
     PopUpPhotoViewer,
     PopUpMenu,
+    PopUpSuccess,
     Maps
 }

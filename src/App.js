@@ -31,8 +31,16 @@ function App() {
                         <Route path="/history" element={<History onMenu={(value) => handleSetMenu(value)} />} />
                         <Route path="/extracurricular" element={<Extracurricular onMenu={(value) => handleSetMenu(value)} />} />
                         <Route path="/infrastucture" element={<Infrastucture onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route path="/school-residents" element={<SchoolResidents onMenu={(value) => handleSetMenu(value)} />} />
-                        <Route path="/school-residents/add-alumni" element={<AddAlumniForm onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/school-residents/*" element={
+                            <Routes>
+                                <Route index element={
+                                    <SchoolResidents onMenu={(value) => handleSetMenu(value)} />
+                                } />
+                                <Route path="add-alumni" element={
+                                    <AddAlumniForm onMenu={(value) => handleSetMenu(value)} />
+                                } />
+                            </Routes>
+                        } />
                         <Route path="/achievement" element={<Achievement onMenu={(value) => handleSetMenu(value)} />} />
                         <Route path="/about" element={<About onMenu={(value) => handleSetMenu(value)} />} />
                         <Route path="/gallery/*" element={

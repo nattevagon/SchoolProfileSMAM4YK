@@ -17,7 +17,7 @@ body {
 }
 
 .main {
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -71,6 +71,34 @@ body {
         /* Firefox */
         -ms-user-select: none;
         /* IE10+ */
+    }
+
+    .default-scrollbar {
+        overflow-x: hidden;
+        overflow-y: auto;
+    
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+    
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #E3E3E3;
+            padding: 10px;
+            border-radius: 16px;
+            margin: 2px 0;
+        }
+    
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #AE7827;
+            border-radius: 10px;
+        }
+    
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #AE7827;
+        }
     }
 
     @media (max-width: 998px) {

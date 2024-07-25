@@ -1,0 +1,112 @@
+.add-alumni-page {
+    font-family: 'Assistant', sans-serif;
+    margin: 52px 0;
+
+    &.container {
+        max-width: 810px !important;
+    }
+
+    .add-alumni-header {
+        color: #313131;
+        text-align: center;
+
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 58px;
+        }
+
+        .date {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: 8px;
+        }
+    }
+
+    .add-alumni-content {
+        margin-top: 52px;
+
+        .form-add-alumni {
+            textarea {
+                min-height: 170px;
+                max-height: 240px;
+            }
+
+            .wrap-graduation-year {
+                &.dropdown-item {
+                    position: relative;
+                    padding: 0;
+                    z-index: 1;
+
+                    .menu-item {
+                        .graduation-year {
+                            .form-mark {
+                                .mark-icon {
+                                    transform: rotate(90deg);
+                                    transition: all 0.5s;
+                                }
+                            }
+                        }
+                    }
+
+                    &:active,
+                    &:hover {
+                        color: #313131;
+                        background-color: #FFFFFF;
+                    }
+
+                    &.show {
+                        .menu-item {
+                            .graduation-year {
+                                .form-mark {
+                                    .mark-icon {
+                                        transform: rotate(-90deg);
+                                        transition: all 0.5s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .dropdown-menu {
+                        width: 100%;
+                        border-radius: 8px;
+                        box-shadow: 0px 2px 4px 0px #00000040;
+                        padding: 16px;
+                        color: #313131;
+                        margin: 8px 0 0 0;
+                        max-height: 258px;
+                        overflow-y: auto;
+                        display: flex;
+                        flex-direction: column;
+
+                        .item {
+                            cursor: pointer;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            margin-bottom: 8px;
+
+                            &:hover {
+                                opacity: 0.8;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn-submit {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+
+                .buttons {
+                    width: 268px;
+                    height: 38px;
+                }
+            }
+        }
+    }
+}

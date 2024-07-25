@@ -34,12 +34,16 @@ import ZoomIn from "./icons/zoom-in.svg"
 import ZoomOut from "./icons/zoom-out.svg"
 import Clock from "./icons/clock.svg"
 import BurgerMenu from "./icons/burger-menu.svg"
+import CalendarIcon from "./icons/calendar.svg"
+import CloseX from "./icons/close-x.svg"
 
 //Backgrounds
 import Students from "./backgrounds/students.jpg"
 import TraditionalDance from "./backgrounds/traditional-dance.jpg"
 import Background1 from "./backgrounds/background-1.png"
+import Background2 from "./backgrounds/background-2.svg"
 import Background3 from "./backgrounds/background-3.svg"
+import Background4 from "./backgrounds/background-4.svg"
 import StudentsStudyInLab from "./backgrounds/students-study-in-lab.jpg"
 import BackgroundIPM from "./backgrounds/background-ipm.svg"
 import Students2 from "./backgrounds/students-2.jpg"
@@ -55,6 +59,7 @@ import SchoolWithLogo from "./others/school-with-logo.png"
 import SilhouetteMen from "./others/silhouette-men.svg"
 import SilhouetteWomen from "./others/silhouette-women.svg"
 import HeadmasterNow from "./others/headmaster-now.png"
+import SuccessAddForm from "./others/success-add-form.svg"
 
 export {
     //Logos
@@ -93,13 +98,17 @@ export {
     ZoomOut,
     Clock,
     BurgerMenu,
+    CalendarIcon,
+    CloseX,
 
     //Backgrounds
     Students,
     Students2,
     TraditionalDance,
     Background1,
+    Background2,
     Background3,
+    Background4,
     StudentsStudyInLab,
     BackgroundIPM,
     BackgroundNews,
@@ -113,5 +122,6 @@ export {
     SchoolWithLogo,
     SilhouetteMen,
     SilhouetteWomen,
-    HeadmasterNow
+    HeadmasterNow,
+    SuccessAddForm
 }

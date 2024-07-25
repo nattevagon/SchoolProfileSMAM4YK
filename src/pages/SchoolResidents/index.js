@@ -8,6 +8,7 @@ import dataAlumni from "../../data/dataAlumni.json"
 import dataFilterList from "../../data/dataFilterList.json"
 import { Chevron } from "assets"
 import "./schoolResidents.scss"
+import { Link } from "react-router-dom"
 
 export default function SchoolResidents(props) {
     const maxData = 21
@@ -151,7 +152,7 @@ export default function SchoolResidents(props) {
             );
         }
 
-        if(dataType === 1) {
+        if (dataType === 1) {
             if (checkSelectedFilterType("subject")) {
                 filteredData = filteredData.filter(item =>
                     selectedFilter.some(criterion =>
@@ -160,7 +161,7 @@ export default function SchoolResidents(props) {
                 );
             }
         }
-        else if(dataType === 2) {
+        else if (dataType === 2) {
             if (checkSelectedFilterType("position")) {
                 filteredData = filteredData.filter(item =>
                     selectedFilter.some(criterion =>
@@ -169,7 +170,7 @@ export default function SchoolResidents(props) {
                 );
             }
         }
-        else if(dataType === 3) {
+        else if (dataType === 3) {
             if (checkSelectedFilterType("grade")) {
                 filteredData = filteredData.filter(item =>
                     selectedFilter.some(criterion =>
@@ -178,7 +179,7 @@ export default function SchoolResidents(props) {
                 );
             }
         }
-        else if(dataType === 4) {
+        else if (dataType === 4) {
             if (checkSelectedFilterType("graduationYear")) {
                 filteredData = filteredData.filter(item =>
                     selectedFilter.some(criterion =>
@@ -232,57 +233,73 @@ export default function SchoolResidents(props) {
                     </div>
                     <Row className="content-section">
                         <Col className="filter-section">
-                            <div className="top-filter">
-                                <div className="title">Filter</div>
-                                <hr className="divider-line" />
-                                {dataFilterList
-                                    .filter((item, i) => item.filterType === "gender" || item.filterType === filterType(dataType))
-                                    .map((item, i) => (
-                                        <div className="wrap-filters">
-                                            <Accordions className="filter-item" key={i}>
-                                                <Accordions.Header>
-                                                    <div className="header-title">{item.filterName}</div>
-                                                    <img className="chevron" src={Chevron} alt="Chevron" />
-                                                </Accordions.Header>
-                                                <Accordions.Body>
-                                                    {item.filterData.map((filter, j) => (
-                                                        <div className="body-item gap-bottom" key={j}>
-                                                            <div className="body-title">{filter}</div>
-                                                            <Checkboxes
-                                                                key={j}
-                                                                className='checkbox-filter all'
-                                                                isChecked={checkSelectedFilter(item.filterType, filter)}
-                                                                name={filter}
-                                                                onChange={(name, checked) => handleSelectedFilter(item.filterType, name, checked)}
-                                                            />
-                                                        </div>
-                                                    ))}
-                                                </Accordions.Body>
-                                            </Accordions>
-                                            <hr className="divider-line" />
-                                        </div>
-                                    ))}
-                            </div>
-                            <div className="bottom-filter">
-                                <div className="btn-show-data">
-                                    <Buttons
-                                        title="Tampilkan Data"
-                                        variant="outline-general"
-                                        size="xs"
-                                        block
-                                        onClick={() => handleSubmitFilter()}
-                                    />
+                            <div className="box-filter">
+                                <div className="top-filter">
+                                    <div className="title">Filter</div>
+                                    <hr className="divider-line" />
+                                    {dataFilterList
+                                        .filter((item, i) => item.filterType === "gender" || item.filterType === filterType(dataType))
+                                        .map((item, i) => (
+                                            <div className="wrap-filters">
+                                                <Accordions className="filter-item" key={i}>
+                                                    <Accordions.Header>
+                                                        <div className="header-title">{item.filterName}</div>
+                                                        <img className="chevron" src={Chevron} alt="Chevron" />
+                                                    </Accordions.Header>
+                                                    <Accordions.Body>
+                                                        {item.filterData.map((filter, j) => (
+                                                            <div className="body-item gap-bottom" key={j}>
+                                                                <div className="body-title">{filter}</div>
+                                                                <Checkboxes
+                                                                    key={j}
+                                                                    className='checkbox-filter all'
+                                                                    isChecked={checkSelectedFilter(item.filterType, filter)}
+                                                                    name={filter}
+                                                                    onChange={(name, checked) => handleSelectedFilter(item.filterType, name, checked)}
+                                                                />
+                                                            </div>
+                                                        ))}
+                                                    </Accordions.Body>
+                                                </Accordions>
+                                                <hr className="divider-line" />
+                                            </div>
+                                        ))}
                                 </div>
-                                <div className="btn-reset-filter">
-                                    <Buttons
-                                        title="Reset Filter"
-                                        variant=""
-                                        size="xs"
-                                        block
-                                        onClick={() => handleResetFilter()}
-                                    />
+                                <div className="bottom-filter">
+                                    <div className="btn-show-data">
+                                        <Buttons
+                                            title="Tampilkan Data"
+                                            variant="outline-general"
+                                            size="xs"
+                                            block
+                                            onClick={() => handleSubmitFilter()}
+                                        />
+                                    </div>
+                                    <div className="btn-reset-filter">
+                                        <Buttons
+                                            title="Reset Filter"
+                                            variant=""
+                                            size="xs"
+                                            block
+                                            onClick={() => handleResetFilter()}
+                                        />
+                                    </div>
                                 </div>
                             </div>
+                            {dataType === 4 && (
+                                <div className="box-add-form">
+                                    <div className="title">Form Data Alumni</div>
+                                    <div className="desc">Silahkan Isi dan daftarkan data alumni anda </div>
+                                    <Link className="btn-add-form" to="add-alumni">
+                                        <Buttons
+                                            title="Isi Form Alumni"
+                                            variant="outline-general"
+                                            size="xs"
+                                            block
+                                        />
+                                    </Link>
+                                </div>
+                            )}
                         </Col>
                         <Col className="table-section">
                             <div className="wrap-search-sort">
