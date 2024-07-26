@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { Container, Dropdown } from "react-bootstrap"
 import { Breadcrumbs, Buttons, DatePickers, PopUpSuccess, TextFields } from "components"
+import { ChevronSlider } from "assets"
 import "./addAlumniForm.scss"
-import { CalendarIcon, Chevron, ChevronReguler, ChevronSlider } from "assets"
-import moment from "moment"
 
 export default function AddAlumniForm(props) {
     const [name, setName] = useState("")
@@ -154,8 +153,9 @@ export default function AddAlumniForm(props) {
                     <DatePickers
                         label="Tanggal Lahir"
                         placeholder="DD-MM-YYYY"
+                        inline={false}
                         selectedDate={dateOfBirth}
-                        onSetStartDate={(date) => setDateOfBirth(date)}
+                        onChange={(date) => setDateOfBirth(date)}
                     />
                     <TextFields
                         name="address"

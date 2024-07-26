@@ -6,7 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import id from "date-fns/locale/id";
 registerLocale('id', id);
 
-const DatePickers = ({ className, label, placeholder, selectedDate, minDate, maxDate, yearDropdownItemNumber, dropdownMode, onSetStartDate }) => {
+const DatePickers = ({ className, label, placeholder, selectedDate, minDate, maxDate, yearDropdownItemNumber, dropdownMode, onChange, inline, highlightDates }) => {
     return (
         <div className="date-pickers">
             <div className="label">{label}</div>
@@ -19,8 +19,10 @@ const DatePickers = ({ className, label, placeholder, selectedDate, minDate, max
                 formatWeekDay={nameOfDay => nameOfDay.substr(0, 3)}
                 dayClassName={date => date.getDay() === 0 ? 'sunday' : undefined}
                 weekDayClassName={date => date.getDay() === 0 ? 'sunday' : undefined}
-                onChange={date => onSetStartDate(date)}
+                onChange={date => onChange(date)}
                 popperPlacement="bottom-start" // Set the popper placement to bottom-start
+                inline={inline}
+                highlightDates={highlightDates}
             />
         </div>
     );

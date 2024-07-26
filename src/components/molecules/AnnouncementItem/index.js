@@ -13,7 +13,7 @@ export default function AnnouncementItem(props) {
                 <Accordions.Header>
                     <div className="header">
                         <div className="title">{title}</div>
-                        <div className="date">{moment(date).format('dddd, DD MMMM YYYY')}</div>
+                        <div className="date">{moment(date).format('dddd, D MMMM YYYY')}</div>
                     </div>
                 </Accordions.Header>
                 <Accordions.Body>

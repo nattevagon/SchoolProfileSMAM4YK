@@ -13,7 +13,7 @@
         color: #FFFFFF;
         display: flex;
         align-items: baseline;
-        
+
         .date-info {
             padding-right: 24px;
             border-right: 1px solid #FFFFFF;
@@ -21,6 +21,170 @@
 
         .wrap-agenda {
             padding-left: 24px;
+        }
+
+        .date-info,
+        .wrap-agenda {
+            .title {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 24px;
+            }
+
+            .desc {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .page-content {
+        margin-top: 46px;
+        display: flex;
+
+        @media (max-width: 998px) {
+            flex-direction: column;
+
+            .calendar-section {
+                margin-right: 0;
+                margin-bottom: 28px;
+            }
+        }
+
+        .section-label {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 46px;
+            color: #28A745;
+            margin-bottom: 24px;
+        }
+
+        .calendar-section {
+            margin-right: 88px;
+
+            .wrap-calendar {
+                .react-datepicker {
+                    border: unset;
+                    box-shadow: unset;
+
+                    .react-datepicker__month {
+                        .react-datepicker__week {
+                            .react-datepicker__day {
+                                border: 1px solid #FFFFFF;
+
+                                &.react-datepicker__day--keyboard-selected {
+                                    background-color: unset;
+                                }
+
+                                &.react-datepicker__day--highlighted {
+                                    border: 1px solid #F9AB37;
+                                    background-color: #FCD59B;
+                                    color: #313131;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .agenda-section {
+            flex: 1;
+
+            .wrap-agenda {
+                position: relative;
+                width: 100%;
+                height: 542px;
+                border-radius: 20px;
+                display: flex;
+
+                .left-section {
+                    width: 176px;
+                    background-color: #EFEDED;
+                    border-radius: 20px 0 0 20px;
+                }
+
+                .right-side {
+                    flex: 1;
+                }
+
+                .agenda-content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 542px;
+                    padding: 24px 0;
+
+                    .agenda-item {
+                        display: flex;
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 62px;
+    
+                        .left-side {
+                            font-weight: 600;
+                            color: #1C7530;
+                            width: 176px;
+                            display: flex;
+                            justify-content: center;
+                            padding: 0 20px;
+                        }
+    
+                        .right-side {
+                            font-weight: 400;
+                            color: #313131;
+                            padding: 0 20px;
+    
+                            .event-items {
+                                padding-left: 20px;
+    
+                                .item {
+                                    margin-bottom: 10px;
+                                    padding-left: 8px;
+    
+                                    &::marker {
+                                        width: 20px;
+                                        padding-right: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .agenda-empty {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        color: #313131;
+
+                        .icon {
+                            width: 144px;
+                        }
+
+                        .title {
+                            font-family: Assistant;
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 32px;
+                            
+                        }
+
+                        .icon {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

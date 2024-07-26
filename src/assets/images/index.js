@@ -60,6 +60,7 @@ import SilhouetteMen from "./others/silhouette-men.svg"
 import SilhouetteWomen from "./others/silhouette-women.svg"
 import HeadmasterNow from "./others/headmaster-now.png"
 import SuccessAddForm from "./others/success-add-form.svg"
+import EmptyAgenda from "./others/empty-agenda.svg"
 
 export {
     //Logos
@@ -123,5 +124,6 @@ export {
     SilhouetteMen,
     SilhouetteWomen,
     HeadmasterNow,
-    SuccessAddForm
+    SuccessAddForm,
+    EmptyAgenda
 }

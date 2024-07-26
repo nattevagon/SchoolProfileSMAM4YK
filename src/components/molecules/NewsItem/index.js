@@ -13,7 +13,7 @@ export default function NewsItem(props) {
             <div className="wrap-item">
                 <img className="image" src={item.imgUrl} alt="News" />
                 <div className="title">{item.title}</div>
-                <div className="date">{moment(item.date).format('dddd, DD MMMM YYYY')}</div>
+                <div className="date">{moment(item.date).format('dddd, D MMMM YYYY')}</div>
             </div>
             <div className="wrap-btn">
                 <Link to={"/news/"+item.permalink}>

@@ -31,7 +31,7 @@ export default function GalleryDetail(props) {
             />
             <div className="gallery-header">
                 <div className="title">{dataState.title}</div>
-                <div className="date">{moment(dataState.date).format('dddd, DD MMMM YYYY')}</div>
+                <div className="date">{moment(dataState.date).format('dddd, D MMMM YYYY')}</div>
                 <div className="count-photo">
                     <p className="label">Jumlah : </p>
                     <p className="value">{dataState.listPhoto.length} Foto</p>
