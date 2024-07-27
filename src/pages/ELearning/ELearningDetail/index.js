@@ -4,7 +4,7 @@ import { Container, Dropdown, Table } from "react-bootstrap"
 import { useLocation } from "react-router-dom";
 import { saveAs } from "file-saver";
 import { Chevron } from "assets";
-import axios from "axios";
+import { convertToSlug } from "libs/convertToSlug";
 import "./eLearningDetail.scss"
 
 export default function ELearningDetail(props) {
@@ -18,6 +18,8 @@ export default function ELearningDetail(props) {
     const [searchText, setSearchText] = useState("")
     const [filterSearchData, setFilterSearchData] = useState([])
     const [pageData, setPageData] = useState(1)
+    const [isloading, setLoading] = useState(false)
+    const [key, setKey] = useState("")
 
     useEffect(() => {
         props.onMenu("ELearningAndAlQuran")
@@ -62,50 +64,21 @@ export default function ELearningDetail(props) {
         setPageData(page)
     }
 
-    function convertToSlug(text) {
-        return text
-            .toLowerCase()          // Convert to lowercase
-            .replace(/\s+/g, "-")   // Replace spaces with hyphens
-            .replace(/[^\w-]+/g, "") // Remove all non-word characters
-            .replace(/--+/g, "-")   // Replace multiple hyphens with a single hyphen
-            .replace(/^-+/, "")     // Trim hyphens from the start of the string
-            .replace(/-+$/, "");    // Trim hyphens from the end of the string
-    }
-
-    const saveFile = (title, url) => {
-        // URL to the PDF file you want to save
-        const pdfUrl = url;
-
-        // Fetch the PDF file as a Blob and save it
-        fetch(pdfUrl)
+    const saveFile = (key, title, url) => {
+        setLoading(true)
+        setKey(key)
+        fetch(url)
             .then(response => response.blob())
             .then(blob => {
+                setLoading(false)
                 saveAs(blob, convertToSlug(title) + ".pdf");
             })
             .catch(error => {
-                console.error("Error fetching and saving PDF:", error);
+                setLoading(false)
+                alert("karena file terkena CORS, disarankan aktifkan library 'Allow CORS' di Chrome")
+
             });
     }
-
-    const savePdfFile = (url) => {
-        axios.get(url,
-            {
-                responseType: 'arraybuffer',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/pdf'
-                }
-            })
-            .then((response) => {
-                const url = window.URL.createObjectURL(new Blob([response.data]));
-                const link = document.createElement('a');
-                link.href = url;
-                link.setAttribute('download', 'file.pdf'); //or any other extension
-                document.body.appendChild(link);
-                link.click();
-            })
-            .catch((error) => console.log(error));
-    };
 
     return (
         <Container className="elearning-detail-page">
@@ -127,7 +100,7 @@ export default function ELearningDetail(props) {
                         <SearchField
                             className="search-field"
                             name="search"
-                            placeholder="Cari warga sekolah di sini"
+                            placeholder="Cari judul materi yang dibutuhkan"
                             value={searchText}
                             onClick={handleChangeSearch}
                             onChange={filterListSearch}
@@ -175,8 +148,8 @@ export default function ELearningDetail(props) {
                                                     title="Download"
                                                     variant="general"
                                                     size="xs"
-                                                    // onClick={() => saveFile(item.name, item.downloadUrl)}
-                                                    onClick={() => savePdfFile(item.downloadUrl)}
+                                                    disabled={isloading && i === key}
+                                                    onClick={() => saveFile(i, item.name, item.downloadUrl)}
                                                 />
                                             </div>
                                         </td>
