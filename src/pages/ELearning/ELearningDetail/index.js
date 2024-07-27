@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react"
 import { Breadcrumbs, Buttons, Paginations, SearchField } from "components"
 import { Container, Dropdown, Table } from "react-bootstrap"
 import { useLocation } from "react-router-dom";
-import "./eLearningDetail.scss"
+import { saveAs } from "file-saver";
 import { Chevron } from "assets";
+import axios from "axios";
+import "./eLearningDetail.scss"
 
 export default function ELearningDetail(props) {
-    const moment = require('moment');
-    require('moment/locale/id');
+    const moment = require("moment");
+    require("moment/locale/id");
     const location = useLocation();
     const dataState = location.state
     const maxData = 15
@@ -60,6 +62,51 @@ export default function ELearningDetail(props) {
         setPageData(page)
     }
 
+    function convertToSlug(text) {
+        return text
+            .toLowerCase()          // Convert to lowercase
+            .replace(/\s+/g, "-")   // Replace spaces with hyphens
+            .replace(/[^\w-]+/g, "") // Remove all non-word characters
+            .replace(/--+/g, "-")   // Replace multiple hyphens with a single hyphen
+            .replace(/^-+/, "")     // Trim hyphens from the start of the string
+            .replace(/-+$/, "");    // Trim hyphens from the end of the string
+    }
+
+    const saveFile = (title, url) => {
+        // URL to the PDF file you want to save
+        const pdfUrl = url;
+
+        // Fetch the PDF file as a Blob and save it
+        fetch(pdfUrl)
+            .then(response => response.blob())
+            .then(blob => {
+                saveAs(blob, convertToSlug(title) + ".pdf");
+            })
+            .catch(error => {
+                console.error("Error fetching and saving PDF:", error);
+            });
+    }
+
+    const savePdfFile = (url) => {
+        axios.get(url,
+            {
+                responseType: 'arraybuffer',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/pdf'
+                }
+            })
+            .then((response) => {
+                const url = window.URL.createObjectURL(new Blob([response.data]));
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', 'file.pdf'); //or any other extension
+                document.body.appendChild(link);
+                link.click();
+            })
+            .catch((error) => console.log(error));
+    };
+
     return (
         <Container className="elearning-detail-page">
             <Breadcrumbs
@@ -89,7 +136,7 @@ export default function ELearningDetail(props) {
                     </div>
                     <div className="wrap-sort">
                         <Dropdown bsPrefix="dropdown-item no-select">
-                            <Dropdown.Toggle bsPrefix="btn-menu-item" as={'div'}>
+                            <Dropdown.Toggle bsPrefix="btn-menu-item" as={"div"}>
                                 Urutkan dari
                                 <img className="chevron" src={Chevron} alt="Chevron" />
                             </Dropdown.Toggle>
@@ -121,13 +168,15 @@ export default function ELearningDetail(props) {
                                     <tr key={indexStartData + i}>
                                         <td>{indexStartData + i + 1}</td>
                                         <td>{item.name}</td>
-                                        <td>{moment(item.date).format('DD/MM/YYYY')}</td>
+                                        <td>{moment(item.date).format("DD/MM/YYYY")}</td>
                                         <td>
                                             <div className="btn-download">
                                                 <Buttons
                                                     title="Download"
                                                     variant="general"
                                                     size="xs"
+                                                    // onClick={() => saveFile(item.name, item.downloadUrl)}
+                                                    onClick={() => savePdfFile(item.downloadUrl)}
                                                 />
                                             </div>
                                         </td>

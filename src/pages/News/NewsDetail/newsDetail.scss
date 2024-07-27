@@ -1,6 +1,6 @@
 .news-detail-page {
     margin-top: 42px;
-    margin-bottom: 290px;
+    margin-bottom: 100px;
 
     &.container {
         max-width: 1000px !important;
@@ -10,7 +10,7 @@
         .wrap-media {
             img {
                 width: 100%;
-                height: 392px;
+                aspect-ratio: 8/5;
                 object-fit: cover;
                 border-radius: 14px;
             }
@@ -34,6 +34,14 @@
                 line-height: 20px;
                 color: #95989A;
             }
+        }
+    }
+
+    .page-content {
+        text-align: justify;
+
+        p {
+            margin-bottom: 0;
         }
     }
 }

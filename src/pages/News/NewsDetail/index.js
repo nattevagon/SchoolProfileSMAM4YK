@@ -2,8 +2,14 @@ import React, { useEffect } from 'react'
 import { Container } from "react-bootstrap"
 import { Breadcrumbs } from "components"
 import "./newsDetail.scss"
+import { useLocation } from "react-router-dom";
 
 export default function News(props) {
+    const location = useLocation();
+    const dataState = location.state
+    const moment = require('moment');
+    require('moment/locale/id');
+
     useEffect(() => {
         props.onMenu("NewsAndInformation")
     }, [])
@@ -16,11 +22,11 @@ export default function News(props) {
             />
             <div className="page-header">
                 <div className="wrap-media">
-                    <img src="http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/album/DSC00803.JPG" alt="Post" />
+                    <img src={dataState.imgUrl} alt="NewsPost" />
                 </div>
                 <div className="wrap-content">
-                    <div className="title">Jejak Petualang Qabilah Ismail Siswa SMA Muhammadiyah 4 Yogyakarta</div>
-                    <div className="date">Senin, 5 Juli 2023</div>
+                    <div className="title">{dataState.title}</div>
+                    <div className="date">{moment(dataState.date).format('dddd, D MMMM YYYY')}</div>
                 </div>
             </div>
             <div className="page-content">
