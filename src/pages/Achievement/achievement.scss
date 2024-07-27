@@ -1,5 +1,6 @@
 .achievement-page {
     font-family: 'Assistant', sans-serif;
+    padding-bottom: 100px;
     
     .top-section {
         position: relative;
@@ -52,7 +53,6 @@
 
             .achievement-items {
                 row-gap: 52px;
-                margin-bottom: 140px;
 
                 .item {
                     display: flex;

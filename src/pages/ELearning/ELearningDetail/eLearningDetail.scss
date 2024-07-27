@@ -1,0 +1,167 @@
+.elearning-detail-page {
+    font-family: 'Assistant', sans-serif;
+    margin: 62px 0;
+
+    &.container {
+        max-width: 1000px !important;
+    }
+
+    .page-header {
+        color: #313131;
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+
+        .desc {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .teacher {
+            margin-top: 32px;
+
+            .label {
+                color: #95989A;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                margin-bottom: 0;
+            }
+
+            .value {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 16px;
+                margin-top: 8px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .page-content {
+        margin-top: 42px;
+        padding: 0 8px;
+
+        .search-sort-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+
+            .wrap-search {
+                width: 100%;
+
+                .search-field {
+                    max-width: 588px;
+                }
+            }
+
+            .wrap-sort {
+                .dropdown-item {
+                    background-color: #FFFFFF;
+                    border: 1px solid #D8D8D8;
+                    border-radius: 8px;
+                    padding: 0;
+
+                    .btn-menu-item {
+                        cursor: pointer;
+                        font-size: 16px;
+                        color: #95989A;
+                        padding: 12px 16px;
+
+                        .chevron {
+                            width: 16px;
+                            height: 10px;
+                            margin-left: 16px;
+                            transition: all 0.5s;
+                            filter: invert(49%) sepia(11%) saturate(2648%) hue-rotate(81deg) brightness(105%) contrast(96%);
+                        }
+
+                        &:focus {
+                            background-color: #FFFFFF;
+                        }
+                    }
+
+                    &.show {
+                        .btn-menu-item {
+                            .chevron {
+                                transform: rotate(180deg);
+                                transition: all 0.5s;
+                            }
+                        }
+                    }
+
+                    .dropdown-menu {
+                        margin-top: 4px !important;
+                        background-color: #FFFFFF;
+                        border-radius: 8px;
+                        padding: 16px 32px;
+                        border: none;
+                        box-shadow: 0px 2px 4px 0px #00000040;
+                        display: flex;
+                        flex-direction: column;
+
+                        .sub-menu {
+                            cursor: pointer;
+                            margin: 8px 0;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                            color: #000000;
+
+                            &:hover {
+                                opacity: 0.7;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .wrap-table {
+            .table {
+                border-radius: 8px;
+                margin-bottom: 24px;
+
+                td,
+                th {
+                    border: none;
+                    text-align: center;
+
+                    &.corner {
+                        &.top-left {
+                            border-top-left-radius: 8px;
+                        }
+
+                        &.top-right {
+                            border-top-right-radius: 8px;
+                        }
+                    }
+                }
+
+                thead {
+                    background-color: #BFE5C7;
+                }
+
+                tbody {
+                    tr {
+                        text-align: center;
+                        background-color: #FFFFFF;
+                    }
+
+                    .btn-download {
+                        .buttons {
+                            padding-left: 16px;
+                            padding-right: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

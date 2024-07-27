@@ -9,7 +9,7 @@ export default function Header(props) {
 
     return (
         <div className="header-component">
-            <img src={Header1} className="background" alt="Background"/>
+            <img src={Header1} className="background" alt="Background" />
             <Container>
                 <Link className="title-section" to={"/"}>
                     <img className="school-logo" src={SchoolLogo} alt="SchoolLogo" />
@@ -23,51 +23,75 @@ export default function Header(props) {
                             <img className="chevron" src={Chevron} alt="Chevron" />
                         </Dropdown.Toggle>
                         <Dropdown.Menu bsPrefix="dropdown-menu">
-                            <Link className="sub-menu" to={"/vision-mission"}>
-                                Visi dan Misi Sekolah
-                            </Link>
-                            <Link className="sub-menu" to={"/organizational-structure"}>
-                                Struktur Organisasi
-                            </Link>
-                            <Link className="sub-menu" to={"/infrastucture"}>
-                                Sarana Prasarana
-                            </Link>
-                            <Link className="sub-menu" to={"/history"}>
-                                Sejarah Sekolah
-                            </Link>
-                            <Link className="sub-menu" to={"/extracurricular"}>
-                                Ekstrakurikuler
-                            </Link>
-                            <Link className="sub-menu" to={"/school-residents"}>
-                                Warga Sekolah
-                            </Link>
-                            <Link className="sub-menu" to={"/achievement"}>
-                                Prestasi
-                            </Link>
-                            <Link className="sub-menu" to={"/about"}>
-                                IPM
-                            </Link>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/vision-mission"}>
+                                    Visi dan Misi Sekolah
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/organizational-structure"}>
+                                    Struktur Organisasi
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/infrastucture"}>
+                                    Sarana Prasarana
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/history"}>
+                                    Sejarah Sekolah
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/extracurricular"}>
+                                    Ekstrakurikuler
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/school-residents"}>
+                                    Warga Sekolah
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/achievement"}>
+                                    Prestasi
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/about"}>
+                                    IPM
+                                </Link>
+                            </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Link className={"btn-menu-item" + (menu === "Gallery" ? " active" : "")}  to={"/gallery"}>Galeri</Link>
+                    <Link className={"btn-menu-item" + (menu === "Gallery" ? " active" : "")} to={"/gallery"}>Galeri</Link>
                     <Dropdown bsPrefix="dropdown-item no-select">
                         <Dropdown.Toggle bsPrefix={"btn-menu-item" + (menu === "NewsAndInformation" ? " active" : "")} as={'div'}>
                             Berita & Informasi
                             <img className="chevron" src={Chevron} alt="Chevron" />
                         </Dropdown.Toggle>
                         <Dropdown.Menu bsPrefix="dropdown-menu">
-                            <Link className="sub-menu" to={"/agenda"}>
-                                Agenda Sekolah
-                            </Link>
-                            <Link className="sub-menu" to={"/announcement"}>
-                                Pengumuman
-                            </Link>
-                            <Link className="sub-menu" to={"/criticism-suggestions"}>
-                                Kritik & Saran
-                            </Link>
-                            <Link className="sub-menu" to={"/news"}>
-                                Berita
-                            </Link>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/agenda"}>
+                                    Agenda Sekolah
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/announcement"}>
+                                    Pengumuman
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/criticism-suggestions"}>
+                                    Kritik & Saran
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/news"}>
+                                    Berita
+                                </Link>
+                            </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown bsPrefix="dropdown-item no-select">
@@ -76,12 +100,16 @@ export default function Header(props) {
                             <img className="chevron" src={Chevron} alt="Chevron" />
                         </Dropdown.Toggle>
                         <Dropdown.Menu bsPrefix="dropdown-menu">
-                            <Link className="sub-menu" to={"/elearning"}>
-                                Mata Pelajaran
-                            </Link>
-                            <Link className="sub-menu" to={"/alquran"}>
-                                Al-Quran
-                            </Link>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/elearning"}>
+                                    Mata Pelajaran
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item className="sub-menu" as={"div"}>
+                                <Link to={"/alquran"}>
+                                    Al-Quran
+                                </Link>
+                            </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
@@ -92,7 +120,7 @@ export default function Header(props) {
                     </Link>
                 </div>
                 <div className="burger-menu" onClick={() => onShowPopUpMenu()}>
-                    <img src={BurgerMenu} alt="Burger"/>
+                    <img src={BurgerMenu} alt="Burger" />
                 </div>
             </Container>
         </div>

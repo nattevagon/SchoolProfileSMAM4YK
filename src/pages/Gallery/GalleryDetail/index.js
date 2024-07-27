@@ -29,7 +29,7 @@ export default function GalleryDetail(props) {
                 to={"/gallery"}
                 title="Kembali ke halaman Galleri"
             />
-            <div className="gallery-header">
+            <div className="page-header">
                 <div className="title">{dataState.title}</div>
                 <div className="date">{moment(dataState.date).format('dddd, D MMMM YYYY')}</div>
                 <div className="count-photo">
@@ -37,7 +37,7 @@ export default function GalleryDetail(props) {
                     <p className="value">{dataState.listPhoto.length} Foto</p>
                 </div>
             </div>
-            <div className="gallery-content">
+            <div className="page-content">
                 <Row xs={1} md={3}>
                     {dataState.listPhoto
                         .map((item, i) => (

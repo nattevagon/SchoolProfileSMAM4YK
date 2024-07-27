@@ -16,7 +16,10 @@ export default function NewsItem(props) {
                 <div className="date">{moment(item.date).format('dddd, D MMMM YYYY')}</div>
             </div>
             <div className="wrap-btn">
-                <Link to={"/news/"+item.permalink}>
+                <Link
+                    to={"/news/" + item.permalink}
+                    state={item}
+                >
                     <Buttons title="Lihat Berita" variant="general" size="xs" block />
                 </Link>
             </div>

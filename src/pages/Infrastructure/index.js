@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react"
 import { CircleAC, CircleCCTV, CircleProjector, CircleWifi, SchoolWithLogo, ScrollUp, StudentsStudyInLab } from "assets"
 import { Container } from "react-bootstrap"
 import dataRoomFacility from "../../data/dataRoomFacility.json"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
 import { Buttons } from "components";
 import "./infrastucture.scss"
 
@@ -16,7 +16,10 @@ export default function Infrastucture(props) {
     }, [])
 
     const handleScrollUp = () => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     }
 
     const handleExpand = () => {
@@ -37,7 +40,7 @@ export default function Infrastucture(props) {
 
             window.scrollTo({
                 top: offsetPosition,
-                behavior: 'smooth'
+                behavior: "smooth"
             });
         }
     }

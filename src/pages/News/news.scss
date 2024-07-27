@@ -1,5 +1,6 @@
 .news-index-page {
     margin-top: 100px;
+    margin-bottom: 100px;
 
     .page-label {
         display: flex;
@@ -78,11 +79,7 @@
     }
 
     .page-content {
-        margin-bottom: 224px;
-
         .news-list {
-            margin-bottom: 80px;
-
             .row {
                 row-gap: 32px;
 
@@ -94,14 +91,10 @@
 
         .pagination-section {
             width: 100%;
+            margin-top: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-
-            .news-pagination {
-                display: flex;
-                align-items: center;
-            }
         }
     }
 }

@@ -59,11 +59,12 @@
 
         .content-section {
             column-gap: 28px;
-            padding: 32px 16px;
+            padding: 32px 16px 0 16px;
 
             .filter-section {
                 max-width: 290px;
                 flex: none;
+                padding: 0;
 
                 .box-filter {
                     background-color: #FFFFFF;
@@ -229,11 +230,13 @@
             }
 
             .table-section {
+                padding: 0;
+
                 .search-sort-section {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    margin-bottom: 32px;
+                    margin-bottom: 24px;
 
                     .wrap-search {
                         width: 100%;
@@ -309,7 +312,7 @@
                 .wrap-table {
                     .table {
                         border-radius: 8px;
-                        margin-bottom: 32px;
+                        margin-bottom: 24px;
 
                         td,
                         th {

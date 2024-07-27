@@ -1,6 +1,7 @@
 .gallery-page {
     position: relative;
     font-family: 'Assistant', sans-serif;
+    padding-bottom: 100px;
 
     .top-section {
         position: relative;
@@ -54,7 +55,6 @@
 
     .bottom-section {
         margin-top: 64px;
-        margin-bottom: 224px;
 
         .page-label {
             display: flex;
@@ -133,11 +133,7 @@
         }
     
         .page-content {
-            margin-bottom: 224px;
-    
             .news-list {
-                margin-bottom: 80px;
-    
                 .row {
                     row-gap: 32px;
     
@@ -149,14 +145,10 @@
     
             .pagination-section {
                 width: 100%;
+                margin-top: 32px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-    
-                .news-pagination {
-                    display: flex;
-                    align-items: center;
-                }
             }
         }
     }

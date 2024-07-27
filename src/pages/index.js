@@ -17,6 +17,7 @@ import CriticismSuggestions from "./CriticismSuggestions"
 import News from "./News"
 import NewsDetail from "./News/NewsDetail"
 import ELearning from "./ELearning"
+import ELearningDetail from "./ELearning/ELearningDetail"
 import AlQuran from "./AlQuran"
 import PageNotFound from "./PageNotFound"
 
@@ -40,6 +41,7 @@ export {
     News,
     NewsDetail,
     ELearning,
+    ELearningDetail,
     AlQuran,
     PageNotFound
 }

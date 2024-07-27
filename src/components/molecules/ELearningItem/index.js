@@ -21,10 +21,13 @@ export default function ELearningItem(props) {
                 </div>
             </div>
             <div className="wrap-btn">
-                    <Link to={"/elearning/" + item.permalink}>
-                        <Buttons title="Lihat Materi" variant="general" size="xs" block />
-                    </Link>
-                </div>
+                <Link
+                    to={"/elearning/" + item.permalink}
+                    state={item}
+                >
+                    <Buttons title="Lihat Materi" variant="general" size="xs" block />
+                </Link>
+            </div>
         </div>
     )
 }

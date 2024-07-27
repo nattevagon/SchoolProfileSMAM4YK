@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { About, Achievement, AddAlumniForm, Agenda, AlQuran, Announcement, CriticismSuggestions, ELearning, Extracurricular, Gallery, GalleryDetail, History, Home, Infrastucture, Location, News, NewsDetail, OrganizationalStructure, PageNotFound, SchoolResidents, VisionMission } from "pages"
+import { About, Achievement, AddAlumniForm, Agenda, AlQuran, Announcement, CriticismSuggestions, ELearning, ELearningDetail, Extracurricular, Gallery, GalleryDetail, History, Home, Infrastucture, Location, News, NewsDetail, OrganizationalStructure, PageNotFound, SchoolResidents, VisionMission } from "pages"
 import { Footer, Header, PopUpMenu } from "components"
 import "./App.scss"
 import "assets/scss/style.scss"
@@ -74,7 +74,16 @@ function App() {
                             </div>
                         }
                         />
-                        <Route path="/elearning" element={<ELearning onMenu={(value) => handleSetMenu(value)} />} />
+                        <Route path="/elearning/*" element={
+                            <Routes>
+                                <Route index element={
+                                    <ELearning onMenu={(value) => handleSetMenu(value)} />
+                                } />
+                                <Route path=":id" element={
+                                    <ELearningDetail onMenu={(value) => handleSetMenu(value)} />
+                                } />
+                            </Routes>
+                        } />
                         <Route path="/alquran" element={<AlQuran onMenu={(value) => handleSetMenu(value)} />} />
                         <Route path="/location" element={<Location onMenu={(value) => handleSetMenu(value)} />} />
                         <Route path="*" element={<PageNotFound />} />

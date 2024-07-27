@@ -14,7 +14,7 @@ export default function News(props) {
                 to={"/news"}
                 title="Kembali ke halaman berita"
             />
-            <div className="news-header">
+            <div className="page-header">
                 <div className="wrap-media">
                     <img src="http://www.smamuh4-yogya.sch.id/web/images/foto/galeri/album/DSC00803.JPG" alt="Post" />
                 </div>
@@ -23,7 +23,7 @@ export default function News(props) {
                     <div className="date">Senin, 5 Juli 2023</div>
                 </div>
             </div>
-            <div className="news-content">
+            <div className="page-content">
                 <p>
                     Hizbul Watan Qabilah Ismail kelas X SMA Muhammadiyah 4 Yogyakarta melaksanakan kemah di  Bumi Perkemahan Kwartir Pusat Hizbul Wathan, Komplek Pusbang Muhammadiyah, Jalan Kaliurang KM 23,Ngipiksari, Hargobinangun, Pakem, Sleman pada 16 sampai dengan 18 Mei 2024. Kegiatan ini bertujuan untuk menambah pengalaman dan meningkatkan kemandirian peserta didik kelas X.
                     <br/>
