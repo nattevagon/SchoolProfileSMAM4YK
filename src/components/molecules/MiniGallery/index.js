@@ -6,13 +6,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import "./miniGallery.scss"
 
 // import required modules
 import { Navigation } from 'swiper/modules';
 import "./miniGallery.scss"
 
 export default function MiniGallery() {
+    const miniGalleryList = () => {
+        const photoList = dataGallery.map(item => item.listPhoto[0]);
+        
+        return photoList
+    }
+
     return (
         <div className="mini-gallery">
             <Swiper
@@ -21,11 +26,11 @@ export default function MiniGallery() {
                 navigation={true}
                 modules={[Navigation]}
             >
-                {dataGallery
+                {miniGalleryList()
                     .filter((_, i) => i < 3)
                     .map((item, i) => (
                         <SwiperSlide key={i}>
-                            <img className="image-item " src={item.listPhoto[0]} alt="MiniGallery" />
+                            <img className="image-item " src={item} alt="MiniGallery" />
                         </SwiperSlide>
                     ))}
             </Swiper>

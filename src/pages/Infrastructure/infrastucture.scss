@@ -70,6 +70,7 @@
             }
 
             .right-section {
+                overflow: hidden;
                 color: #313131;
                 flex: 1;
 
@@ -89,16 +90,21 @@
                     margin: 24px 0;
 
                     .swiper {
-                        width: 100%;
-
+                        min-height: fit-content;
+                        
                         .swiper-slide {
                             width: fit-content;
 
                             .item {
+                                cursor: pointer;
                                 color: #28A745;
                                 border: 1px solid #28A745;
                                 padding: 10px;
                                 border-radius: 8px;
+
+                                &:hover {
+                                    filter: brightness(0.8);
+                                }
                             }
                         }
                     }
@@ -187,7 +193,8 @@
                 justify-content: center;
 
                 .buttons {
-                    padding: 10px 134px;
+                    padding-left: 134px;
+                    padding-right: 134px;
                 }
             }
         }

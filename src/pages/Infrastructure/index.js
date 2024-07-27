@@ -5,35 +5,10 @@ import dataRoomFacility from "../../data/dataRoomFacility.json"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import "./infrastucture.scss"
 import { Buttons } from "components";
+import "./infrastucture.scss"
 
 export default function Infrastucture(props) {
-    const [facility] = useState(
-        [
-            {
-                "name": "Ruang Kelas"
-            },
-            {
-                "name": "Perpustakaan"
-            },
-            {
-                "name": "Laboratorium IPA"
-            },
-            {
-                "name": "Laboratorium Komputer"
-            },
-            {
-                "name": "Laboratorium Bahasa"
-            },
-            {
-                "name": "Hall Sekolah"
-            },
-            {
-                "name": "Ruang UKS"
-            }
-        ]
-    )
     const [maxFacilityList, setMaxFacilityList] = useState(6)
 
     useEffect(() => {
@@ -46,6 +21,25 @@ export default function Infrastucture(props) {
 
     const handleExpand = () => {
         setMaxFacilityList(dataRoomFacility.length)
+    }
+
+    const handleScrollByID = (key) => {
+        const element = document.getElementById("facility-" + (key));
+
+        if (key >= maxFacilityList) {
+            handleExpand()
+        }
+
+        if (element) {
+            const offset = 88; // Offset in pixels
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
     }
 
     return (
@@ -76,13 +70,18 @@ export default function Infrastucture(props) {
                             <div className="room-facility">
                                 <Swiper
                                     spaceBetween={16}
-                                    initialSlide={1}
+                                    initialSlide={0}
                                     slidesPerView={"auto"}
                                     pagination={false}
                                 >
-                                    {facility.map((item, i) => (
+                                    {dataRoomFacility.map((item, i) => (
                                         <SwiperSlide key={i}>
-                                            <div className="item">{item.name}</div>
+                                            <div
+                                                className="item"
+                                                onClick={() => handleScrollByID(i)}
+                                            >
+                                                {item.name}
+                                            </div>
                                         </SwiperSlide>
                                     ))}
                                 </Swiper>
@@ -100,7 +99,7 @@ export default function Infrastucture(props) {
                     {dataRoomFacility.map((item, i) => {
                         if (i < maxFacilityList) {
                             return (
-                                <div className={"room-facility-item" + (i % 2 === 0 ? " reverse " : "")}>
+                                <div className={"room-facility-item" + (i % 2 === 0 ? " reverse " : "")} id={"facility-" + i}>
                                     <Container className="wrap-room-facility">
                                         <div className="content-section">
                                             <div className="label">{item.name}</div>
@@ -123,7 +122,7 @@ export default function Infrastucture(props) {
                 {dataRoomFacility.length !== maxFacilityList && (
                     <div className="wrap-see-all">
                         <Container>
-                            <Buttons title="Lihat Selengkapnya" variant="outline-general" size="xs" onClick={() => handleExpand()} />
+                            <Buttons title="Lihat Selengkapnya" variant="outline-general" size="md" onClick={() => handleExpand()} />
                         </Container>
                     </div>
                 )}

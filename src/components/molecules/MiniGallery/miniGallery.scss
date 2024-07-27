@@ -8,9 +8,13 @@
                 .image-item {
                     filter: brightness(70%);
                     width: 100%;
-                    height: 311px;
+                    aspect-ratio: 8/5;
                     object-fit: cover;
                     border-radius: 8px;
+
+                    @media(max-width: 998px) {
+                        aspect-ratio: 5/4;
+                    }
                 }
             }
         }

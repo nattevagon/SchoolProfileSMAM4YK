@@ -82,7 +82,7 @@ export default function Announcement(props) {
                     </div>
                     {dataAnnouncement.length !== maxAnnouncementList && (
                         <div className="wrap-see-all">
-                            <Buttons title="Lihat Selengkapnya" variant="outline-general" size="xs" onClick={() => handleExpand()} />
+                            <Buttons title="Lihat Selengkapnya" variant="outline-general" size="md" onClick={() => handleExpand()} />
                         </div>
                     )}
                     <div className="wrap-gallery">

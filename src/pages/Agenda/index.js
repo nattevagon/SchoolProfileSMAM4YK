@@ -17,6 +17,15 @@ export default function Agenda(props) {
 
     useEffect(() => {
         props.onMenu("NewsAndInformation")
+
+        let selected = []
+
+        dataAgenda.map(item => {
+            const dateString = moment(item.date).format('YYYY-MM-DD');
+            selected.push(dateString)
+        })
+
+        setSelectedDates(selected)
     }, [])
 
     const handleDateChange = (date) => {
@@ -55,7 +64,7 @@ export default function Agenda(props) {
                                 selected={null}
                                 inline={true}
                                 highlightDates={selectedDates.map(date => new Date(date))}
-                                onChange={handleDateChange}
+                                onChange={(handleDateChange)}
                             />
 
                         </div>

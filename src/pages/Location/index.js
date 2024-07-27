@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import { Clock, LocationMaps, LocationMaps2, Mail, PhoneCall, SocialFB, SocialIG, SocialTiktok, SocialWA, SocialX, SocialYT } from "assets"
 import { Link } from "react-router-dom"
 import "./location.scss"
+import { Buttons } from "components"
 // import { Maps } from "components"
 
 export default function Location(props) {
@@ -57,6 +58,14 @@ export default function Location(props) {
                             <Link>
                                 <img className="social-item" src={SocialYT} alt="SocialLogo" />
                             </Link>
+                        </div>
+                        <div className="btn-show-location">
+                            <Buttons
+                                title="Buka di Google Map"
+                                variant="general"
+                                size="xs"
+                                block
+                            />
                         </div>
                     </div>
                     <div className="maps-section">

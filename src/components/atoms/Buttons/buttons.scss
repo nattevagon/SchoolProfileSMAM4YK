@@ -2,11 +2,9 @@
     &.btn{
         border: 0;
         border-radius: 4px;
-        padding: 8px;
         font-size: 12px;
         font-weight: bold;
         font-size: 14px;
-        height: 40px;
         box-shadow: none !important;
         cursor: pointer;
     }
@@ -51,19 +49,20 @@
     }
 
     &.btn-xs{
-        padding: 12px 16px;
-        font-size: 14px;
-        line-height: 14px;
+        padding: 6px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     &.btn-md{
-        padding: 12px 28px;
+        padding: 10px;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 20px;
     }
 
     &.btn-lg{
-        padding: 16px 32px;
+        padding: 14px;
         font-size: 16px;
+        line-height: 22px;
     }
 }
