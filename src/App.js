@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { About, Achievement, AddAlumniForm, Agenda, AlQuran, Announcement, CriticismSuggestions, ELearning, Extracurricular, Gallery, GalleryDetail, History, Home, Infrastucture, Location, News, NewsDetail, OrganizationalStructure, PageNotFound, SchoolResidents, VisionMission } from "pages"
 import { Footer, Header, PopUpMenu } from "components"
 import "./App.scss"
-import 'assets/scss/style.scss'
+import "assets/scss/style.scss"
 import { BackgroundNews } from "assets"
 
 function App() {

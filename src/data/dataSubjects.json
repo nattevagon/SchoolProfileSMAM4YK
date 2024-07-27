@@ -1,0 +1,449 @@
+[
+    {
+        "subject": "Matematika",
+        "teacher": "Cristiano Ronaldo, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/math-1.png",
+        "permalink": "matematika",
+        "date": "2023-08-03T11:00:00-07:00",
+        "materials": [
+            {
+                "name": "Aljabar Linier",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Kalkulus Dasar",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Statistika",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Trigonometri",
+                "date": "2023-07-28T12:45:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Geometri Analitik",
+                "date": "2023-07-29T13:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Logika Matematika",
+                "date": "2023-07-30T14:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Persamaan Diferensial",
+                "date": "2023-08-01T09:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Matematika Diskrit",
+                "date": "2023-08-02T10:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Teori Bilangan",
+                "date": "2023-08-03T11:00:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Bahasa & Sastra Inggris",
+        "teacher": "Harry Kane, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/english-1.png",
+        "permalink": "bahasa-inggris",
+        "date": "2023-08-04T12:00:00-07:00",
+        "materials": [
+            {
+                "name": "Grammar Basics",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Essay Writing",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Poetry Analysis",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Literary Devices",
+                "date": "2023-07-28T12:45:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Shakespeare",
+                "date": "2023-07-29T13:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Novel Study",
+                "date": "2023-07-30T14:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Reading Comprehension",
+                "date": "2023-08-01T09:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Speaking Skills",
+                "date": "2023-08-02T10:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Listening Practice",
+                "date": "2023-08-03T11:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Creative Writing",
+                "date": "2023-08-04T12:00:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Kimia",
+        "teacher": "Susi Susanti, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/periodic-table.png",
+        "permalink": "kimia",
+        "date": "2023-08-04T12:00:00-07:00",
+        "materials": [
+            {
+                "name": "Atom dan Molekul",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Reaksi Kimia",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Stoikiometri",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Termokimia",
+                "date": "2023-07-28T12:45:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Kimia Organik",
+                "date": "2023-07-29T13:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Kimia Anorganik",
+                "date": "2023-07-30T14:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Kinetika Kimia",
+                "date": "2023-08-01T09:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Kimia Fisika",
+                "date": "2023-08-02T10:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Kimia Analitik",
+                "date": "2023-08-03T11:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Elektrokimia",
+                "date": "2023-08-04T12:00:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Prakarya",
+        "teacher": "Titik Ismiyati, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/paint-art.png",
+        "permalink": "prakarya",
+        "date": "2023-08-04T12:00:00-07:00",
+        "materials": [
+            {
+                "name": "Kerajinan Tangan",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Membuat Batik",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Membuat Keramik",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Desain Grafis",
+                "date": "2023-07-28T12:45:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Fotografi",
+                "date": "2023-07-29T13:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Anyaman",
+                "date": "2023-07-30T14:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Mengukir Kayu",
+                "date": "2023-08-01T09:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Membuat Miniatur",
+                "date": "2023-08-02T10:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Desain Busana",
+                "date": "2023-08-03T11:00:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Kuliner",
+                "date": "2023-08-04T12:00:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Seni Budaya",
+        "teacher": "Sandy Walsh, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/singin-a-song.png",
+        "permalink": "seni-budaya",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": [
+            {
+                "name": "Tari Tradisional",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Musik Tradisional",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Seni Lukis",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Ekonomi",
+        "teacher": "Thiago Alcantara, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/the-ship-and-container.png",
+        "permalink": "ekonomi",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": [
+            {
+                "name": "Ekonomi Makro",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Ekonomi Mikro",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Pasar Uang",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Geografi",
+        "teacher": "Marcos Alonso, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/map-at-south-america.png",
+        "permalink": "geografi",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": [
+            {
+                "name": "Tektonik",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Vulkanik",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Perbatuan",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Sejarah",
+        "teacher": "Xavi Fernandes, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/prambanan-with-flag.png",
+        "permalink": "sejarah",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": [
+            {
+                "name": "Kerajaan Kuno",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Perang Dunia",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Sejarah Mataram Kuno",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Al-Quran & Hadist",
+        "teacher": "Karim Benzema, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/reading-al-quran.png",
+        "permalink": "alquran-hadist",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Fisika",
+        "teacher": "Shayne Pattynama, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/einstein-formula.png",
+        "permalink": "fisika",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Biologi",
+        "teacher": "Marc Klok, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/anatomy.png",
+        "permalink": "biologi",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Olahraga",
+        "teacher": "Bambang Pamungkas, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/running.png",
+        "permalink": "olahraga",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": [
+            {
+                "name": "Bola Kecil",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Bola Besar",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Senam",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    },
+    {
+        "subject": "Bahasa Jerman",
+        "teacher": "Toni Kross, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/english-1.png",
+        "permalink": "bahasa-jerman",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Bahasa Spanyol",
+        "teacher": "Andes Iniesta, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/english-1.png",
+        "permalink": "bahasa-spanyol",
+        "date": "2023-07-27T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Bahasa Portugis",
+        "teacher": "Joao Cancelo, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/english-1.png",
+        "permalink": "bahasa-portugis",
+        "date": "2023-07-20T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Bahasa Perancis",
+        "teacher": "Kylian Mbappe, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/english-1.png",
+        "permalink": "bahasa-perancis",
+        "date": "2023-07-21T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Bahasa Jepang",
+        "teacher": "Kagawa, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/english-1.png",
+        "permalink": "bahasa-jepang",
+        "date": "2023-07-22T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Teknologi Informasi",
+        "teacher": "Marco Motta, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/math-2.png",
+        "permalink": "teknologi-informasi",
+        "date": "2023-07-22T11:30:00-07:00",
+        "materials": []
+    },
+    {
+        "subject": "Matematika Wajib",
+        "teacher": "Marcelino Ferdinan, S.Pd",
+        "imgUrl": "https://smam4ykassets.netlify.app/math-2.png",
+        "permalink": "matematika-wajib",
+        "date": "2023-08-03T11:00:00-07:00",
+        "materials": [
+            {
+                "name": "Aljabar Linier",
+                "date": "2023-07-25T09:07:21-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Kalkulus Dasar",
+                "date": "2023-07-26T10:15:00-07:00",
+                "downloadUrl": ""
+            },
+            {
+                "name": "Statistika",
+                "date": "2023-07-27T11:30:00-07:00",
+                "downloadUrl": ""
+            }
+        ]
+    }
+]

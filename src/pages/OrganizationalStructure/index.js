@@ -9,8 +9,8 @@ export default function OrganizationalStructure(props) {
 
     return (
         <div className="organizational-structure-page">
-            <Container className="page-section">
-                <h2 className="page-title">Bagan Struktur Organisasi</h2>
+            <Container className="page-content">
+                <h2 className="page-label">Bagan Struktur Organisasi</h2>
                 <div className="content-chart">
                     <table class="org-chart">
                         <tr>

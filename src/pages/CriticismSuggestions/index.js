@@ -34,7 +34,7 @@ export default function CriticismSuggestions(props) {
         }
 
     }
-    
+
     const handleSubmit = () => {
         setPopUpSuccess(true)
     }
@@ -55,105 +55,103 @@ export default function CriticismSuggestions(props) {
                 </div>
             </div>
             <div className="bottom-section">
-                <Container>
-                    <div className="page-content">
-                        <div className="info-section">
-                            <h3 className="section-label">Hubungi Kami</h3>
-                            <h5 className="title">SMA Muhammadiyah 4</h5>
-                            <div className="contact-item">
-                                <img className="icon" src={LocationMaps} alt="Address" />
-                                <p className="text">Jl. Mondorakan No. 51 Kotagede Yogyakarta. 55172</p>
-                            </div>
-                            <div className="contact-item">
-                                <img className="icon" src={Clock} alt="Time" />
-                                <p className="text">Buka 24 jam pada hari tertentu (Jumat, Sabtu)</p>
-                            </div>
-                            <div className="contact-item center">
-                                <img className="icon" src={PhoneCall} alt="Phone" />
-                                <p className="text">0274371185 / 2840268</p>
-                            </div>
-                            <div className="contact-item center">
-                                <img className="icon" src={Mail} alt="Mail" />
-                                <p className="text">Muhammadiyah4yk@gmail.com</p>
-                            </div>
-                            <div className="social-icons">
-                                <Link>
-                                    <img className="social-item" src={SocialIG} alt="SocialLogo" />
-                                </Link>
-                                <Link>
-                                    <img className="social-item" src={SocialWA} alt="SocialLogo" />
-                                </Link>
-                                <Link>
-                                    <img className="social-item" src={SocialFB} alt="SocialLogo" />
-                                </Link>
-                                <Link>
-                                    <img className="social-item" src={SocialTiktok} alt="SocialLogo" />
-                                </Link>
-                                <Link>
-                                    <img className="social-item x" src={SocialX} alt="SocialLogo" />
-                                </Link>
-                                <Link>
-                                    <img className="social-item" src={SocialYT} alt="SocialLogo" />
-                                </Link>
-                            </div>
+                <Container className="page-content">
+                    <div className="info-section">
+                        <h3 className="section-label">Hubungi Kami</h3>
+                        <h5 className="title">SMA Muhammadiyah 4</h5>
+                        <div className="contact-item">
+                            <img className="icon" src={LocationMaps} alt="Address" />
+                            <p className="text">Jl. Mondorakan No. 51 Kotagede Yogyakarta. 55172</p>
                         </div>
-                        <div className="form-section">
-                            <div className="section-label">Kritik dan Saran</div>
-                            <form className="form-content">
-                                <TextFields
-                                    name="name"
-                                    label="Nama Lengkap"
-                                    type="text"
-                                    maxLength={50}
-                                    placeholder="Masukkan nama sesuai KTP"
-                                    value={name}
-                                    onChange={handleChange}
-                                />
-                                <TextFields
-                                    name="email"
-                                    label="Alamat Email"
-                                    type="email"
-                                    maxLength={50}
-                                    placeholder="Masukkan alamat email anda"
-                                    value={email}
-                                    onChange={handleChange}
-                                />
-                                <TextFields
-                                    name="subject"
-                                    label="Subjek"
-                                    type="text"
-                                    maxLength={50}
-                                    placeholder="Masukkan subjek pesan anda "
-                                    value={subject}
-                                    onChange={handleChange}
-                                />
-                                <TextFields
-                                    name="message"
-                                    label="Pesan Anda"
-                                    type="text"
-                                    as="textarea"
-                                    maxLength={100}
-                                    placeholder="Masukkan pesan anda disini"
-                                    value={message}
-                                    onChange={handleChange}
-                                />
-                                <div className="btn-submit">
-                                    <Buttons
-                                        title="Kirim Data Alumni"
-                                        variant="general"
-                                        onClick={handleSubmit}
-                                    />
-                                </div>
-                            </form>
+                        <div className="contact-item">
+                            <img className="icon" src={Clock} alt="Time" />
+                            <p className="text">Buka 24 jam pada hari tertentu (Jumat, Sabtu)</p>
+                        </div>
+                        <div className="contact-item center">
+                            <img className="icon" src={PhoneCall} alt="Phone" />
+                            <p className="text">0274371185 / 2840268</p>
+                        </div>
+                        <div className="contact-item center">
+                            <img className="icon" src={Mail} alt="Mail" />
+                            <p className="text">Muhammadiyah4yk@gmail.com</p>
+                        </div>
+                        <div className="social-icons">
+                            <Link>
+                                <img className="social-item" src={SocialIG} alt="SocialLogo" />
+                            </Link>
+                            <Link>
+                                <img className="social-item" src={SocialWA} alt="SocialLogo" />
+                            </Link>
+                            <Link>
+                                <img className="social-item" src={SocialFB} alt="SocialLogo" />
+                            </Link>
+                            <Link>
+                                <img className="social-item" src={SocialTiktok} alt="SocialLogo" />
+                            </Link>
+                            <Link>
+                                <img className="social-item x" src={SocialX} alt="SocialLogo" />
+                            </Link>
+                            <Link>
+                                <img className="social-item" src={SocialYT} alt="SocialLogo" />
+                            </Link>
                         </div>
                     </div>
-                    <PopUpSuccess
-                        isShow={isPopUpSuccess}
-                        message="Kritik & Saran anda berhasil dikirim"
-                        onShow={(value) => setPopUpSuccess(value)}
-                    />
+                    <div className="form-section">
+                        <div className="section-label">Kritik dan Saran</div>
+                        <form className="form-content">
+                            <TextFields
+                                name="name"
+                                label="Nama Lengkap"
+                                type="text"
+                                maxLength={50}
+                                placeholder="Masukkan nama sesuai KTP"
+                                value={name}
+                                onChange={handleChange}
+                            />
+                            <TextFields
+                                name="email"
+                                label="Alamat Email"
+                                type="email"
+                                maxLength={50}
+                                placeholder="Masukkan alamat email anda"
+                                value={email}
+                                onChange={handleChange}
+                            />
+                            <TextFields
+                                name="subject"
+                                label="Subjek"
+                                type="text"
+                                maxLength={50}
+                                placeholder="Masukkan subjek pesan anda "
+                                value={subject}
+                                onChange={handleChange}
+                            />
+                            <TextFields
+                                name="message"
+                                label="Pesan Anda"
+                                type="text"
+                                as="textarea"
+                                maxLength={100}
+                                placeholder="Masukkan pesan anda disini"
+                                value={message}
+                                onChange={handleChange}
+                            />
+                            <div className="btn-submit">
+                                <Buttons
+                                    title="Kirim Data Alumni"
+                                    variant="general"
+                                    onClick={handleSubmit}
+                                />
+                            </div>
+                        </form>
+                    </div>
                 </Container>
             </div>
+            <PopUpSuccess
+                isShow={isPopUpSuccess}
+                message="Kritik & Saran anda berhasil dikirim"
+                onShow={(value) => setPopUpSuccess(value)}
+            />
         </div>
     )
 }

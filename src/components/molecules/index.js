@@ -4,6 +4,7 @@ import Banner from "./Banner"
 import NewsItem from "./NewsItem"
 import GalleryItem from "./GalleryItem"
 import AnnouncementItem from "./AnnouncementItem"
+import ELearningItem from "./ELearningItem"
 import MiniGallery from "./MiniGallery"
 import PopUpPhotoViewer from "./PopUpPhotoViewer"
 import PopUpMenu from "./PopUpMenu"
@@ -17,6 +18,7 @@ export {
     NewsItem,
     GalleryItem,
     AnnouncementItem,
+    ELearningItem,
     MiniGallery,
     PopUpPhotoViewer,
     PopUpMenu,

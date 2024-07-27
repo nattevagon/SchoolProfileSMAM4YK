@@ -11,7 +11,7 @@ export default function VisionMission(props) {
     return (
         <div className="vision-mission-page">
             <Container>
-                <Row xs={1} md={2} className="page-section">
+                <Row xs={1} md={2} className="page-content">
                     <Col className="left-section" md={8}>
                         <div className="wrap-item vision">
                             <h2 className="label">“ Visi Kami</h2>

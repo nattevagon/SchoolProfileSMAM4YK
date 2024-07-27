@@ -30,7 +30,7 @@ export default function About(props) {
             </div>
             <div className="bottom-section">
                 <Container>
-                    <Row xs={1} md={2} className="page-section">
+                    <Row xs={1} md={2} className="page-content">
                         <Col className="left-section" md={7}>
                             <div className="label">Tentang Kami</div>
                             <div className="content">

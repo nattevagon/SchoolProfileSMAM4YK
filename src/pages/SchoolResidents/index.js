@@ -7,8 +7,8 @@ import dataStudent from "../../data/dataStudent.json"
 import dataAlumni from "../../data/dataAlumni.json"
 import dataFilterList from "../../data/dataFilterList.json"
 import { Chevron } from "assets"
-import "./schoolResidents.scss"
 import { Link } from "react-router-dom"
+import "./schoolResidents.scss"
 
 export default function SchoolResidents(props) {
     const maxData = 21
@@ -302,7 +302,7 @@ export default function SchoolResidents(props) {
                             )}
                         </Col>
                         <Col className="table-section">
-                            <div className="wrap-search-sort">
+                            <div className="search-sort-section">
                                 <div className="wrap-search">
                                     <SearchField
                                         className="search-field"

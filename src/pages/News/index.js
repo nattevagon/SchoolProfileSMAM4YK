@@ -22,7 +22,7 @@ export default function News(props) {
         let newAnnouncementList = newsList
 
         if (type === 1) { // Tanggal Terbaru
-            newAnnouncementList = newsList.sort((a, b) => new Date(a.date) - new Date(b.date)).reverse().slice() 
+            newAnnouncementList = newsList.sort((a, b) => new Date(b.date) - new Date(a.date)).slice() 
         }
         else if (type === 2) { // Tanggal Terlama
             newAnnouncementList = newsList.sort((a, b) => new Date(a.date) - new Date(b.date)).slice()
