@@ -60,12 +60,14 @@ export default function Location(props) {
                             </Link>
                         </div>
                         <div className="btn-show-location">
-                            <Buttons
-                                title="Buka di Google Map"
-                                variant="general"
-                                size="xs"
-                                block
-                            />
+                            <Link to={"https://maps.app.goo.gl/NTepHA9vmvYtZQ378"} target="_blank">
+                                <Buttons
+                                    title="Buka di Google Map"
+                                    variant="general"
+                                    size="xs"
+                                    block
+                                />
+                            </Link>
                         </div>
                     </div>
                     <div className="maps-section">

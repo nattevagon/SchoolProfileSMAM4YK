@@ -114,6 +114,12 @@
 
             .btn-show-location {
                 margin-top: 22px;
+
+                a {
+                    &:hover {
+                        text-decoration: unset;
+                    }
+                }
             }
         }
 
