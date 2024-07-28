@@ -151,7 +151,14 @@
                 tbody {
                     tr {
                         text-align: center;
-                        background-color: #FFFFFF;
+                        
+                        &.white {
+                            background-color: #FFFFFF;
+                        }
+
+                        &.grey {
+                            background-color: #FAFAFA;
+                        }
                     }
 
                     .btn-download {

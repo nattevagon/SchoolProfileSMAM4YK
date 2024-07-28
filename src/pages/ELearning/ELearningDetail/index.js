@@ -80,6 +80,11 @@ export default function ELearningDetail(props) {
             });
     }
 
+    const handleClear = () => {
+        setSearchText("")
+        setFilterSearchData(dataState.materials)
+    }
+
     return (
         <Container className="elearning-detail-page">
             <Breadcrumbs
@@ -98,13 +103,15 @@ export default function ELearningDetail(props) {
                 <div className="search-sort-section">
                     <div className="wrap-search">
                         <SearchField
-                            className="search-field"
+                            className="search-material"
                             name="search"
                             placeholder="Cari judul materi yang dibutuhkan"
                             value={searchText}
                             onClick={handleChangeSearch}
                             onChange={filterListSearch}
-                            block={true}
+                            onClear={handleClear}
+                            block
+                            searchIcon
                         />
                     </div>
                     <div className="wrap-sort">
@@ -138,7 +145,7 @@ export default function ELearningDetail(props) {
                             {filterSearchData
                                 .filter((item, i) => i >= indexStartData && i < indexEndData)
                                 .map((item, i) => (
-                                    <tr key={indexStartData + i}>
+                                    <tr key={indexStartData + i} className={i%2 === 0 ? "white" : "grey"}>
                                         <td>{indexStartData + i + 1}</td>
                                         <td>{item.name}</td>
                                         <td>{moment(item.date).format("DD/MM/YYYY")}</td>

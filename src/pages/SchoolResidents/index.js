@@ -80,6 +80,11 @@ export default function SchoolResidents(props) {
         setSearchText(e.target.value)
     };
 
+    const handleClear = () => {
+        setSearchText("")
+        setFilterSearchData(dataResidents)
+    }
+
     const handleClickPage = (page) => {
         setIndexStartData((page - 1) * maxData)
         setIndexEndData((page) * maxData)
@@ -195,8 +200,6 @@ export default function SchoolResidents(props) {
         setFilterSearchData(filteredData)
     }
 
-    console.log("Selected", selectedFilter)
-
     return (
         <div className="school-residents-page">
             <Container>
@@ -305,13 +308,15 @@ export default function SchoolResidents(props) {
                             <div className="search-sort-section">
                                 <div className="wrap-search">
                                     <SearchField
-                                        className="search-field"
+                                        className="search-school-residents"
                                         name="search"
                                         placeholder="Cari warga sekolah di sini"
                                         value={searchText}
                                         onClick={handleChangeSearch}
                                         onChange={filterListSearch}
-                                        block={true}
+                                        onClear={handleClear}
+                                        block
+                                        searchIcon
                                     />
                                 </div>
                                 <div className="wrap-sort">

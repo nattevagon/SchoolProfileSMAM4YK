@@ -66,6 +66,11 @@ export default function ELearning(props) {
         setPageData(page)
     }
 
+    const handleClear = () => {
+        setSearchText("")
+        setFilterSearchData(dataSubjects)
+    }
+
     return (
         <div className="elearning-page">
             <div className="top-section">
@@ -84,13 +89,15 @@ export default function ELearning(props) {
                 <div className="search-sort-section">
                     <div className="wrap-search">
                         <SearchField
-                            className="search-field"
+                            className="search-elearning"
                             name="search"
                             placeholder="Cari Mata Pelajaran / Nama Guru Pengajar"
                             value={searchText}
                             onClick={handleChangeSearch}
                             onChange={filterListSearch}
-                            block={true}
+                            onClear={handleClear}
+                            block
+                            searchIcon
                         />
                     </div>
                     <div className="wrap-sort">

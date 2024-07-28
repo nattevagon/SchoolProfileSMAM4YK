@@ -1,21 +1,36 @@
 import React from 'react'
 import "./searchField.scss"
-import { Search } from "assets"
+import { CloseX, Search } from "assets"
 
 export default function SearchField(props) {
-    const { className, name, placeholder, value, block } = props
+    const { className, name, placeholder, value, block, searchIcon } = props
 
     return (
-        <div className="search-field">
+        <div className={"search-field" + (className ? " " + className : "") + (block ? " block" : "") + (searchIcon || value ? " have-icon" : "")}>
             <input
                 type="text"
-                className={(className ? className : "") + (block ? " block" : "")}
                 name={name}
                 placeholder={placeholder}
                 value={value}
                 onChange={props.onChange}
             />
-            <img className="icon" src={Search} alt="Search" />
+
+            {value ?
+                <img
+                    className="icon clear"
+                    src={CloseX}
+                    alt="Clear"
+                    onClick={() => props.onClear()}
+                />
+                :
+                searchIcon && (
+                    <img
+                        className="icon"
+                        src={Search}
+                        alt="Search"
+                    />
+                )
+            }
         </div>
     )
 }

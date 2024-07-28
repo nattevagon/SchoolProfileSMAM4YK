@@ -1,0 +1,218 @@
+.alquran-page {
+    font-family: 'Assistant', sans-serif;
+    background-color: #FAFAFA;
+
+    .page-content {
+        display: flex;
+        column-gap: 0px;
+        padding: 0 16px;
+
+        .left-side {
+            max-width: fit-content;
+            background-color: #FAFAFA;
+            padding: 12px;
+            padding-top: 64px;
+
+            .page-label {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 38px;
+                color: #28A745;
+                margin-bottom: 24px;
+            }
+
+            .search-section {
+                display: flex;
+                align-items: center;
+                margin-bottom: 24px;
+
+                .text-fields {
+                    margin-bottom: 0;
+
+                    .wrap-form-input {
+                        .form-input {
+                            padding: 12px 16px;
+                            height: 46px;
+                        }
+                    }
+                }
+
+                .form-surah {
+                    width: 266px;
+                    margin-right: 12px;
+                }
+
+                .form-ayah {
+                    width: 114px;
+                    margin: 0 12px;
+
+                    input {
+                        text-align: center;
+                        padding: 12px 16px;
+
+                        &::placeholder {
+                            text-align: center;
+                        }
+                    }
+
+                    .icon {
+                        display: none;
+                    }
+                }
+            }
+
+            .surah-ayah-section {
+                color: #414141;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                display: flex;
+                height: 600px;
+
+                .surah-list,
+                .ayah-list {
+                    .item {
+                        cursor: pointer;
+                        width: 100%;
+                        border-radius: 8px;
+                        padding: 6px 16px;
+                        margin-bottom: 8px;
+
+                        &.active,
+                        &:hover {
+                            background-color: #FDE6C3;
+                        }
+                    }
+                }
+
+                .surah-list {
+                    width: 278px;
+                    // border-right: 1px solid #D8D8D8;
+                    padding-right: 12px;
+
+                    .item {
+                        display: flex;
+                        align-items: center;
+
+                        p {
+                            margin-bottom: 0;
+                        }
+
+                        .number {
+                            margin-right: 4px;
+                        }
+                    }
+                }
+
+                .ayah-list {
+                    width: 138px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+
+                    .item {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .right-side {
+            flex: 1;
+            width: 100%;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            padding: 112px 20px 40px 60px;
+
+            .surah-content-list {
+                .wrap-title {
+                    font-size: 58px;
+                    font-weight: 700;
+                    color: #313131;
+                    margin-bottom: 50px;
+                }
+
+                .wrap-content {
+                    .content-item {
+
+                        .quran-side,
+                        .translate-side {
+                            .label {
+                                font-size: 24px;
+                                font-weight: 600;
+                                line-height: 24px;
+                                color: #28A745;
+                            }
+
+                            .content {
+                                color: #313131
+                            }
+                        }
+
+                        .quran-side {
+                            border-right: 1px solid #D8D8D8;
+
+                            .label {
+                                text-align: right;
+                            }
+
+                            .content {
+                                text-align: right;
+
+                                .arabic-text {
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    line-height: 24px;
+                                    margin-bottom: 16px;
+                                }
+
+                                .latin-text {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+
+                        .translate-side {
+                            .label {
+                                text-align: left;
+                            }
+
+                            .content {
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                text-align: justify;
+                            }
+                        }
+
+                        &.label {
+
+                            .quran-side,
+                            .translate-side {
+                                padding: 0 16px 24px 24px;
+                            }
+                        }
+
+                        &.content {
+
+                            .quran-side,
+                            .translate-side {
+                                padding: 40px 16px 40px 24px;
+                            }
+                        }
+
+                        &.active {
+                            background-color: #FFFBF4;
+                        }
+                    }
+
+                    .pagination-section {
+                        width: 100%;
+                        margin-top: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
