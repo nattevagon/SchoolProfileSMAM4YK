@@ -23,59 +23,87 @@ export default function Footer(props) {
                             <Col className="menu-section">
                                 <h5 className="title">Profil Sekolah</h5>
                                 <div className="menu-list">
-                                    <Link>Visi dan Misi Sekolah</Link>
-                                    <Link>Struktur Organisasi</Link>
-                                    <Link>Sarana Prasarana</Link>
-                                    <Link>Sejarah Sekolah</Link>
-                                    <Link>Ekstrakurikuler</Link>
-                                    <Link>Warga Sekolah</Link>
-                                    <Link>Prestasi</Link>
-                                    <Link>IPM</Link>
+                                    <Link to={"/vision-mission"}>
+                                        Visi dan Misi Sekolah
+                                    </Link>
+                                    <Link to={"/organizational-structure"}>
+                                        Struktur Organisasi
+                                    </Link>
+                                    <Link to={"/infrastucture"}>
+                                        Sarana Prasarana
+                                    </Link>
+                                    <Link to={"/history"}>
+                                        Sejarah Sekolah
+                                    </Link>
+                                    <Link to={"/extracurricular"}>
+                                        Ekstrakurikuler
+                                    </Link>
+                                    <Link to={"/school-residents"}>
+                                        Warga Sekolah
+                                    </Link>
+                                    <Link to={"/achievement"}>
+                                        Prestasi
+                                    </Link>
+                                    <Link to={"/about"}>
+                                        IPM
+                                    </Link>
                                 </div>
                             </Col>
                             <Col className="menu-section">
                                 <h5 className="title">Berita & Informasi</h5>
                                 <div className="menu-list">
-                                    <Link>Agenda Sekolah</Link>
-                                    <Link>Pengumuman</Link>
-                                    <Link>Kritik & Saran</Link>
-                                    <Link>Berita</Link>
+                                    <Link to={"/agenda"}>
+                                        Agenda Sekolah
+                                    </Link>
+                                    <Link to={"/announcement"}>
+                                        Pengumuman
+                                    </Link>
+                                    <Link to={"/criticism-suggestions"}>
+                                        Kritik & Saran
+                                    </Link>
+                                    <Link to={"/news"}>
+                                        Berita
+                                    </Link>
                                 </div>
                             </Col>
                             <Col className="menu-section">
                                 <h5 className="title">E-Learning</h5>
                                 <div className="menu-list">
-                                    <Link>Mata Pelajaran</Link>
-                                    <Link>Al-quran</Link>
+                                    <Link to={"/elearning"}>
+                                        Mata Pelajaran
+                                    </Link>
+                                    <Link to={"/alquran"}>
+                                        Al-Quran
+                                    </Link>
                                 </div>
                             </Col>
                             <Col className="menu-section">
                                 <h5 className="title">Hubungi Kami</h5>
                                 <div className="contact-item">
-                                    <img className="icon" src={PhoneCall} alt="Phone"/>
+                                    <img className="icon" src={PhoneCall} alt="Phone" />
                                     0274371185 / 2840268</div>
                                 <div className="contact-item">
-                                    <img className="icon" src={Mail} alt="Mail"/>
+                                    <img className="icon" src={Mail} alt="Mail" />
                                     Muhammadiyah4yk@gmail.com
                                 </div>
                                 <div className="social-icons">
-                                    <Link>
-                                        <img className="social-item" src={SocialIG} alt="SocialLogo"/>
+                                    <Link to="https://www.instagram.com/smamuh4yg" target="_blank">
+                                        <img className="social-item" src={SocialIG} alt="SocialLogo" />
                                     </Link>
-                                    <Link>
-                                        <img className="social-item" src={SocialWA} alt="SocialLogo"/>
+                                    <Link to="https://wa.me/" target="_blank">
+                                        <img className="social-item" src={SocialWA} alt="SocialLogo" />
                                     </Link>
-                                    <Link>
-                                        <img className="social-item" src={SocialFB} alt="SocialLogo"/>
+                                    <Link to="https://www.facebook.com/smamuh4yg" target="_blank">
+                                        <img className="social-item" src={SocialFB} alt="SocialLogo" />
                                     </Link>
-                                    <Link>
-                                        <img className="social-item" src={SocialTiktok} alt="SocialLogo"/>
+                                    <Link to="https://tiktok.com/" target="_blank">
+                                        <img className="social-item" src={SocialTiktok} alt="SocialLogo" />
                                     </Link>
-                                    <Link>
-                                        <img className="social-item x" src={SocialX} alt="SocialLogo"/>
+                                    <Link to="https://x.com/sma_muh4yk" target="_blank">
+                                        <img className="social-item x" src={SocialX} alt="SocialLogo" />
                                     </Link>
-                                    <Link>
-                                        <img className="social-item" src={SocialYT} alt="SocialLogo"/>
+                                    <Link to="https://www.youtube.com/channel/UCg4gH9fQ2Z4lyVQeEpT7_FA" target="_blank">
+                                        <img className="social-item" src={SocialYT} alt="SocialLogo" />
                                     </Link>
                                 </div>
                             </Col>
