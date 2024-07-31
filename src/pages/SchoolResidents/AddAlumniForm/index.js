@@ -48,7 +48,6 @@ export default function AddAlumniForm(props) {
     }
 
     const handleSubmit = () => {
-        console.log("submit")
         setPopUpSuccess(true)
     }
 

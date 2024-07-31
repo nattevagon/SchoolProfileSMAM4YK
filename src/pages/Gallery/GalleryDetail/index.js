@@ -12,8 +12,6 @@ export default function GalleryDetail(props) {
     const location = useLocation();
     const dataState = location.state
 
-    console.log(dataState)
-
     useEffect(() => {
         props.onMenu("Gallery")
     }, [])
