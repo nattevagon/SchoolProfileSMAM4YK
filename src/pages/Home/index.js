@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { AnnouncementItem, Banner, MiniGallery, NewsItem } from "components"
 import { Link } from "react-router-dom"
@@ -8,6 +8,20 @@ import dataAnnouncement from "../../data/dataAnnouncement.json"
 import "./home.scss"
 
 export default function Home(props) {
+    const [bannerList, setBannerList] = useState([
+        {
+            "title": "Banner1",
+            "imgUrl": "https://smam4ykassets.netlify.app/students-in-class.jpg"
+        },
+        {
+            "title": "Banner2",
+            "imgUrl": "https://smam4ykassets.netlify.app/students-study-in-lab.jpg"
+        },
+        {
+            "title": "Banner3",
+            "imgUrl": "https://smam4ykassets.netlify.app/students-in-class.jpg"
+        }
+    ])
     useEffect(() => {
         props.onMenu("Home")
     }, [])

@@ -1,6 +1,11 @@
 .history-page {
+    position: relative;
     font-family: 'Assistant', sans-serif;
     padding-bottom: 150px;
+    background-image: url(../../assets/images/backgrounds/pattern-1.svg);
+    background-size: contain;
+    background-repeat: repeat;
+    z-index: 0;
 
     .top-section {
         background-image: url(../../assets/images/backgrounds/shape-1.svg);

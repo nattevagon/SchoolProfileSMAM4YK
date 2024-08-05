@@ -26,6 +26,36 @@
             }
         }
 
+         .swiper-button-prev, .swiper-button-next {
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            background-color: #FFFFFF;
+            border: 1px solid #E3E3E3;
+            opacity: 1;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(../../../assets/images/icons/chevron-slider.svg);
+            background-repeat: no-repeat!important;
+            background-size: auto;
+            border-radius: 50%;
+            background-position: 20px;
+            border: 1px solid #E3E3E3;
+
+            &::after {
+                display: none;
+            }
+
+            &.swiper-button-disabled {
+                filter: grayscale(1);
+                opacity: 0.2;
+            }
+        }
+
+        .swiper-button-prev {
+            transform: rotate(180deg);
+        }
+
         .swiper-pagination {
             position: absolute;
             right: 32px;

@@ -1,4 +1,5 @@
 import React from 'react';
+import dataBanner from "../../../data/dataBanner.json"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,33 +9,30 @@ import 'swiper/css/pagination';
 import "./banner.scss"
 
 // import required modules
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Students, Students2, StudentsStudyInLab } from "assets";
 
 export default function Banner() {
+    console.log(dataBanner)
     return (
         <div className="banner">
             <Swiper
                 centeredSlides={true}
                 autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
+                    delay: 2500,
+                    disableOnInteraction: false,
                 }}
                 pagination={{
-                  clickable: true,
+                    clickable: true,
                 }}
-                navigation={false}
-                modules={[Autoplay, Pagination]}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
             >
-                <SwiperSlide>
-                    <img className="image-item " src={Students} alt="Student" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img className="image-item " src={Students2} alt="Student" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img className="image-item " src={StudentsStudyInLab} alt="Student" />
-                </SwiperSlide>
+                {dataBanner.map((item, i) => (
+                    <SwiperSlide key={i}>
+                        <img className="image-item " src={item.imgUrl} alt="Banner" />
+                    </SwiperSlide>
+                ))}
             </Swiper>
             <div className="banner-info">
                 <h3 className="title">SMA Muhammadiyah 4 Yogyakarta</h3>

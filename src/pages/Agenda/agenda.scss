@@ -79,7 +79,8 @@
 
                                 &.react-datepicker__day--highlighted {
                                     border: 1px solid #F9AB37;
-                                    background-color: #FCD59B;
+                                    border-radius: 0;
+                                    background-color: unset;
                                     color: #313131;
                                 }
                             }

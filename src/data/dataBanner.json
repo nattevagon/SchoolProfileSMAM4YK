@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Banner1",
+        "imgUrl" : "https://smam4ykassets.netlify.app/students-in-class.jpg"
+    },
+    {
+        "title": "Banner2",
+        "imgUrl" : "https://smam4ykassets.netlify.app/students-meeting.jpg"
+    },
+    {
+        "title": "Banner3",
+        "imgUrl" : "https://smam4ykassets.netlify.app/students-study-in-lab.jpg"
+    }
+]
