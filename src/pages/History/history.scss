@@ -17,10 +17,22 @@
         color: #FFFFFF;
         z-index: 2;
 
-        // @media(min-width: 1360px) {
-        //     background-position: 0 -68px;
-        //     padding-bottom: 256px;
-        // }
+        @media(min-width: 1560px) {
+            background-position: 0 -128px;
+            padding-bottom: 290px;
+        }
+
+        @media(min-width: 1920px) {
+            background-position: 0 -200px;
+            padding-bottom: 350px;
+        }
+
+        @media(min-width: 2048px) {
+            background-position: 0 -68px;
+            padding-bottom: 200px;
+            background-image: unset;
+            background-color: #00833E;
+        }
 
         .page-title {
             font-size: 36px;
@@ -84,6 +96,18 @@
     .bottom-section {
         margin-top: -136px;
         z-index: 1;
+
+        @media(min-width: 1560px) {
+            margin-top: -150px;
+        }
+
+        @media(min-width: 1920px) {
+            margin-top: -200px;
+        }
+
+        @media(min-width: 2048px) {
+            margin-top: 64px;
+        }
 
         .list-school-headmaster {
             .label {

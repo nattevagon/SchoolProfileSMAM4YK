@@ -1,5 +1,8 @@
 .home-page {
     font-family: 'Assistant', sans-serif;
+    background-image: url(../../assets/images/backgrounds/pattern-1.svg);
+    background-size: contain;
+    background-repeat: repeat;
     padding-top: 16px;
     padding-bottom: 100px;
 
@@ -130,6 +133,8 @@
     }
 
     .announcement-gallery-section {
+        background-color: #FFFFFF;
+        
         .announcement {
             padding-top: 52px;
             padding-bottom: 28px;
