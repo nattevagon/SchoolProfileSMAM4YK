@@ -65,7 +65,6 @@ export default function Header(props) {
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Link className={"btn-menu-item" + (menu === "Gallery" ? " active" : "")} to={"/gallery"}>Galeri</Link>
                     <Dropdown bsPrefix="dropdown-item no-select">
                         <Dropdown.Toggle bsPrefix={"btn-menu-item" + (menu === "NewsAndInformation" ? " active" : "")} as={'div'}>
                             Berita & Informasi
@@ -94,6 +93,7 @@ export default function Header(props) {
                             </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
+                    <Link className={"btn-menu-item" + (menu === "Gallery" ? " active" : "")} to={"/gallery"}>Galeri</Link>
                     <Dropdown bsPrefix="dropdown-item no-select">
                         <Dropdown.Toggle bsPrefix={"btn-menu-item" + (menu === "ELearningAndAlQuran" ? " active" : "")} as={'div'}>
                             E-Learning & Al-Quran

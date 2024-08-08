@@ -138,7 +138,7 @@ export default function CriticismSuggestions(props) {
                             />
                             <div className="btn-submit">
                                 <Buttons
-                                    title="Kirim Data Alumni"
+                                    title="Kirim Pesan"
                                     variant="general"
                                     onClick={handleSubmit}
                                 />
