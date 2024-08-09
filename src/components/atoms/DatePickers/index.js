@@ -1,12 +1,11 @@
 import React from 'react';
 import DatePicker, { registerLocale } from "react-datepicker";
-import { CalendarIcon } from "assets";
 import './datePickers.scss';
 import "react-datepicker/dist/react-datepicker.css";
 import id from "date-fns/locale/id";
 registerLocale('id', id);
 
-const DatePickers = ({ className, label, placeholder, selectedDate, minDate, maxDate, yearDropdownItemNumber, dropdownMode, onChange, inline, highlightDates }) => {
+const DatePickers = ({ className, label, placeholder, selectedDate, icon, onChange, inline, highlightDates }) => {
     return (
         <div className="date-pickers">
             <div className="label">{label}</div>
@@ -25,11 +24,13 @@ const DatePickers = ({ className, label, placeholder, selectedDate, minDate, max
                     inline={inline}
                     highlightDates={highlightDates}
                 />
-                <img
-                    className="icon"
-                    src={CalendarIcon}
-                    alt="Search"
-                />
+                {icon && (
+                    <img
+                        className="icon"
+                        src={icon}
+                        alt="Search"
+                    />
+                )}
             </div>
         </div>
     );

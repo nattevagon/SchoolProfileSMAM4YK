@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Container, Dropdown } from "react-bootstrap"
 import { Breadcrumbs, Buttons, DatePickers, PopUpSuccess, TextFields } from "components"
-import { ChevronSlider } from "assets"
+import { CalendarIcon, ChevronSlider } from "assets"
 import "./addAlumniForm.scss"
 
 export default function AddAlumniForm(props) {
@@ -154,6 +154,7 @@ export default function AddAlumniForm(props) {
                         placeholder="DD-MM-YYYY"
                         inline={false}
                         selectedDate={dateOfBirth}
+                        icon={CalendarIcon}
                         onChange={(date) => setDateOfBirth(date)}
                     />
                     <TextFields
